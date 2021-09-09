@@ -5,7 +5,7 @@ using Cinemachine;
 
 public class PlayerController3rdPerson : MonoBehaviour
 {
-    // 🐈 ~ Xandy, pode mudar o código como quiser. Essa versão é só pra ter como boneco de teste. 
+    // ~ Xandy, pode mudar o código como quiser. Essa versão é só pra ter como boneco de teste. 
     private CharacterController characterController;
     private Animator animator;
 
@@ -13,7 +13,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     [SerializeField] private Transform camTransform; // we get this value from the current active camera on the clearshot system
     [SerializeField] CinemachineClearShot clearShot;
     
-    private Vector3 lastCamAngle; // 🐈 ~ when testing, I found that maintaining the same direction for moving forward is great, but for turning around not so much.
+    private Vector3 lastCamAngle; // ~ when testing, I found that maintaining the same direction for moving forward is great, but for turning around not so much.
     private float camEulerX, camEulerY, camEulerZ;
 
     private bool canMove = true; // make method to set this value from events
@@ -49,7 +49,7 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void OnEnable()
     {
-        // inscrição nos eventos ocorre aqui
+       // inscrição nos eventos ocorre aqui
        // cinemachineBrain.m_CameraCutEvent = UpdateActiveCam;
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -145,7 +145,7 @@ public class PlayerController3rdPerson : MonoBehaviour
         }
         else
         {
-            characterController.stepOffset = 0.150f; // 🐈 ~ the value dont change cause the player was becoming unable to go up stairs while crouched.
+            characterController.stepOffset = 0.150f; // ~ the value dont change cause the player was becoming unable to go up stairs while crouched.
             characterController.center = new Vector3(0, 0.0775f, 0.02f);
             characterController.radius = 0.033f;
             characterController.height = 0.155f;
@@ -210,7 +210,7 @@ public class PlayerController3rdPerson : MonoBehaviour
                 if (currentDir.y > 0f) // If the player is standing and running
                     actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, runSpeed, Time.deltaTime * 2f);
 
-                actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, runSpeed, Time.deltaTime * 2f);            // this one works!
+                actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, runSpeed, Time.deltaTime * 2f);
             }
             else if (isCrouched && !isRunning)
             {
