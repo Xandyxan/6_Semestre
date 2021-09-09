@@ -80,6 +80,7 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
         drawers[selectionIndex].Interact();
     }
 
+
     void IInteractable.Interact()
     {
         print("INteragiu");
@@ -92,6 +93,7 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
         ChoseAnother(0);
         Invoke("SetFirstInputFalse", 0.1f);
     }
+
 
     private void SetFirstInputFalse()
     {

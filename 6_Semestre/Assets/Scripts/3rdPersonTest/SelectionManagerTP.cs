@@ -5,39 +5,61 @@ using UnityEngine;
 public class SelectionManagerTP : MonoBehaviour
 {
     [SerializeField] private string selectableTag = "Selectable";
+    private IInteractable interactable;
 
-    private void OnTriggerStay(Collider other)
+    private void Update()
     {
-        if (other.gameObject.CompareTag(selectableTag))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            print("Colidiu");
-           
-            if (Input.GetKeyDown(KeyCode.E))
+            if (interactable != null)
             {
-                var interactable = other.GetComponent<IInteractable>();
-                if (interactable == null) return;
                 interactable.Interact();
+                interactable = null;
             }
-           
+            else
+            {
+                Debug.Log("The player is not close to any item");
+            }
         }
+
+        //Debug.Log(interactable);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider col)
     {
-        if (other.gameObject.CompareTag(selectableTag))
+        if (col.gameObject.CompareTag(selectableTag))
         {
-            var selectable = other.gameObject.GetComponent<ISelectable>();
-            if (selectable == null) return;
-            selectable.Select();
-        }    
+            var selectable = col.gameObject.GetComponent<ISelectable>();
+            interactable = col.gameObject.GetComponent<IInteractable>();
+
+            if (selectable != null)
+            {
+                selectable.Select();
+            }
+            else
+            {
+                Debug.LogError("There is no ISelectable interface into the object/script");
+            }
+
+        }
+
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider col)
     {
-        if (other.gameObject.CompareTag(selectableTag))
+        if (col.gameObject.CompareTag(selectableTag))
         {
-            var selectable = other.gameObject.GetComponent<ISelectable>();
-            if (selectable == null) return;
-            selectable.Deselect();
+            var selectable = col.gameObject.GetComponent<ISelectable>();
+            interactable = null;
+
+            if (selectable != null)
+            {
+                selectable.Deselect();
+            }
+            else
+            {
+                Debug.LogError("There is no ISelectable interface into the object/script");
+            }
+
         }
     }
 

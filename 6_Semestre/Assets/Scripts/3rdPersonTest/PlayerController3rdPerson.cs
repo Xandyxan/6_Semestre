@@ -134,7 +134,7 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void UpdateCollider()
     {
-        print("Ainda não implementado");
+        //print("Ainda não implementado");
         if (!isCrouched)
         {
             characterController.stepOffset = 0.150f;
