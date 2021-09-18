@@ -11,6 +11,7 @@ public class NavMeshFollow : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        
     }
 
     private void Update()
