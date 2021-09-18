@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Lamp : MonoBehaviour
 {
@@ -11,18 +12,30 @@ public class Lamp : MonoBehaviour
     // The lamp however have a limited time use, and will eventually need to be recharged with OIL.
     #endregion
 
-    [SerializeField] private Light pointLight;
+    // mudamos dinamicamente o tamanho do obstacle pra bater com o raio de alcance da luz.
 
+    [SerializeField] private NavMeshObstacle litZone; 
 
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Light candleLight;
+
+    [Header("Balancing")]
+     private float lightMultiplier = 1f;
+     private float obstacleMultiplier = 0.382f;
+
+    private void Update()
     {
-       
+        if (Input.GetKeyDown(KeyCode.K)) { ChangeLightRadius(1f); }
+        if(Input.GetKeyDown(KeyCode.J)) { ChangeLightRadius(-1f); }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ChangeLightRadius(float amount)
     {
-        
+        print("obstacle value:" + amount * obstacleMultiplier);
+        print("light value:" + amount * lightMultiplier);
+        candleLight.range = amount * lightMultiplier;
+        litZone.radius = amount * obstacleMultiplier;
     }
+
+    // light = light value - 10
+    // collider = collider value - 3.82
 }

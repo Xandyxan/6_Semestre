@@ -19,6 +19,7 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     [Header("Camera")]
     [SerializeField] private GameObject player; // we will temporally disable the player gameobject when using the inspection camera. Need to rework later!
     [SerializeField] private Cinemachine.CinemachineVirtualCamera drawerCam;
+    private Camera mainCam;
 
     [Header("Selection")]
     [Tooltip("The visual feedback for an item that can be interacted with")]
@@ -31,13 +32,15 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
             Renderer drawerRend = drawer.transform.GetChild(0).GetComponent<Renderer>();
             drawerRenderes.Add(drawerRend);
         }
+        
+        mainCam = Camera.main;
     }
     private void Update()
     {
         if (isInteracting)
         {
-            if (Input.GetKeyDown(KeyCode.J)) { ChoseAnother(-1); }
-            else if (Input.GetKeyDown(KeyCode.K)) { ChoseAnother(1); }
+            if (Input.GetKeyDown(KeyCode.W)) { ChoseAnother(-1); }
+            else if (Input.GetKeyDown(KeyCode.S)) { ChoseAnother(1); }
             else if (Input.GetKeyDown(KeyCode.Space)) { OpenSelectedDrawer(); }
         }
        
@@ -48,13 +51,15 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     }
     private void StopInteracting()
     {
+        if (!isInteracting) { return; }
         print("StoppedInteracting");
         foreach (Renderer rend in drawerRenderes)
         {
             rend.material.DisableKeyword("_EMISSION");
         }
         isInteracting = false;
-        player.SetActive(true);
+        GameManager.instance.returnPlayerControlEvent?.Invoke();
+        ShowPlayerLayer();
         drawerCam.Priority = 5;
     }
 
@@ -83,11 +88,13 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
 
     void IInteractable.Interact()
     {
+        if (isInteracting) { return; }
         print("INteragiu");
         firstInput = true;
         isInteracting = true;
         drawerCam.Priority = 12;
-        player.SetActive(false);
+        HidePlayerLayer();
+        GameManager.instance.removePlayerControlEvent?.Invoke();
         // change to inspection camera
         // disable player movement
         ChoseAnother(0);
@@ -109,5 +116,18 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     public void Deselect()
     {
         interactionFeedback.SetActive(false);
+    }
+
+    private void ShowPlayerLayer()
+    {
+        //playerController.SetCanMove(true);
+        mainCam.cullingMask |= 1 << LayerMask.NameToLayer("Player");
+
+    }
+
+    private void HidePlayerLayer()
+    {
+        mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Player"));
+       // playerController.SetCanMove(false);
     }
 }
