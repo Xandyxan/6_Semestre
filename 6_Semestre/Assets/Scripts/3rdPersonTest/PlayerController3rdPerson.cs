@@ -49,13 +49,29 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void OnEnable()
     {
-       // inscrição nos eventos ocorre aqui
-       // cinemachineBrain.m_CameraCutEvent = UpdateActiveCam;
+        // inscrição nos eventos ocorre aqui
+        Invoke("SubscribeToDelegates", 1f);            // usando isso por enquanto pq por algum motivo o Enable desse script roda antes do Awake do GameManager.
+
+        // Dialogue.playerDuringDialogueOn -= PlayerDuringDialogueOn;
+        // Dialogue.playerDuringDialogueOff -= PlayerDuringDialogueOff;
+        // Dialogue.playerDuringDialogueOn += PlayerDuringDialogueOn;
+        // Dialogue.playerDuringDialogueOff += PlayerDuringDialogueOff;
+
+
+        // cinemachineBrain.m_CameraCutEvent = UpdateActiveCam;
 
         /*
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         */
+    }
+
+    private void SubscribeToDelegates()
+    {
+        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
+        GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
+        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
+        GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
     }
 
     private void OnDisable()
@@ -225,5 +241,19 @@ public class PlayerController3rdPerson : MonoBehaviour
                 actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, crouchSpeed, Time.deltaTime * 50f);
             }
         } 
+    }
+
+    private void TurnPlayerControllerOn()
+    {
+        canMove = true;
+        this.enabled = true;
+        print("Player controller on");
+    }
+
+    private void TurnPlayerControllerOff()
+    {
+        canMove = false;
+        this.enabled = false;
+        print("PLayer controller off");
     }
 }

@@ -25,7 +25,7 @@ public class SelectionManagerTP : MonoBehaviour
         //Debug.Log(interactable);
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerStay(Collider col)
     {
         if (col.gameObject.CompareTag(selectableTag))
         {
