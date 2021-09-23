@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af03d624643eba74a9ca79ed38e29549, type: 3}
-  m_Name: PlayerInventory
+  m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
+  m_Name: Gas
   m_EditorClassIdentifier: 
-  _savePath: /inventory.Save2
-  Container: []
+  prefab: {fileID: 2149904562203350458, guid: 3e7262e6b7acbdb4aba26d8485dfb593, type: 3}
+  type: 2
+  description: 

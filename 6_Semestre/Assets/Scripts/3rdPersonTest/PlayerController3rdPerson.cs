@@ -52,8 +52,10 @@ public class PlayerController3rdPerson : MonoBehaviour
        // inscrição nos eventos ocorre aqui
        // cinemachineBrain.m_CameraCutEvent = UpdateActiveCam;
 
+        /*
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        */
     }
 
     private void OnDisable()

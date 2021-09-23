@@ -10,4 +10,24 @@ public class PlayerInventory : MonoBehaviour
     {
         playerInventory.AddItem(_item, 1);
     }
+
+    private void Update()
+    {
+        /*
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            playerInventory.Save();
+        }
+
+        if(Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            playerInventory.Load();
+        }
+        */
+    }
+
+    private void OnApplicationQuit()
+    {
+        playerInventory.Container.Clear();
+    }
 }

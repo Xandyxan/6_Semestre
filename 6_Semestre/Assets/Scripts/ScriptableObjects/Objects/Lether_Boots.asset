@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0650da2830ca68342880bf5656bb99c6, type: 3}
   m_Name: Lether_Boots
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 2149904562203350458, guid: 19dd109035a7dca4eb20db12e646061c, type: 3}
   type: 1
   description: "S\xE3o leves, mas f\xE1ceis de se rasgar."
   speedValue: 2
