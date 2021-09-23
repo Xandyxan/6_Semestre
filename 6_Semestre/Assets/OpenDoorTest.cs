@@ -18,5 +18,6 @@ public class OpenDoorTest : MonoBehaviour
     private void OpenDoor()
     {
         door.Interact();
+        Destroy(this);
     }
 }

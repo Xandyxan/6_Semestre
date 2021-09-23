@@ -10,7 +10,7 @@ public class RotationMechanism : MonoBehaviour
     // Seleção entre mecanismos: Teclas W ou seta pra cima alternam para a peça superior, Teclas S ou seta pra baixo alterna pra peça inferior. Quando a peça está
     // selecionada, Teclas A e seta pra esquerda rotacionam a peça para a esquerda e Teclas D e seta pra direita rotacionam a peça pra direita.
     #endregion
-
+    [SerializeField] RotationMechanismBase mecBase;
     // transformar quantidade de rotação em um float, colocar bool pra apenas intergir caso o mecanismo esteja selecionado
 
     [SerializeField] private List<Vector3> rotations = new List<Vector3>(); // talvez alterar para uma list de quaternions dependendo
@@ -74,6 +74,8 @@ public class RotationMechanism : MonoBehaviour
        
         atualRotation = rotations[atualPos];
         transform.rotation = Quaternion.Euler(atualRotation);
+
+        mecBase.CheckPuzzleConclusion(); // ver se isso não vai deixar o jogo muito pesado, talvez testar usando delegates ou coisa do tipo
     }
 
     public void SetIsSelected(bool value)
