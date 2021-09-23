@@ -33,6 +33,8 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
 
     [SerializeField] private bool isHorizontal;
 
+    private bool solved;
+
     private void Awake()
     {
         foreach (RotationMechanism mecha in mechanisms)
@@ -60,7 +62,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
                 else if (Input.GetKeyDown(KeyCode.S)) { ChoseAnother(1); }
             }
           
-            if (Input.GetKeyDown(KeyCode.Space)) { CheckPuzzleConclusion(); }
+            //if (Input.GetKeyDown(KeyCode.Space)) { CheckPuzzleConclusion(); }
         }
     }
 
@@ -81,6 +83,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
             mechanismRenderes[selectionIndex].material.EnableKeyword("_EMISSION");
             mechanisms[selectionIndex].SetIsSelected(true);
 
+          
         }
     }
 
@@ -100,13 +103,14 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         
         mechanisms[selectionIndex].SetIsSelected(false);
         GameManager.instance.returnPlayerControlEvent?.Invoke();
+        
         ShowPlayerLayer();
         interactionCam.Priority = 5;
     }
 
     void IInteractable.Interact()
     {
-        if (isInteracting) { return; }
+        if (isInteracting || solved) { return; }
         print("Interagiu com o puzzle de sequencia");
         firstInput = true;
         isInteracting = true;
@@ -119,13 +123,10 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         Invoke("SetFirstInputFalse", 0.1f);
     }
 
-
     private void SetFirstInputFalse()
     {
-        print("AAAAA");
         firstInput = false;
     }
-
     public void Select()
     {
         interactionFeedback.SetActive(true);
@@ -136,7 +137,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         interactionFeedback.SetActive(false);
     }
 
-    private bool CheckPuzzleConclusion()
+    public bool CheckPuzzleConclusion()
     {
         int correctAnswers = 0;
         for(int i = 0; i< mechanisms.Count; i++)
@@ -154,6 +155,11 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         print("puzzle resolvido");
         // aqui chamamos o código de abrir o portão
         puzzleSolvedDelegate?.Invoke();
+
+        solved = true;
+        gameObject.tag = "Untagged";
+        Deselect();
+        StopInteracting();
         return (correctAnswers == mechanisms.Count); // se o jogador acertou a posição de 8 em 8 mecanismos, o puzzle é resolvido
     }
 
