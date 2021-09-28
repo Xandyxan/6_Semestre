@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
 {
     // if the player clicks E, he starts interacting, clicking E again leaves. While interacting, W and S change between mechanisms(and A and D rotate them). If they
@@ -10,7 +11,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
     public delegate void PuzzleSolved();
     public PuzzleSolved puzzleSolvedDelegate;
     #endregion
-
+   
     [SerializeField] List<RotationMechanism> mechanisms = new List<RotationMechanism>();
     [Space]
     [Header("Condition")]
