@@ -84,6 +84,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     private void UpdateActiveCam()
     {
         camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
+        CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
         //print(clearShot.LiveChild.VirtualCameraGameObject.name);
     }
 

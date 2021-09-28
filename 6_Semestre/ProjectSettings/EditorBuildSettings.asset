@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlocagemMapa.unity
     guid: 6daaaa8f034f0064aa091a6b51d1ff52
+  - enabled: 1
+    path: Assets/Scenes/ObrigadoPorJogar.unity
+    guid: 50cda4cb2da31f74eb96e2b9cbe35a9c
   m_configObjects: {}
