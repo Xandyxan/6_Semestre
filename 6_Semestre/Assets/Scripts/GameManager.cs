@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     [Header("Pause Menu Screens")]
     [SerializeField] private GameObject pauseMenuObject;
     [HideInInspector] public bool isPausedGame;
-    [SerializeField] private GameObject homePauseMenu;
+    //[SerializeField] private GameObject homePauseMenu;
     [SerializeField] private GameObject[] secondaryPauseMenus;
 
     [Header("It's main screen?")]
@@ -55,12 +55,12 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-       /* if (Input.GetButtonDown("Pause") && !mainMenuScreen)
+        if (Input.GetButtonDown("Pause") && !mainMenuScreen)
         {
             if (!isPausedGame) SetPauseGame(true);
             else SetPauseGame(false);
         }
-       */
+       
     }
 
     public void SetLockCursor(bool on)
@@ -83,14 +83,15 @@ public class GameManager : MonoBehaviour
         {
             if (playerInScene)
             {
-               // if (!playerMovement.GetCanMove()) playerWasNotFree = true;
+                if (!playerMovement.GetCanMove()) playerWasNotFree = true;
                // usingInventory = playerMovement.GetUsingInventory();
             }
             Time.timeScale = 0;
             isPausedGame = true;
-            pauseMenuObject.SetActive(true);
-            homePauseMenu.SetActive(true);
             SetLockCursor(false);
+            pauseMenuObject.SetActive(true);
+           // homePauseMenu.SetActive(true);
+            
 
             instance.pauseGameTrue();
             instance.removePlayerControlEvent();
@@ -100,7 +101,7 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1;
             isPausedGame = false;
-
+            SetLockCursor(true);
             for (int i = 0; i < secondaryPauseMenus.Length; i++) secondaryPauseMenus[i].SetActive(false);
             pauseMenuObject.SetActive(false);
 
@@ -109,10 +110,10 @@ public class GameManager : MonoBehaviour
             {
                 instance.returnPlayerControlEvent();
             }
-            if (!usingInventory)
-            {
-                SetLockCursor(true);
-            }
+           // if (!usingInventory)
+           // {
+                
+           // }
 
            // if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(false);
             playerWasNotFree = false;

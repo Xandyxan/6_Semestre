@@ -88,6 +88,11 @@ public class PlayerController3rdPerson : MonoBehaviour
         //print(clearShot.LiveChild.VirtualCameraGameObject.name);
     }
 
+    public bool GetCanMove()
+    {
+        return canMove;
+    }
+
     private void Update()
     {
         if (canMove)

@@ -25,6 +25,9 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     [Tooltip("The visual feedback for an item that can be interacted with")]
     [SerializeField] private GameObject interactionFeedback;
 
+    [SerializeField] int _dialogueIndex;
+    [SerializeField] DialogueManager2 dialogue;
+
     private void Awake()
     {
         foreach(Doors drawer in drawers)
@@ -111,6 +114,7 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     public void Select()
     {
         interactionFeedback.SetActive(true);
+       
     }
 
     public void Deselect()
@@ -128,6 +132,7 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     private void HidePlayerLayer()
     {
         mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Player"));
-       // playerController.SetCanMove(false);
+        dialogue.ExecuteDialogue(_dialogueIndex);
+        // playerController.SetCanMove(false);
     }
 }

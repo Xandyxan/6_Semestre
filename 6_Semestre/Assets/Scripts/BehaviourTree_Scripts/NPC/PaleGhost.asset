@@ -15,6 +15,6 @@ MonoBehaviour:
   speed: 1.5
   playerDtRange: 3
   lightSourceDtRange: 3
-  atackRange: 1
+  atackRange: 0.75
   waypointSelectionRange: 10
   damage: 30
