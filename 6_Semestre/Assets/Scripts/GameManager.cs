@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
            // homePauseMenu.SetActive(true);
             
 
-            instance.pauseGameTrue();
+            instance.pauseGameTrue?.Invoke();
             instance.removePlayerControlEvent();
             //if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(true);
         }
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < secondaryPauseMenus.Length; i++) secondaryPauseMenus[i].SetActive(false);
             pauseMenuObject.SetActive(false);
 
-            instance.pauseGameFalse();
+            instance.pauseGameFalse?.Invoke();
             if (!playerWasNotFree)
             {
                 instance.returnPlayerControlEvent();
