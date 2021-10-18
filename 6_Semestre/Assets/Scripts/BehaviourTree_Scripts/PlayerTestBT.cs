@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerTestBT : MonoBehaviour, IFade
 {
@@ -10,8 +12,11 @@ public class PlayerTestBT : MonoBehaviour, IFade
 
     [SerializeField] private PostprocessingControlTest postprocessingControl;
 
+    [SerializeField] private Image fillSanidade;
+
     private void Update()
     {
+        UpdateUI();
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             espiritualEnergy -= 1;
@@ -24,6 +29,11 @@ public class PlayerTestBT : MonoBehaviour, IFade
             postprocessingControl.espiritualEnergy = espiritualEnergy;
             postprocessingControl.UpdatePPEE();
         }
+    }
+
+    private void UpdateUI()
+    {
+        fillSanidade.fillAmount = espiritualEnergy / 100f;
     }
 
     public void Fade()
