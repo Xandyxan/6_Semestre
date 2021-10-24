@@ -38,9 +38,10 @@ public class GameManager : MonoBehaviour
    // [SerializeField] private Text taskText; // ainda não sei se vamos colocar alguma forma de task nesse jogo
 
     private bool playerWasNotFree = false;
-    private bool usingInventory, playerInScene; // pensei em utilizar o mesmo método que estavamos usando pra tratar a interação com o celular, só que com o inventário
+    private bool playerInScene; // pensei em utilizar o mesmo método que estavamos usando pra tratar a interação com o celular, só que com o inventário
     [SerializeField] private PlayerController3rdPerson playerMovement;
 
+    public bool usingInventory;
     //----------------------------------------------------------------------------\\
 
     private void Awake()
@@ -77,7 +78,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetPauseGame(bool on)
+    public void SetPauseGame(bool on, bool openPauseMenu) // colocar true, false caso queira pausar sem abrir o menu de pause
     {
         if (on)
         {
@@ -89,10 +90,14 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             isPausedGame = true;
             SetLockCursor(false);
-            pauseMenuObject.SetActive(true);
+
+            if (openPauseMenu)
+            {
+                pauseMenuObject.SetActive(true);
+            }
+           
            // homePauseMenu.SetActive(true);
             
-
             instance.pauseGameTrue?.Invoke();
             instance.removePlayerControlEvent();
             //if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(true);
@@ -116,6 +121,49 @@ public class GameManager : MonoBehaviour
            // }
 
            // if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(false);
+            playerWasNotFree = false;
+        }
+    }
+
+    public void SetPauseGame(bool on)
+    {
+        if (usingInventory) // impedir bug em que ele despausa com o menu aberto
+        {
+            return;
+        }
+        if (on)
+        {
+            if (playerInScene)
+            {
+                if (!playerMovement.GetCanMove()) playerWasNotFree = true;
+                // usingInventory = playerMovement.GetUsingInventory();
+            }
+            Time.timeScale = 0;
+            isPausedGame = true;
+
+            SetLockCursor(false);
+            pauseMenuObject.SetActive(true);
+          
+            // homePauseMenu.SetActive(true);
+
+            instance.pauseGameTrue?.Invoke();
+            instance.removePlayerControlEvent();
+            //if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            isPausedGame = false;
+            SetLockCursor(true);
+            for (int i = 0; i < secondaryPauseMenus.Length; i++) secondaryPauseMenus[i].SetActive(false);
+            pauseMenuObject.SetActive(false);
+
+            instance.pauseGameFalse?.Invoke();
+            if (!playerWasNotFree)
+            {
+                instance.returnPlayerControlEvent();
+            }
+
             playerWasNotFree = false;
         }
     }

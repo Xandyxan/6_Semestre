@@ -14,6 +14,18 @@ public class PlayerTestBT : MonoBehaviour, IFade
 
     [SerializeField] private Image fillSanidade;
 
+    // testes de inventario
+    [Space]
+    [SerializeField] private GameObject uiInventario;
+    private GameObject abaInventario;
+    private GameObject abaArquivos;
+    [SerializeField] private GameObject uiInGame;
+    private bool inventarioAberto = false;
+    private void Awake()
+    {
+        abaInventario = uiInventario.transform.GetChild(0).gameObject;
+        abaArquivos = uiInventario.transform.GetChild(1).gameObject;
+    }
     private void Update()
     {
         UpdateUI();
@@ -23,11 +35,30 @@ public class PlayerTestBT : MonoBehaviour, IFade
             postprocessingControl.espiritualEnergy = espiritualEnergy;
             postprocessingControl.UpdatePPEE();
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.H))
         {
-            espiritualEnergy += 1;
-            postprocessingControl.espiritualEnergy = espiritualEnergy;
-            postprocessingControl.UpdatePPEE();
+            Heal(15);
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventarioAberto = !inventarioAberto;
+            if (inventarioAberto)
+            {
+                GameManager.instance.usingInventory = true;
+                uiInGame.SetActive(false);
+                abaArquivos.SetActive(false);
+                abaInventario.SetActive(true);
+                uiInventario.SetActive(true);
+                GameManager.instance.SetPauseGame(true, false);
+            }
+            else
+            {
+                GameManager.instance.usingInventory = false;
+                uiInGame.SetActive(true);
+                uiInventario.SetActive(false);
+                GameManager.instance.SetPauseGame(false);
+            }
         }
     }
 
@@ -57,5 +88,13 @@ public class PlayerTestBT : MonoBehaviour, IFade
             Fade();
             espiritualEnergy = 0;
         }
+    }
+
+    public void Heal(int healingAmount)
+    {
+        espiritualEnergy += healingAmount;
+        if (espiritualEnergy >= 100) espiritualEnergy = 100;
+        postprocessingControl.espiritualEnergy = espiritualEnergy;
+        postprocessingControl.UpdatePPEE();
     }
 }

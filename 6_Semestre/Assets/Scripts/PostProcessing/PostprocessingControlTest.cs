@@ -16,26 +16,25 @@ public class PostprocessingControlTest : MonoBehaviour
 
     private void Update()
     {
-        if (espiritualEnergy <= 0) espiritualEnergy = 0;
-        else if (espiritualEnergy >= 100) espiritualEnergy = 100;
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            espiritualEnergy -= 1;
-            UpdatePPEE();
-        }else if (Input.GetKeyDown(KeyCode.P))
-        {
-            espiritualEnergy += 1;
-            UpdatePPEE();
-        }
+       // if (Input.GetKeyDown(KeyCode.I))
+       // {
+       //     espiritualEnergy -= 15;
+       //     UpdatePPEE();
+       // }else if (Input.GetKeyDown(KeyCode.O))
+       // {
+       //     espiritualEnergy += 15;
+       //     UpdatePPEE();
+       // }
         if(espiritualEnergy <= 0)
         {
             print("GAME OVER!!!!!!!!!!!!!!!!!!!!");
         }
     }
 
-    public void UpdatePPEE()
+    public void UpdatePPEE() // postProcessing espiritual energy
     {
+        if (espiritualEnergy <= 0) espiritualEnergy = 0;
+        if (espiritualEnergy > 100) espiritualEnergy = 100;
         int eeLost = Mathf.Abs(100 - espiritualEnergy); // 100 -> 0, 30 -> 70, 0 -> 100...
         // ee = 100 -> -4 => saturation = -4 / contrast = +4. 
         // ee = 96 -> +2 => saturation = -2 / contrast = +2
