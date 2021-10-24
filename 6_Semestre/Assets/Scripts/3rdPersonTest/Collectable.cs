@@ -7,22 +7,27 @@ public class Collectable : MonoBehaviour, IInteractable, ISelectable
     [Header("Selection")]
     [Tooltip("The visual feedback for an item that can be interacted with")]
     [SerializeField] private GameObject interactionFeedback;
-    [SerializeField] private ItemObject _item;
-    [SerializeField] private PlayerInventory playerInventory;
-
-    public ItemObject item { get => _item; set => _item = value; }
+    public ItemObject item;
+    [SerializeField] private InventoryObject playerInventory;
 
     private void Awake()
     {
-        if (playerInventory == null) playerInventory = FindObjectOfType<PlayerInventory>();
+        if (playerInventory == null) playerInventory = FindObjectOfType<InventoryObject>();
         //necessita refatoração
     }
 
     public void Interact()
     {
-        playerInventory.CollectItem(_item);
+
+        playerInventory.AddItem(new Item(this.item), 1);
         this.gameObject.SetActive(false);
+
         //Deselect();
+    }
+
+    private void CollectItem(Collectable _item)
+    {
+
     }
 
     public void Deselect()
@@ -30,12 +35,12 @@ public class Collectable : MonoBehaviour, IInteractable, ISelectable
         if (interactionFeedback)
         {
             interactionFeedback.SetActive(false);
-        }    
+        }
     }
 
     public void Select()
     {
-        if(interactionFeedback)
+        if (interactionFeedback)
         {
             interactionFeedback.SetActive(true);
         }

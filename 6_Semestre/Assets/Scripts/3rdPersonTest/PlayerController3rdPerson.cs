@@ -68,10 +68,10 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void SubscribeToDelegates()
     {
-        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
-        GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
-        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
-        GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
+        ////GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
+        ////GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
+        ////GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
+        ////GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
     }
 
     private void OnDisable()
@@ -84,7 +84,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     private void UpdateActiveCam()
     {
         camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
-        CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
+        //CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
         //print(clearShot.LiveChild.VirtualCameraGameObject.name);
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - LightSource
   - Enemy
   - Waypoint
+  - SlotInterface
   layers:
   - Default
   - TransparentFX

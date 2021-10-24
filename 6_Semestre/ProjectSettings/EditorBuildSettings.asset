@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Save Test.unity
     guid: 587599ec4222e1146a59d3ef46d272f0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 4794457ee48b994429421b820e1e160d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BlocagemMapa.unity
     guid: 6daaaa8f034f0064aa091a6b51d1ff52
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ObrigadoPorJogar.unity
     guid: 50cda4cb2da31f74eb96e2b9cbe35a9c
   m_configObjects: {}

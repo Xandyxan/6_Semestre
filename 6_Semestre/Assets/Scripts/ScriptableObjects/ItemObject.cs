@@ -8,11 +8,43 @@ public enum ItemType
     Equipament,
     Default
 }
-public abstract class ItemObject : ScriptableObject
+public class ItemObject : ScriptableObject
 {
-    public GameObject prefab;
+    public Sprite uiDisplay;
+    public bool stackbable;
     public ItemType type;
+    public Item data = new Item();
 
     [TextArea(15, 20)]
     public string description;
+
+    public Item CreateItem()
+    {
+        Item newItem = new Item(this);
+        return newItem;
+    }
+}
+
+[System.Serializable]
+public class Item
+{
+    public string Name;
+    public int Id = -1;
+
+    public Item()
+    {
+        Name = "";
+        Id = -1;
+    }
+
+    public Item(ItemObject item)
+    {
+        Name = item.name;
+        Id = item.data.Id;
+    }
+
+    public int GetItemID()
+    {
+        return Id;
+    }
 }

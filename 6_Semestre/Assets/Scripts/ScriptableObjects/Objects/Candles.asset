@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
   m_Name: Candles
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2149904562203350458, guid: 2ae96bd5ac2c0c540a43ca2850796888, type: 3}
-  type: 2
+  uiDisplay: {fileID: 194336859228450555, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  stackbable: 0
+  type: 1
+  data:
+    Name: 
+    Id: 1
   description: "Estas velas parecem que j\xE1 foram usadas antes, de qualquer forma
     ainda possuem o suficiente para serem usadas novamente."

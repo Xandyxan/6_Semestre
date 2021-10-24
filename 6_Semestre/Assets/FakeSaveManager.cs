@@ -5,38 +5,41 @@ using UnityEngine;
 public class FakeSaveManager : MonoBehaviour
 {
     [SerializeField] private InventoryObject inventoryObject;
-    [SerializeField] private string savePath;
-    private bool objectExists;
+    [SerializeField] private InventoryObject equipamentInventory;
+    [SerializeField] private string inventorySavePath;
+    [SerializeField] private string equipamentSavePath;
 
     private void Awake()
     {
-        objectExists = false;
     }
 
     private void Start()
     {
-        if (inventoryObject != null) objectExists = true;
-        else objectExists = false;
     }
 
     public void Save()
     {
+        ChangeTo();
         inventoryObject.Save();
+        equipamentInventory.Save();
     }
 
     public void ChangeTo()
     {
-        inventoryObject.savePath = this.savePath;
+        inventoryObject.savePath = this.inventorySavePath;
+        equipamentInventory.savePath = this.equipamentSavePath;
     }
 
     public void Load()
     {
         ChangeTo();
-        inventoryObject.Load();    
+        inventoryObject.Load();
+        equipamentInventory.Load();
     }
 
     public void DeleteSave()
     {
         inventoryObject.DeleteSave();
+        equipamentInventory.DeleteSave();
     }
 }
