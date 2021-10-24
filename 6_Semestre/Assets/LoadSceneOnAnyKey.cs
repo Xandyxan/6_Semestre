@@ -19,7 +19,7 @@ public class LoadSceneOnAnyKey : MonoBehaviour
         {
             holdCounter += Time.deltaTime;
             print(holdCounter);
-            if(holdCounter >= holdAmount) GameManager.instance.LoadScene(1);
+            if(holdCounter >= holdAmount) GameManager.instance.LoadScene(0);
         }
         else
         {

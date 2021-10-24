@@ -58,6 +58,7 @@ public class FadeImage : MonoBehaviour
            
            
         }
+       
         if (loadScene) { GameManager.instance.LoadScene(sceneIndex); }
     }
 

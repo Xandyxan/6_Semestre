@@ -5,7 +5,7 @@ using UnityEngine;
 public class CandleInteraction : MonoBehaviour, IInteractable, ISelectable
 {
     [Header("LightSource")]
-    [SerializeField] private GameObject luz; // a luz gerada pela vela
+    [SerializeField] private GameObject lightSource; // a luz gerada pela vela
     [Tooltip("if the candle starts lit or not")]
     [SerializeField] private bool candleLit;
 
@@ -17,11 +17,11 @@ public class CandleInteraction : MonoBehaviour, IInteractable, ISelectable
         candleLit = !candleLit;
         if (candleLit)
         {
-            luz.SetActive(true);
+            lightSource.SetActive(true);
         }
         else
         {
-            luz.SetActive(false);
+            lightSource.SetActive(false);
         }
     }
 

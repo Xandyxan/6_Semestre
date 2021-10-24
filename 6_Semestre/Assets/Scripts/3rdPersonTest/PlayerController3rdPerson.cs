@@ -12,6 +12,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     [Header("Camera related stuff")]
     [SerializeField] private Transform camTransform; // we get this value from the current active camera on the clearshot system
     [SerializeField] CinemachineClearShot clearShot;
+    [SerializeField] CinemachineBrain brain;
     
     private Vector3 lastCamAngle; // ~ when testing, I found that maintaining the same direction for moving forward is great, but for turning around not so much.
     private float camEulerX, camEulerY, camEulerZ;
@@ -86,6 +87,18 @@ public class PlayerController3rdPerson : MonoBehaviour
         camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
         //CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
         //print(clearShot.LiveChild.VirtualCameraGameObject.name);
+
+        camTransform = brain.ActiveVirtualCamera.VirtualCameraGameObject.transform;
+        //camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
+        if(camTransform)
+        CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
+       
+    }
+
+    public bool GetCanMove()
+    {
+        return canMove;
+
     }
 
     private void Update()

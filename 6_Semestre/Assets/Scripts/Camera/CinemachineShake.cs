@@ -71,7 +71,7 @@ public class CinemachineShake : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.K)) ShakeCamera(.4f, .1f);
+        if(Input.GetKeyDown(KeyCode.K)) ShakeCamera(.4f, .1f); // para versão de teste
 
     }
 

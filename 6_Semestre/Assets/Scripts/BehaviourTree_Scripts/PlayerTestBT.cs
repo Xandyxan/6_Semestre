@@ -1,22 +1,100 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerTestBT : MonoBehaviour
+public class PlayerTestBT : MonoBehaviour, IFade
 {
-    [SerializeField] private int lives;
-    [SerializeField] private GameObject lamparina;
+    [SerializeField] private FadeImage fadeScript;
+    [SerializeField] private int sceneToLoadIndex = 3;
+    [SerializeField] private int espiritualEnergy = 100;
+
+    [SerializeField] private PostprocessingControlTest postprocessingControl;
+
+    [SerializeField] private Image fillSanidade;
+
+    // testes de inventario
+    [Space]
+    [SerializeField] private GameObject uiInventario;
+    private GameObject abaInventario;
+    private GameObject abaArquivos;
+    [SerializeField] private GameObject uiInGame;
+    private bool inventarioAberto = false;
+    private void Awake()
+    {
+        abaInventario = uiInventario.transform.GetChild(0).gameObject;
+        abaArquivos = uiInventario.transform.GetChild(1).gameObject;
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z)) lamparina.SetActive(!lamparina.activeInHierarchy);
+        UpdateUI();
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            espiritualEnergy -= 1;
+            postprocessingControl.espiritualEnergy = espiritualEnergy;
+            postprocessingControl.UpdatePPEE();
+        }
+        else if (Input.GetKeyDown(KeyCode.H))
+        {
+            Heal(15);
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventarioAberto = !inventarioAberto;
+            if (inventarioAberto)
+            {
+                GameManager.instance.usingInventory = true;
+                uiInGame.SetActive(false);
+                abaArquivos.SetActive(false);
+                abaInventario.SetActive(true);
+                uiInventario.SetActive(true);
+                GameManager.instance.SetPauseGame(true, false);
+            }
+            else
+            {
+                GameManager.instance.usingInventory = false;
+                uiInGame.SetActive(true);
+                uiInventario.SetActive(false);
+                GameManager.instance.SetPauseGame(false);
+            }
+        }
     }
+
+    private void UpdateUI()
+    {
+        fillSanidade.fillAmount = espiritualEnergy / 100f;
+    }
+
+    public void Fade()
+    {
+        fadeScript.SetFadeIn(true);
+        fadeScript.SetHasNextFade(false);
+        fadeScript.SetHasSceneLoad(true);
+        fadeScript.SetSceneIndex(sceneToLoadIndex);
+
+        fadeScript.StartCoroutine(fadeScript.Fade(3f));
+    }
+
     public void TakeDamage(int damage)
     {
-        lives -= damage;
+        espiritualEnergy -= damage;
+        postprocessingControl.espiritualEnergy = espiritualEnergy;
+        postprocessingControl.UpdatePPEE();
 
-        if(lives <= 0)
+        if(espiritualEnergy <= 0)
         {
-            Destroy(gameObject);
+            Fade();
+            espiritualEnergy = 0;
         }
+    }
+
+    public void Heal(int healingAmount)
+    {
+        espiritualEnergy += healingAmount;
+        if (espiritualEnergy >= 100) espiritualEnergy = 100;
+        postprocessingControl.espiritualEnergy = espiritualEnergy;
+        postprocessingControl.UpdatePPEE();
     }
 }
