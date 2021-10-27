@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6542074694489733082}
   - component: {fileID: 9020403341841203984}
   m_Layer: 0
-  m_Name: Lamparina_INTE_Obj
+  m_Name: Lamparina_INTE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

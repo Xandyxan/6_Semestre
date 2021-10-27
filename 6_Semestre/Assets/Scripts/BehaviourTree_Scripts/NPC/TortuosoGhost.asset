@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28dee5ae32b93cd49a5c7e58005fe6cb, type: 3}
-  m_Name: ObscureGhost
+  m_Name: TortuosoGhost
   m_EditorClassIdentifier: 
-  speed: 1.2
-  turningSpeed: 100
-  playerDtRange: 3
-  lightSourceDtRange: 6
-  atackRange: 7
+  speed: 0.7
+  turningSpeed: 80
+  playerDtRange: 0
+  lightSourceDtRange: 0
+  atackRange: 0
   waypointSelectionRange: 8
-  damage: 8
+  damage: 0

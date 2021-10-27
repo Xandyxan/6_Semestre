@@ -7,6 +7,8 @@ public class EnemyNPCProfile : ScriptableObject
 {
     public float speed = 1.5f;
 
+    public float turningSpeed = 120f;
+
     public float playerDtRange;
 
     public float lightSourceDtRange;
