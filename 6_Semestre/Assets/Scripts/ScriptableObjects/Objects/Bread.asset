@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c427cafa4a7db7a40b0660f5545f784d, type: 3}
   m_Name: Bread
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2149904562203350458, guid: 19dd109035a7dca4eb20db12e646061c, type: 3}
+  uiDisplay: {fileID: -1964973379043560768, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  stackbable: 1
   type: 0
+  data:
+    Name: 
+    Id: 0
   description: 
   healthValue: 5

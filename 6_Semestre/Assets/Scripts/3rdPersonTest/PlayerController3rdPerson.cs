@@ -11,7 +11,7 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     [Header("Camera related stuff")]
     [SerializeField] private Transform camTransform; // we get this value from the current active camera on the clearshot system
-    //[SerializeField] CinemachineClearShot clearShot;
+    [SerializeField] CinemachineClearShot clearShot;
     [SerializeField] CinemachineBrain brain;
     
     private Vector3 lastCamAngle; // ~ when testing, I found that maintaining the same direction for moving forward is great, but for turning around not so much.
@@ -69,10 +69,10 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void SubscribeToDelegates()
     {
-        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
-        GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
-        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
-        GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
+        ////GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
+        ////GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
+        ////GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
+        ////GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
     }
 
     private void OnDisable()
@@ -84,6 +84,10 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void UpdateActiveCam()
     {
+        camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
+        //CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
+        //print(clearShot.LiveChild.VirtualCameraGameObject.name);
+
         camTransform = brain.ActiveVirtualCamera.VirtualCameraGameObject.transform;
         //camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
         if(camTransform)
@@ -94,6 +98,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     public bool GetCanMove()
     {
         return canMove;
+
     }
 
     private void Update()

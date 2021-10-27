@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c427cafa4a7db7a40b0660f5545f784d, type: 3}
   m_Name: Cheap_Wine
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2149904562203350458, guid: 62047791ed86af2478600b1ea6aa50be, type: 3}
+  uiDisplay: {fileID: 5801650414593611148, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  stackbable: 1
   type: 0
+  data:
+    Name: 
+    Id: 2
   description: "N\xE3o \xE9 o melhor vinho, mas ainda sim \xE9 vinho. Restaura 20
     de vida."
   healthValue: 20

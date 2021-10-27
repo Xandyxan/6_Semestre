@@ -6,36 +6,36 @@ using UnityEngine;
 public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiver
 {
     //this one will never be serialized
-    public ItemObject[] itemObjects;
+    public ItemObject[] Items;        //GetID
 
-    //will always be serialized losing all content in (OnAfterDeserialize())
-    public Dictionary<ItemObject, int> idDictionary = new Dictionary<ItemObject, int>();    //set the ID of each ItemObject stored in the array
-    public Dictionary<int, ItemObject> itemDictionary = new Dictionary<int, ItemObject>();  //set the Item from each ID
+    //will always be serialized losing all content in (OnBeforeDeserialize())
+    //public Dictionary<int, ItemObject> GetItem = new Dictionary<int, ItemObject>();  //set the Item from each ID - GetItem
 
+    public void UpdateID()
+    {
+        for (int i = 0; i < Items.Length; i++)
+        {
+            if((Items[i].data.Id != i))
+                Items[i].data.Id = i;
+        }
+    }
     public void OnAfterDeserialize()
     {
-
-        //avoid to duplicate the Dictionary after deserialization
-        idDictionary = new Dictionary<ItemObject, int>();
-        itemDictionary = new Dictionary<int, ItemObject>();
-
-        for(int i = 0; i < itemObjects.Length; i++)   //repopulate all the 'GetId' dictionary by adding object by object from ItemObject Array (Itens Data)
-        {
-            idDictionary.Add(itemObjects[i], i);
-            itemDictionary.Add(i, itemObjects[i]);
-        }
+        UpdateID();
     }
 
     public void OnBeforeSerialize()
     {
+        //avoid to duplicate the Dictionary after deserialization
+        //GetItem = new Dictionary<int, ItemObject>();
 
     }
 
     private void OnEnable()
     {    
-        for (int i = 0; i < itemObjects.Length; i++)   
-        {
-            Debug.Log("Nome: " + itemObjects[i].name + " (" + itemObjects[i].type + "); " + "ID: "+ i);
-        }
+        //for (int i = 0; i < Items.Length; i++)   
+        //{
+        //    Debug.Log("Nome: " + itemObjects[i].name + " (" + itemObjects[i].type + "); " + "ID: "+ i);
+        //}
     }
 }

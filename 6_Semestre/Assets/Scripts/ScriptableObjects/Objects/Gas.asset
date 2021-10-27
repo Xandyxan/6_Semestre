@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
   m_Name: Gas
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2149904562203350458, guid: 3e7262e6b7acbdb4aba26d8485dfb593, type: 3}
+  uiDisplay: {fileID: 5793084992459526587, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  stackbable: 1
   type: 2
+  data:
+    Name: 
+    Id: 3
   description: 

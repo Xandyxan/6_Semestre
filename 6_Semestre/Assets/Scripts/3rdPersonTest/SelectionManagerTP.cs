@@ -18,7 +18,7 @@ public class SelectionManagerTP : MonoBehaviour
             }
             else
             {
-                Debug.Log("The player is not close to any item");
+                Debug.Log("The player is not close to any interactable item");
             }
         }
 
