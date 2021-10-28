@@ -18,6 +18,7 @@ public class NPC : MonoBehaviour
     {
        bt = GetComponent<BehaviourTree>();
        npcAgent = GetComponent<NavMeshAgent>();
+       npcAgent.speed = profile.speed;
        npcAnim = GetComponent<Animator>();
     }
 

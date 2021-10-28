@@ -37,6 +37,7 @@ public class NPCPaleGhost : NPC
         attackPlayer.children.Add(new BTMarcarPlayer());
         attackPlayer.children.Add(aproachPlayer);
         attackPlayer.children.Add(new BTActivateHitBox());
+        attackPlayer.children.Add(new BTDeactivateNPC());
 
         BTSequence patrol = new BTSequence();
         patrol.children.Add(new BTTemWaypoints());
