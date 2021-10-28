@@ -9,17 +9,22 @@ public class BTActivateHitBox : BTNode
         status = Status.RUNNING;
         Print(bt);
 
-        NPCPaleGhost npc = bt.GetComponent<NPCPaleGhost>();
+        NPC npc = bt.GetComponent<NPC>();
         if (npc.player)
         {
             if(Vector3.Distance(npc.transform.position, npc.player.transform.position) < npc.profile.atackRange)
             {
                 npc.transform.LookAt(npc.player.transform);
-                Debug.Log("UMA TORA NO MEU CU");
-                if (npc.npcAnim) npc.npcAnim.SetTrigger("Attack");
-                yield return new WaitForSeconds(.8f);
+
+                if (npc.npcAnim)
+                {
+                    npc.npcAnim.SetTrigger("Attack");
+
+                    yield return new WaitForSeconds(.8f);
+
+                    status = Status.SUCCESS;
+                }
                
-                status = Status.SUCCESS;
             }
         }
      
