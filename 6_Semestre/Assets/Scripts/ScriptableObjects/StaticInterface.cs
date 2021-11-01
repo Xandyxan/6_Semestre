@@ -13,6 +13,7 @@ public class StaticInterface : UserInterface
     {
         slotsOnInterface = new Dictionary<GameObject, InventorySlot>();       //Confirms that there is no old Dictionary by creating a new one
 
+
         for(int i = 0; i < inventory.Container.Items.Length; i++)
         {
             var obj = slots[i];

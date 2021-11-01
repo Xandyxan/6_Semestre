@@ -8,9 +8,11 @@ using UnityEngine.UI;
 public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public InventoryObject inventory;
-    public GameObject descriptWindow;
     public Dictionary<GameObject, InventorySlot> slotsOnInterface = new Dictionary<GameObject, InventorySlot>();
-    
+
+    public GameObject descriptWindow;
+    public Text descriptionText;
+
 
     private void Awake()
     {
@@ -45,10 +47,11 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
 
     public abstract void CreateSlots();
 
-    #region InventorySlots Event Methods (StaticInterface & DynamicInterface)
+    #region Inventory Slots Event Methods (StaticInterface & DynamicInterface)
     public void OnEnter(GameObject obj)
     {
         MouseData.slotHoveredOver = obj;
+        descriptionText.text = slotsOnInterface[obj].itemObject.description;
     }
 
     public void OnClickedOnSlot(BaseEventData baseEventData)
@@ -90,6 +93,7 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnExit(GameObject obj)
     {
         MouseData.slotHoveredOver = null;
+        descriptionText.text = "";
     }
 
     public void OnDragStart(GameObject obj)
@@ -106,11 +110,13 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
             tempItem = new GameObject();
 
             RectTransform rectTransform = tempItem.AddComponent<RectTransform>();
-            rectTransform.sizeDelta = new Vector2(50, 50);
+            rectTransform.sizeDelta = new Vector2(90, 90);
             tempItem.transform.SetParent(transform.parent);
 
             Image image = tempItem.AddComponent<Image>();
+            image.preserveAspect = true;
             image.sprite = slotsOnInterface[obj].itemObject.uiDisplay;
+            image.color = new Color(1, 1, 1, 0.8f);
             image.raycastTarget = false;
         }
 
@@ -147,7 +153,7 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnDeselect(BaseEventData eventData)
     {
         if (!MouseData.mouseIsOverUserUI && !MouseData.mouseIsOverUI)
-            MouseData.descriptionWindow.SetActive(false);
+            if(MouseData.descriptionWindow !=null) MouseData.descriptionWindow.SetActive(false);
 
         //Debug.Log("Mouse was clicked outside");
     }
@@ -184,7 +190,6 @@ public static class MouseData
 {
     public static UserInterface interfaceMouseIsOver;
     public static InventorySlot interfaceSlot;
-    //public static DynamicInterface interfaceMouseIsOverDynamic;
     public static GameObject tempItemBeingDragged;
     public static GameObject slotHoveredOver;
     public static GameObject descriptionWindow = new GameObject();

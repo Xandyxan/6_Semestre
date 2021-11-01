@@ -29,8 +29,8 @@ public class DialogueManager2 : MonoBehaviour
     private void Awake()
     {
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
-        dialogueTextUI = dialogueBox.transform.GetChild(0).GetComponent<Text>();
-        characterNameUI = dialogueBox.transform.GetChild(1).GetComponent<Text>();
+        dialogueTextUI = dialogueBox.transform.GetChild(2).GetComponent<Text>();
+        characterNameUI = dialogueBox.transform.GetChild(3).GetComponent<Text>();
         dialogueBox.gameObject.SetActive(false);
     }
 
