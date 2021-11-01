@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0650da2830ca68342880bf5656bb99c6, type: 3}
-  m_Name: Sword
+  m_Name: Lamparina
   m_EditorClassIdentifier: 
-  uiDisplay: {fileID: -5421027211986494622, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  uiDisplay: {fileID: -7888986177424831467, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
   stackbable: 0
   type: 1
   data:
     Name: 
-    Id: 5
-  description: 
+    Id: 1
+  description: Ferramenta principal para evitar os fantasmas
   speedValue: 0
   defenseValue: 0

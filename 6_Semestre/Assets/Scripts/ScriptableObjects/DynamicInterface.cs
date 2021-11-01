@@ -7,10 +7,10 @@ public class DynamicInterface : UserInterface
 {
     public GameObject inventoryPrefab;
 
-    [SerializeField] private int X_START_POINT;
-    [SerializeField] private int Y_START_POINT;
-    [SerializeField] private int X_SPACE_BETWEEN_ITEM;
-    [SerializeField] private int Y_SPACE_BETWEEN_ITEM;
+    [SerializeField] private float X_START_POINT;
+    [SerializeField] private float Y_START_POINT;
+    [SerializeField] private float X_SPACE_BETWEEN_ITEM;
+    [SerializeField] private float Y_SPACE_BETWEEN_ITEM;
     [SerializeField] private int NUMBER_OF_COLUMN;
     public override void CreateSlots()
     {

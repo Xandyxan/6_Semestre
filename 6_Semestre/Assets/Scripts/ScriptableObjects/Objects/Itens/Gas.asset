@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
-  m_Name: Candles
+  m_Name: Gas
   m_EditorClassIdentifier: 
-  uiDisplay: {fileID: 194336859228450555, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
-  stackbable: 0
-  type: 1
+  uiDisplay: {fileID: 5793084992459526587, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  stackbable: 1
+  type: 2
   data:
     Name: 
-    Id: 1
-  description: "Estas velas parecem que j\xE1 foram usadas antes, de qualquer forma
-    ainda possuem o suficiente para serem usadas novamente."
+    Id: 3
+  description: Use para encher a sua lamparina
