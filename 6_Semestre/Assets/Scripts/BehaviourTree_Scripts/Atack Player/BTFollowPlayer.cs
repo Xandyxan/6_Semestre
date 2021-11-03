@@ -14,16 +14,18 @@ public class BTFollowPlayer : BTNode
         {
             while (npc.player.gameObject.activeInHierarchy)
             {
+                //npc.npcAgent.speed = .8f;
                 npc.npcAgent.SetDestination(npc.player.transform.position);
 
-                if (npc.npcAgent.remainingDistance < npc.profile.atackRange)
+                if (npc.npcAgent.remainingDistance <= npc.npcAgent.stoppingDistance)
                 {
-                    npc.npcAgent.SetDestination(npc.transform.position);
+                   // npc.npcAgent.SetDestination(npc.transform.position); 
                     status = Status.SUCCESS;
                     break;
                 }else if(npc.npcAgent.remainingDistance > npc.profile.playerDtRange)
                 {
                     status = Status.FAILURE;
+                   // npc.npcAgent.speed = 0.5f;
                     break;
                 }
                 yield return null;

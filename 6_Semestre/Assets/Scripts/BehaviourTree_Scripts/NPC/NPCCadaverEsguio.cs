@@ -23,7 +23,7 @@ public class NPCCadaverEsguio : NPC
         BTSequence patrol = new BTSequence();
         patrol.children.Add(new BTTemWaypoints());
         patrol.children.Add(new BTSelecionarWaypoints());
-        patrol.children.Add(new BTMoveToRandomWaypoint());
+        patrol.children.Add(moveToWaypoint);
 
         BTSequence attackPlayer = new BTSequence();
         attackPlayer.children.Add(new BTTemPlayer());
@@ -35,7 +35,6 @@ public class NPCCadaverEsguio : NPC
         BTSelector selecao = new BTSelector();
         selecao.children.Add(patrol);
         selecao.children.Add(attackPlayer);
-
 
         base.Start();
         bt.root = selecao;
