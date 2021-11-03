@@ -19,7 +19,7 @@ public class BTMoveToRandomWaypoint : BTNode
             {
                 npc.npcAgent.SetDestination(npc.waypoints[randomIndex].position);
 
-                if (npc.npcAgent.remainingDistance < 1)
+                if (npc.npcAgent.remainingDistance <= npc.npcAgent.stoppingDistance)
                 {
                     status = Status.SUCCESS;
                     break;

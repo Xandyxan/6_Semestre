@@ -11,7 +11,8 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     [Header("Camera related stuff")]
     [SerializeField] private Transform camTransform; // we get this value from the current active camera on the clearshot system
-    [SerializeField] CinemachineClearShot clearShot;
+    
+    //[SerializeField] CinemachineClearShot clearShot; // testando pra ver o que muda
     [SerializeField] CinemachineBrain brain;
     
     private Vector3 lastCamAngle; // ~ when testing, I found that maintaining the same direction for moving forward is great, but for turning around not so much.
@@ -24,8 +25,8 @@ public class PlayerController3rdPerson : MonoBehaviour
     float velocityY = 0.0f;                    // Will change if the player falls, jumps or something like that.
 
     private float actualWalkSpeed;  // player speed;
-    private float walkSpeed = 2f;   // default speed for the player walking
-    private float runSpeed = 4.0f;  // default speed for the player running
+    private float walkSpeed = 1.6f;   // default speed for the player walking
+    private float runSpeed = 3.0f;  // default speed for the player running
    
     private float crouchSpeed = 1f; // default speed for the player walking while crouched
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
@@ -40,6 +41,9 @@ public class PlayerController3rdPerson : MonoBehaviour
     [Header("States")]
     private bool isCrouched, isRunning, isWalking; // isWalking indicates if the player is moving.
 
+    // local temporário pra var de soundSource
+    [SerializeField] private GameObject soundSource;
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -47,6 +51,7 @@ public class PlayerController3rdPerson : MonoBehaviour
         actualWalkSpeed = walkSpeed;
         canMove = true;
     }
+
 
     private void OnEnable()
     {
@@ -69,10 +74,10 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void SubscribeToDelegates()
     {
-        ////GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
-        ////GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
-        ////GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
-        ////GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
+        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
+        GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
+        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
+        GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
     }
 
     private void OnDisable()
@@ -84,7 +89,7 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     private void UpdateActiveCam()
     {
-        camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
+        //camTransform = clearShot.LiveChild.VirtualCameraGameObject.transform;
         //CinemachineShake.Instance.UpdateActualCam(camTransform.GetComponent<CinemachineVirtualCamera>());
         //print(clearShot.LiveChild.VirtualCameraGameObject.name);
 
@@ -269,5 +274,11 @@ public class PlayerController3rdPerson : MonoBehaviour
         canMove = false;
         this.enabled = false;
         print("PLayer controller off");
+    }
+
+    public void ActivateSoundSource()
+    {
+        if(isRunning)
+        soundSource.SetActive(true);
     }
 }

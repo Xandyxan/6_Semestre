@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ObrigadoPorJogar.unity
     guid: 50cda4cb2da31f74eb96e2b9cbe35a9c
+  - enabled: 1
+    path: Assets/Scenes/BlocagemMapaADM.unity
+    guid: 5797cb83b695739479fad4fbfed43633
+  - enabled: 1
+    path: Assets/Scenes/CemiterioTestes 1.unity
+    guid: 5b7a20f09b22e464aa95a1d4b362a3b3
   m_configObjects: {}

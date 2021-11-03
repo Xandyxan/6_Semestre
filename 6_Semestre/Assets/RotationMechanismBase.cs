@@ -115,7 +115,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         print("Interagiu com o puzzle de sequencia");
         firstInput = true;
         isInteracting = true;
-        interactionCam.Priority = 12;
+        interactionCam.Priority = 15;
         //player.SetActive(false); // mudar isso pra versão que só tira a layer do player do culling da camera e chama o evento de PlayerCannotMove
         GameManager.instance.removePlayerControlEvent?.Invoke();
         HidePlayerLayer();
