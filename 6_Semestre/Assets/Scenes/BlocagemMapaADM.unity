@@ -1913,11 +1913,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuObject: {fileID: 1259647328}
+  inventoryUiObject: {fileID: 0}
   isPausedGame: 0
   secondaryPauseMenus: []
   mainMenuScreen: 0
-  playerMovement: {fileID: 0}
   usingInventory: 0
+  playerMovement: {fileID: 0}
 --- !u!114 &184923278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4220,11 +4221,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuObject: {fileID: 0}
+  inventoryUiObject: {fileID: 0}
   isPausedGame: 0
   secondaryPauseMenus: []
   mainMenuScreen: 0
-  playerMovement: {fileID: 0}
   usingInventory: 0
+  playerMovement: {fileID: 0}
 --- !u!4 &306934085
 Transform:
   m_ObjectHideFlags: 0
@@ -7479,8 +7481,6 @@ MonoBehaviour:
   espiritualEnergy: 100
   postprocessingControl: {fileID: 0}
   fillSanidade: {fileID: 0}
-  uiInventario: {fileID: 0}
-  uiInGame: {fileID: 0}
 --- !u!114 &602895887
 MonoBehaviour:
   m_ObjectHideFlags: 0
