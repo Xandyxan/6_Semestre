@@ -11,7 +11,7 @@ public class PostprocessingControlTest : MonoBehaviour
     Vignette vignette;
     WhiteBalance whiteBalance;
 
-    public int espiritualEnergy = 100;
+    public float espiritualEnergy = 100;        //changed due PlayerStats, sorry :(
 
 
     private void Update()
@@ -35,7 +35,7 @@ public class PostprocessingControlTest : MonoBehaviour
     {
         if (espiritualEnergy <= 0) espiritualEnergy = 0;
         if (espiritualEnergy > 100) espiritualEnergy = 100;
-        int eeLost = Mathf.Abs(100 - espiritualEnergy); // 100 -> 0, 30 -> 70, 0 -> 100...
+        float eeLost = Mathf.Abs(100 - espiritualEnergy); // 100 -> 0, 30 -> 70, 0 -> 100...            //Change to float due PlayerStats
         // ee = 100 -> -4 => saturation = -4 / contrast = +4. 
         // ee = 96 -> +2 => saturation = -2 / contrast = +2
 

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "New Equipament Object", menuName = "Inventory System/Items/Equipament")]
+[CreateAssetMenu(fileName = "New Equipament Object", menuName = "Scriptbale Objects/Inventory System/Items/Equipament")]
 
 public class EquipamentObject : ItemObject
 {

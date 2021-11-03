@@ -6,7 +6,7 @@ using System.IO;
 using UnityEditor;
 using System.Runtime.Serialization;
 
-[CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
+[CreateAssetMenu(fileName = "New Inventory", menuName = "Scriptbale Objects/Inventory System/Inventory")]
 
 public class InventoryObject : ScriptableObject
 {
@@ -17,10 +17,18 @@ public class InventoryObject : ScriptableObject
 
     public bool AddItem(Item _item, int _amount)
     {
-        if(EmptySlotCount <= 0)
-            return false;
-
+        #region Most recent block
         InventorySlot slot = FindItemOnInventory(_item);
+
+        if (database.Items[_item.Id].stackbable && slot != null)
+        {
+            slot.ChangeAmount(_amount);
+            return true;
+        }
+        #endregion
+
+        if (EmptySlotCount <= 0)
+            return false;
 
         if(!database.Items[_item.Id].stackbable || slot == null)
         {

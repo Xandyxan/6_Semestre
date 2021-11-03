@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Pause Menu Screens")]
     [SerializeField] private GameObject pauseMenuObject;
+    [SerializeField] private GameObject inventoryUiObject;
     [HideInInspector] public bool isPausedGame;
     //[SerializeField] private GameObject homePauseMenu;
     [SerializeField] private GameObject[] secondaryPauseMenus;
@@ -34,14 +35,16 @@ public class GameManager : MonoBehaviour
     [Header("It's main screen?")]
     [SerializeField] private bool mainMenuScreen;
 
-   // [Header("Tasks")]
-   // [SerializeField] private Text taskText; // ainda não sei se vamos colocar alguma forma de task nesse jogo
+    [HideInInspector] public bool usingInventory;
+
+    // [Header("Tasks")]
+    // [SerializeField] private Text taskText; // ainda não sei se vamos colocar alguma forma de task nesse jogo
 
     private bool playerWasNotFree = false;
     private bool playerInScene; // pensei em utilizar o mesmo método que estavamos usando pra tratar a interação com o celular, só que com o inventário
     [SerializeField] private PlayerController3rdPerson playerMovement;
 
-    public bool usingInventory;
+    
     //----------------------------------------------------------------------------\\
 
     private void Awake()
@@ -56,12 +59,33 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Pause") && !mainMenuScreen)
+        if (Input.GetButtonDown("Pause"))
         {
-            if (!isPausedGame) SetPauseGame(true);
-            else SetPauseGame(false);
+            if (!mainMenuScreen && !usingInventory)
+            {
+                if (!isPausedGame) SetPauseGame(true);
+                else SetPauseGame(false);
+            }
         }
-       
+
+        if(Input.GetButtonDown("Inventory"))
+        {
+            if (!mainMenuScreen)
+            {
+                if (!isPausedGame)
+                {
+                    inventoryUiObject.SetActive(true);
+                    SetPauseGame(true, false);
+                    usingInventory = true;
+                }
+                else if (isPausedGame && usingInventory)
+                {
+                    inventoryUiObject.SetActive(false);
+                    SetPauseGame(false, false);
+                    usingInventory = false  ;
+                }
+            }
+        }
     }
 
     public void SetLockCursor(bool on)
@@ -115,12 +139,7 @@ public class GameManager : MonoBehaviour
             {
                 instance.returnPlayerControlEvent();
             }
-           // if (!usingInventory)
-           // {
-                
-           // }
 
-           // if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(false);
             playerWasNotFree = false;
         }
     }
@@ -147,14 +166,14 @@ public class GameManager : MonoBehaviour
             // homePauseMenu.SetActive(true);
 
             instance.pauseGameTrue?.Invoke();
-            instance.removePlayerControlEvent();
+            //instance.removePlayerControlEvent();
             //if (Inventory.instance != null) Inventory.instance.SetIsPausedGame(true);
         }
         else
         {
             Time.timeScale = 1;
             isPausedGame = false;
-            SetLockCursor(true);
+            //--------SetLockCursor(true);
             for (int i = 0; i < secondaryPauseMenus.Length; i++) secondaryPauseMenus[i].SetActive(false);
             pauseMenuObject.SetActive(false);
 

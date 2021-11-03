@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item Database", menuName = "Inventory System/Items/Data")]
+[CreateAssetMenu(fileName = "New Inventory", menuName = "Scriptbale Objects/Inventory System/Items/Data")]
 public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiver
 {
     //this one will never be serialized

@@ -10,7 +10,7 @@ public class UpdateEquipTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slotItemLamp = equipamentInterface.slots[2];
+        slotItemLamp = equipamentInterface.slots[0];
         //slotInventory = equipamentInterface.slots[0].GetComponent<InventorySlot>();
     }
 
