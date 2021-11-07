@@ -14,7 +14,7 @@ public class SelectionManagerTP : MonoBehaviour
             if (interactable != null)
             {
                 interactable.Interact();
-                interactable = null;
+                //interactable = null; // pq caralhos eu coloquei essa linha?
             }
             else
             {
@@ -25,7 +25,7 @@ public class SelectionManagerTP : MonoBehaviour
         //Debug.Log(interactable);
     }
 
-    private void OnTriggerStay(Collider col)
+    private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag(selectableTag))
         {

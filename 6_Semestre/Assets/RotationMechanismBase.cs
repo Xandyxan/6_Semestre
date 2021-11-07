@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
@@ -26,7 +27,9 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
     [Header("Camera")]
     [SerializeField] private GameObject player; // we will temporally disable the player gameobject when using the inspection camera. Need to rework later!
     [SerializeField] private Cinemachine.CinemachineVirtualCamera interactionCam;
+    [SerializeField] private Cinemachine.CinemachineVirtualCamera descriptionCam;
     private Camera mainCam;
+    private bool changedCam;
 
     [Header("Selection")]
     [Tooltip("The visual feedback for an item that can be interacted with")]
@@ -61,6 +64,12 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
             {
                 if (Input.GetKeyDown(KeyCode.W)) { ChoseAnother(-1); }
                 else if (Input.GetKeyDown(KeyCode.S)) { ChoseAnother(1); }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // Changes camera to focus on the text
+                ChangeCamera();
             }
           
             //if (Input.GetKeyDown(KeyCode.Space)) { CheckPuzzleConclusion(); }
@@ -106,24 +115,43 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         GameManager.instance.returnPlayerControlEvent?.Invoke();
         
         ShowPlayerLayer();
+        Select();
         interactionCam.Priority = 5;
     }
 
     void IInteractable.Interact()
     {
         if (isInteracting || solved) { return; }
-        print("Interagiu com o puzzle de sequencia");
+       // print("Interagiu com o puzzle de sequencia");
         firstInput = true;
         isInteracting = true;
         interactionCam.Priority = 15;
+        
         //player.SetActive(false); // mudar isso pra versão que só tira a layer do player do culling da camera e chama o evento de PlayerCannotMove
         GameManager.instance.removePlayerControlEvent?.Invoke();
+        Deselect();
         HidePlayerLayer();
 
         ChoseAnother(0);
         Invoke("SetFirstInputFalse", 0.1f);
     }
 
+    private void ChangeCamera()
+    {
+        if (!changedCam)
+        {
+            descriptionCam.Priority = 15;
+            interactionCam.Priority = 5;
+            changedCam = true;
+        }
+        else
+        {
+            descriptionCam.Priority = 5;
+            interactionCam.Priority = 15;
+            changedCam = false;
+        }
+       
+    }
     private void SetFirstInputFalse()
     {
         firstInput = false;
@@ -159,8 +187,9 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
 
         solved = true;
         gameObject.tag = "Untagged";
-        Deselect();
+       
         StopInteracting();
+        Deselect();
         return (correctAnswers == mechanisms.Count); // se o jogador acertou a posição de 8 em 8 mecanismos, o puzzle é resolvido
     }
 

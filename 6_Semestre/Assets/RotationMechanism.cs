@@ -15,38 +15,58 @@ public class RotationMechanism : MonoBehaviour
 
     [SerializeField] private List<Vector3> rotations = new List<Vector3>(); // talvez alterar para uma list de quaternions dependendo
     [SerializeField] private Vector3 atualRotation; // igual ao transform.rotation
-    private int[] posicoes = new int[8];
+   // private int[] posicoes = new int[8];
+    private int[] posicoes;
     private int atualPos = 0;
 
-    [Header("Rotation Amount")]
-    [SerializeField] private float rotAmount;
     [Space]
     [SerializeField] private bool isSelected;
 
     [Header("Mechanism Type")]
+    [SerializeField] bool rotateX;
+    [SerializeField] private float rotAmountX;
+
+    [SerializeField] bool rotateY;
+    [SerializeField] private float rotAmountY;
+
+    [SerializeField] bool rotateZ;
+    [SerializeField] private float rotAmountZ;
+
+    [Space]
+    [SerializeField] private float rotationSpeed = 4;
+    [Space]
     [SerializeField] bool isHorizontal; // caso as peças estejam na horizontal, a rotação ocorre em x, caso não, a rotação ocorre em y.
+    [SerializeField] bool autoCheckForConclusion; // caso true, checa a conclusão automaticamente a cada rotação, caso não, o check é chamado externamente.
 
     private void Awake()
     {
-        posicoes = new int[] { 0, 1, 2, 3, 4, 5, 6, 7};
         atualRotation = transform.rotation.eulerAngles;
-        //rotations[0] = atualRotation;
 
-        if (isHorizontal)
+        posicoes = new int[rotations.Count];
+
+        for (int i = 0; i < rotations.Count; i++)
         {
-            for (int i = 0; i < rotations.Count; i++)
-            {
-                rotations[i] = new Vector3(atualRotation.x + (rotAmount * i), atualRotation.y, atualRotation.z);
-            }
-        }
-        else
+            posicoes[i] = i;
+
+            Vector3 tempRotation = new Vector3(atualRotation.x, atualRotation.y, atualRotation.z);
+
+        if (rotateX)
         {
-            for (int i = 0; i < rotations.Count; i++)
-            {
-                rotations[i] = new Vector3(atualRotation.x, atualRotation.y + (rotAmount * i), atualRotation.z);
-            }
+            tempRotation.x += rotAmountX * i;
         }
-        
+
+        if (rotateY)
+        {
+            tempRotation.y += rotAmountY * i;
+        }
+
+        if (rotateZ)
+        {
+            tempRotation.z += rotAmountZ * i;
+        }
+            rotations[i] = tempRotation;
+        }
+       
     }
     private void Update()
     {
@@ -63,7 +83,8 @@ public class RotationMechanism : MonoBehaviour
                 else if (Input.GetKeyDown(KeyCode.D)) { ChangeRotation(1); }
             }
            
-        } 
+        }
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(atualRotation), Time.deltaTime * rotationSpeed);
     }
     private void ChangeRotation(int dir) // diração -1 roda pra esquerda, direção +1 roda pra direita.
     {    
@@ -73,9 +94,14 @@ public class RotationMechanism : MonoBehaviour
         print("Posicao Atual" + atualPos +" "+ rotations[atualPos]);
        
         atualRotation = rotations[atualPos];
-        transform.rotation = Quaternion.Euler(atualRotation);
+       // transform.rotation = Quaternion.Euler(atualRotation);
+       
 
-        mecBase.CheckPuzzleConclusion(); // ver se isso não vai deixar o jogo muito pesado, talvez testar usando delegates ou coisa do tipo
+        if (autoCheckForConclusion)
+        {
+            mecBase.CheckPuzzleConclusion(); // ver se isso não vai deixar o jogo muito pesado, talvez testar usando delegates ou coisa do tipo
+        }
+      
     }
 
     public void SetIsSelected(bool value)
