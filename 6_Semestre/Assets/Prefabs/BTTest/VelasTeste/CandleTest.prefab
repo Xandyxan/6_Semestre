@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1808006704400247024}
   - component: {fileID: 1754690540752495236}
   - component: {fileID: 5193203764117077493}
-  - component: {fileID: 4530851727326833497}
   m_Layer: 0
   m_Name: Candle
   m_TagString: LightSource
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4530851727326833497
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38301423350325303}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1332848342712590149
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +490,6 @@ GameObject:
   - component: {fileID: 2333807927360326994}
   - component: {fileID: 849407539531664937}
   - component: {fileID: 8255068781983752367}
-  - component: {fileID: 4888384817070834722}
   m_Layer: 2
   m_Name: LightSource
   m_TagString: Untagged
@@ -579,19 +563,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &4888384817070834722
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2500711098923070668}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5863829664704227567
 GameObject:
   m_ObjectHideFlags: 0

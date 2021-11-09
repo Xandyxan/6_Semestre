@@ -5,13 +5,13 @@ using UnityEngine;
 public class CandleInteraction : MonoBehaviour, IInteractable, ISelectable
 {
     [Header("LightSource")]
-    [SerializeField] private GameObject lightSource; // a luz gerada pela vela
+    [SerializeField] protected GameObject lightSource; // a luz gerada pela vela
     [Tooltip("if the candle starts lit or not")]
-    [SerializeField] private bool candleLit;
+    [SerializeField] protected bool candleLit;
 
     [Header("Selectable")]
-    [SerializeField] private GameObject interactionFeedback;
-    public void Interact()
+    [SerializeField] protected GameObject interactionFeedback;
+    public virtual void Interact()
     {
         Deselect();
         candleLit = !candleLit;

@@ -30,6 +30,7 @@ public class BetterLookInteraction : MonoBehaviour, IInteractable, ISelectable
 
         GameManager.instance.removePlayerControlEvent?.Invoke();
         HidePlayerLayer();
+        Deselect();
         ChoseAnother(0);
 
         Invoke("SetFirstInputFalse", 0.1f);
@@ -83,6 +84,7 @@ public class BetterLookInteraction : MonoBehaviour, IInteractable, ISelectable
         GameManager.instance.returnPlayerControlEvent?.Invoke();
 
         ShowPlayerLayer();
+        Select();
     }
 
     public void Select()

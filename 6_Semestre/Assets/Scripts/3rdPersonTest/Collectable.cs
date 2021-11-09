@@ -18,7 +18,6 @@ public class Collectable : MonoBehaviour, IInteractable, ISelectable
 
     public void Interact()
     {
-
         playerInventory.AddItem(new Item(this.item), 1);
         this.gameObject.SetActive(false);
 
