@@ -20,7 +20,7 @@ public class BTActivateHitBox : BTNode
                 if (npc.npcAnim)
                 {
                     npc.npcAnim.SetTrigger("Attack");
-                   
+                    npc.GetComponent<NPCPaleGhost>().hitbox.SetActive(true);
                     yield return new WaitForSeconds(.8f);
 
                     status = Status.SUCCESS;

@@ -11,15 +11,16 @@ public class TestHitPlayer : MonoBehaviour
     {
         parentNpc = transform.parent.GetComponent<NPC>(); // ver de fazer isso funcionar para outros tipos de NPC
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider col)
     {
-        if (other.CompareTag("Player"))
+        PlayerStats playerStats = col.GetComponent<PlayerStats>();
+        Debug.LogError("Hitou");
+        if (playerStats)
         {
-            if (!alreadHit)
+            Debug.LogError("Hitou");
+;            if (!alreadHit)
             {
-                PlayerTestBT player = other.GetComponent<PlayerTestBT>(); // script que por enquanto lida com as questões de vida do player
-
-                if (player) player.TakeDamage(parentNpc.profile.damage);
+                playerStats.TakeDamage(parentNpc.profile.damage);
                 alreadHit = true;
                 Invoke("SetAlreadHitFalse", .6f);
                 CinemachineShake.Instance.ShakeCamera(.4f, .1f);

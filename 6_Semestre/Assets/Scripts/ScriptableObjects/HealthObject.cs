@@ -7,6 +7,12 @@ public class HealthObject : ItemObject
 {
     [SerializeField] private int healthValue;
 
+    public override void UseItem(PlayerStats playerStats)
+    {
+        playerStats.insanityValue += healthValue;
+        Debug.Log("Item de cura especifico");
+    }
+
     private void Awake()
     {
         type = ItemType.Food;
