@@ -18,10 +18,11 @@ public class BTMoveToRandomWaypoint : BTNode
             while (npc.waypoints[randomIndex])
             {
                 npc.npcAgent.SetDestination(npc.waypoints[randomIndex].position);
-
+                npc.npcAnim.SetBool("IsWalking", true);
                 if (npc.npcAgent.remainingDistance <= npc.npcAgent.stoppingDistance)
                 {
                     status = Status.SUCCESS;
+                    npc.npcAnim.SetBool("IsWalking", false);
                     break;
                 }
                 yield return null;

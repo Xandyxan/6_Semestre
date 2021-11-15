@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28dee5ae32b93cd49a5c7e58005fe6cb, type: 3}
   m_Name: CadaverEsguio
   m_EditorClassIdentifier: 
-  speed: 0.5
-  turningSpeed: 120
+  speed: 0.35
+  turningSpeed: 135
   playerDtRange: 4
   lightSourceDtRange: 0
   atackRange: 2
