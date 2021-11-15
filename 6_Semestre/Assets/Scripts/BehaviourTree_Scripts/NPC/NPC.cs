@@ -10,7 +10,7 @@ public class NPC : MonoBehaviour
     protected BehaviourTree bt;
     public NavMeshAgent npcAgent;
     public Animator npcAnim;
-    public PlayerTestBT player; 
+    public PlayerStats player; 
     [Tooltip("To make it chose it's own waypoints, add BTSelecionarWaypoints")]
     public List<Transform> waypoints = new List<Transform>();
 

@@ -23,6 +23,8 @@ public class ItemObject : ScriptableObject
         Item newItem = new Item(this);
         return newItem;
     }
+
+    public virtual void UseItem(PlayerStats playerStats) { }
 }
 
 [System.Serializable]

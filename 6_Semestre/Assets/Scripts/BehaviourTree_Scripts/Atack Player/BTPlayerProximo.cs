@@ -7,11 +7,11 @@ public class BTPlayerProximo : BTNode
     public override IEnumerator Run(BehaviourTree bt)
     {
         status = Status.FAILURE;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = GameObject.FindObjectOfType<PlayerStats>();
         NPC npc = bt.GetComponent<NPC>();
-        if (player)
+        if (playerStats)
         {
-            if (Vector3.Distance(bt.transform.position, player.transform.position) < npc.profile.playerDtRange)
+            if (Vector3.Distance(bt.transform.position, playerStats.transform.position) < npc.profile.playerDtRange)
             {
                 status = Status.SUCCESS;
             }
