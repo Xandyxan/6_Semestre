@@ -10,13 +10,19 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public InventoryObject inventory;
     public Dictionary<GameObject, InventorySlot> slotsOnInterface = new Dictionary<GameObject, InventorySlot>();
 
-    public GameObject descriptWindow;
-    public Text descriptionText;
+    [Header("UI GameObjects")]
+    [SerializeField] private GameObject _descriptWindow;
+    [SerializeField] private Text _descriptionText;
+    [SerializeField] private Text _itemName;
+
+    [SerializeField] private PlayerStats _playerStats;
+
+    public PlayerStats playerStats { get => _playerStats; set => _playerStats = value; }
 
 
     private void Awake()
     {
-        EventSystem.current.SetSelectedGameObject(gameObject);
+        //EventSystem.current.SetSelectedGameObject(gameObject);
     }
 
     protected virtual void Start()
@@ -51,21 +57,27 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnEnter(GameObject obj)
     {
         MouseData.slotHoveredOver = obj;
-        descriptionText.text = slotsOnInterface[obj].itemObject.description;
+        
+
+        if (slotsOnInterface[obj].itemObject != null)
+        {
+            _descriptionText.text = slotsOnInterface[obj].itemObject.description;
+            _itemName.text = slotsOnInterface[obj].itemObject.data.Name;
+        }
     }
 
     public void OnClickedOnSlot(BaseEventData baseEventData)
     {
         PointerEventData pointerEventData = (PointerEventData)baseEventData;
-        if (pointerEventData.button == PointerEventData.InputButton.Right)
+        if (pointerEventData.button == PointerEventData.InputButton.Right && MouseData.interfaceSlot.HasItemOnSlot())
         {
-            MouseData.descriptionWindow = descriptWindow;
+            MouseData.descriptionWindow = _descriptWindow;
             MouseData.descriptionWindow.SetActive(true);
-            MouseData.descriptionWindow.transform.position = Input.mousePosition + new Vector3(1,1,1);
+            MouseData.descriptionWindow.transform.position = Input.mousePosition + new Vector3(1, 1, 1);
         }
         else
         {
-            if(MouseData.descriptionWindow.activeSelf == true)
+            if (MouseData.descriptionWindow.activeSelf == true)
                 MouseData.descriptionWindow.SetActive(false);
         }
     }
@@ -76,6 +88,7 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
         {
             MouseData.currentItemID = slotsOnInterface[obj].item.GetItemID();
             MouseData.interfaceSlot = slotsOnInterface[obj];
+
             //Debug.Log(slotsOnInterface[obj].amount);
         }
     }
@@ -84,16 +97,18 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     {
         PointerEventData pointerEventData = (PointerEventData)baseEventData;
 
-        if(pointerEventData.button == PointerEventData.InputButton.Left || pointerEventData.button == PointerEventData.InputButton.Right)
+        if (pointerEventData.button == PointerEventData.InputButton.Left || pointerEventData.button == PointerEventData.InputButton.Right)
         {
             MouseData.descriptionWindow.SetActive(false);
+            MouseData.interfaceSlot = null;
         }
     }
 
     public void OnExit(GameObject obj)
     {
         MouseData.slotHoveredOver = null;
-        descriptionText.text = "";
+        _descriptionText.text = "";
+        _itemName.text = "";
     }
 
     public void OnDragStart(GameObject obj)
@@ -110,7 +125,7 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
             tempItem = new GameObject();
 
             RectTransform rectTransform = tempItem.AddComponent<RectTransform>();
-            rectTransform.sizeDelta = new Vector2(90, 90);
+            rectTransform.rect.Set(rectTransform.position.x, rectTransform.position.y, 64, 64);
             tempItem.transform.SetParent(transform.parent);
 
             Image image = tempItem.AddComponent<Image>();
@@ -153,7 +168,7 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnDeselect(BaseEventData eventData)
     {
         if (!MouseData.mouseIsOverUserUI && !MouseData.mouseIsOverUI)
-            if(MouseData.descriptionWindow !=null) MouseData.descriptionWindow.SetActive(false);
+            if (MouseData.descriptionWindow != null) MouseData.descriptionWindow.SetActive(false);
 
         //Debug.Log("Mouse was clicked outside");
     }
@@ -173,17 +188,11 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnEnterInterface(GameObject obj)
     {
         MouseData.interfaceMouseIsOver = obj.GetComponent<UserInterface>();
-        //MouseData.interfaceMouseIsOverDynamic = obj.GetComponent<DynamicInterface>();
-        //Debug.Log("Mouse ESTA NA UI");
     }
     public void OnExitInterface(GameObject obj)
     {
         MouseData.interfaceMouseIsOver = null;
-        //MouseData.interfaceMouseIsOverDynamic = null;
-        //if(MouseData.descriptionWindow != null) MouseData.descriptionWindow.SetActive(false);
         Debug.Log("Mouse SAIU NA UI");
-
-        //MouseData.teste = false;
     }
 }
 public static class MouseData
@@ -192,18 +201,13 @@ public static class MouseData
     public static InventorySlot interfaceSlot;
     public static GameObject tempItemBeingDragged;
     public static GameObject slotHoveredOver;
+
     public static GameObject descriptionWindow = new GameObject();
 
     public static bool mouseIsOverUserUI;
     public static bool mouseIsOverUI;
 
     public static int currentItemID;
-
-    public static void Teste()
-    {
-        interfaceSlot.ConsumeItem(-1);
-        MouseData.descriptionWindow.SetActive(false);
-    }
 }
 
 public static class ExtensionMethods

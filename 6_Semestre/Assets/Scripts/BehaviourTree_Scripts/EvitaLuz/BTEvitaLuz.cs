@@ -11,6 +11,8 @@ public class BTEvitaLuz : BTNode
 
         NPCPaleGhost npc = bt.GetComponent<NPCPaleGhost>();
 
+        npc.npcAnim.SetTrigger("Light"); // teste
+
         while (Vector3.Distance(bt.transform.position, npc.lightSource.position) < npc.profile.lightSourceDtRange)
         {
             Vector3 runDirection = bt.transform.position - npc.lightSource.position;

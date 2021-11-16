@@ -16,8 +16,9 @@ MonoBehaviour:
   stackbable: 0
   type: 1
   data:
-    Name: 
+    Name: Lamparina
     Id: 1
-  description: Ferramenta principal para evitar os fantasmas
+  description: "Uma poderosa fonte de luz, \xE9 necess\xE1rio algum tipo de combust\xEDvel
+    para poder ser usado."
   speedValue: 0
   defenseValue: 0

@@ -25,6 +25,7 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
     [Tooltip("The visual feedback for an item that can be interacted with")]
     [SerializeField] private GameObject interactionFeedback;
 
+    [Header("Dialogue")]
     [SerializeField] int _dialogueIndex;
     [SerializeField] DialogueManager2 dialogue;
 
@@ -103,7 +104,6 @@ public class DrawerSelection : MonoBehaviour, IInteractable, ISelectable
         ChoseAnother(0);
         Invoke("SetFirstInputFalse", 0.1f);
     }
-
 
     private void SetFirstInputFalse()
     {
