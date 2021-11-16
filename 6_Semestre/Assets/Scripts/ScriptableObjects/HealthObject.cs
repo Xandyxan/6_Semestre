@@ -9,8 +9,7 @@ public class HealthObject : ItemObject
 
     public override void UseItem(PlayerStats playerStats)
     {
-        playerStats.insanityValue += healthValue;
-        Debug.Log("Item de cura especifico");
+        playerStats.Heal(healthValue);
     }
 
     private void Awake()
