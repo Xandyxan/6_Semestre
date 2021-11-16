@@ -230,12 +230,11 @@ public class InventorySlot
         item = new Item();
         amount = 0;
     }
-    public void ConsumeItem(int _amountToChange)
+    public void ConsumeItem(PlayerStats playerStats, int _amountToChange)
     {
+        itemObject.UseItem(playerStats);
         ChangeAmount(_amountToChange);
-        //acho que aqui faria algo do item
     }
-
     public void ChangeAmount(int value)
     {
         if (itemObject.stackbable)
@@ -266,6 +265,12 @@ public class InventorySlot
     public int GetItemIDFromSlot()
     {
         return item.Id;
+    }
+
+    public bool HasItemOnSlot()
+    {
+        if (item.Id >= 0) return true;
+        else return false;
     }
 }
 
