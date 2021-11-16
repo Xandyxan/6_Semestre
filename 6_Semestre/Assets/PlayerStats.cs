@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private PlayerDataObject playerDataObject;
+    private Animator animator;
 
     //Backing Variables
     [Header("String Save Path")]
@@ -41,6 +42,8 @@ public class PlayerStats : MonoBehaviour
     [Header("Others")]
     [SerializeField] private int sceneToLoadIndex = 3;
 
+    public bool isUsingLamparina;
+
     private void Awake()
     {
         playerDataObject.Load();
@@ -54,6 +57,8 @@ public class PlayerStats : MonoBehaviour
 
         currentInsanity = playerDataObject.playerData.currentInsanity;
         currentFuel = playerDataObject.playerData.currentFuel;
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -76,7 +81,8 @@ public class PlayerStats : MonoBehaviour
             save = false;
         }
 
-        Debug.Log(currentInsanity + " " + currentFuel);
+        animator.SetBool("isUsingLamparina", isUsingLamparina);
+        //Debug.Log(currentInsanity + " " + currentFuel);
     }
 
     public void UpdateStatsUI()

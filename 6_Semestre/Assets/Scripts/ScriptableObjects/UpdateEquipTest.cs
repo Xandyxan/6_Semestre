@@ -5,6 +5,7 @@ using UnityEngine;
 public class UpdateEquipTest : MonoBehaviour
 {
     public StaticInterface equipamentInterface;
+    public PlayerStats playerStats;
     private GameObject slotItemLamp;
 
     // Start is called before the first frame update
@@ -20,10 +21,12 @@ public class UpdateEquipTest : MonoBehaviour
         if (equipamentInterface.slotsOnInterface[slotItemLamp].item.Id == 1)
         {
             equipamentInterface.lamparinaItem.SetActive(true);
+            playerStats.isUsingLamparina = true;
         }
         else
         {
             equipamentInterface.lamparinaItem.SetActive(false);
+            playerStats.isUsingLamparina = false;
         }
     }
 }
