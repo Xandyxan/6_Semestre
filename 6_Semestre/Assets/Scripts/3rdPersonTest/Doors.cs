@@ -74,6 +74,7 @@ public class Doors : MonoBehaviour, IInteractable, IObjectiveObj
     public virtual void Interact()
     {
         openingIsHappening = true;
+        print("NHOMMMM");
       /*  if (dialogue != null)
         {
             dialogue.RunCoroutine();
