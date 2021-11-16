@@ -42,7 +42,7 @@ public class PortaoInteraction : MonoBehaviour, IInteractable, ISelectable
         mainCam = Camera.main;
         keyAnimator = chaveObj.GetComponent<Animator>();
         portaoAnim = GetComponent<Animator>();
-        PlayerPrefs.SetInt("PortaoNobre", 0);
+        //PlayerPrefs.SetInt("PortaoNobre", 0);
     }
     private void Start()
     {
@@ -50,16 +50,19 @@ public class PortaoInteraction : MonoBehaviour, IInteractable, ISelectable
         if(valor == 1)
         {
             gateUnlocked = true;
+            print("OpenKkkkkkkkkkk");
         }
         else
         {
             gateUnlocked = false;
+            print("UNLOCKkkkkkkkkkk");
         }
     }
     private IEnumerator UnlockGate()
     {
         // método que é chamado apenas na primeira vez que o player interage com o portão, aparece o feedback de que o item da chave foi consumido e tals.
         chaveObj.SetActive(true);
+        
         keyAnimator.SetTrigger("Used");
         yield return new WaitForSeconds(0.8f);
         canvasChaveConsumida.SetActive(true);
@@ -74,8 +77,9 @@ public class PortaoInteraction : MonoBehaviour, IInteractable, ISelectable
     private IEnumerator OpenGate()
     {
         // método chamado quando o portão já estiver destrancado. Apenas roda os eventos de abertura do portão e o fade load pra cena devida.
+       
         portaoAnim.SetTrigger(portaoSide);
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1.3f);
         Fade();
         yield return null;
         // se pa fazer a camera dar zoom / mover aqui 

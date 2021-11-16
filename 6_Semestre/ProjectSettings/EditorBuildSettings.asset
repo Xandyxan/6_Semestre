@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CemiterioTestes 1.unity
     guid: 5b7a20f09b22e464aa95a1d4b362a3b3
   - enabled: 1
+    path: Assets/Scenes/BlocagemPortaoAreaNobre.unity
+    guid: 2861694c176c5a44589f6079eff34d5a
+  - enabled: 1
     path: Assets/Scenes/BlocagemAreaNobre.unity
     guid: a2d81413764ba57498cb3463f3208436
   m_configObjects: {}
