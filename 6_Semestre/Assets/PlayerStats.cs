@@ -14,14 +14,16 @@ public class PlayerStats : MonoBehaviour
     [Header("String Save Path")]
     [SerializeField] private string _savePath;
 
-    
-    [SerializeField] private float _insanityValue;
-    [SerializeField] private float _lamparinaFuel;
+    [Header("Stats Values")]
+    [SerializeField] private float _maxInsanity;
+    [SerializeField] private float _maxFuel;
+    [SerializeField] private float _currentInsanity;
+    [SerializeField] private float _currentFuel;
     
 
     //Encapsulated Variables
-    public float insanityValue { get => _insanityValue; set => _insanityValue = value; }
-    public float lamparinaFuel { get => _lamparinaFuel; set => _lamparinaFuel = value; }
+    public float currentInsanity { get => _currentInsanity; set => _currentInsanity = value; }
+    public float currentFuel { get => _currentFuel; set => _currentFuel = value; }
     public string savePath { get => _savePath; set => _savePath = value; }
 
     [Header("Just for Debug")]
@@ -47,8 +49,11 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
-        this.insanityValue = playerDataObject.playerData.health;
-        this.lamparinaFuel = playerDataObject.playerData.lamparinaFuel;
+        _maxInsanity = playerDataObject.playerData.maxInsanity;
+        _maxFuel = playerDataObject.playerData.maxFuel;
+
+        currentInsanity = playerDataObject.playerData.currentInsanity;
+        currentFuel = playerDataObject.playerData.currentFuel;
     }
 
     void Update()
@@ -65,19 +70,19 @@ public class PlayerStats : MonoBehaviour
 
         if (save)
         {
-            playerDataObject.playerData.health = this.insanityValue;
-            playerDataObject.playerData.lamparinaFuel = this.lamparinaFuel;
+            playerDataObject.playerData.currentInsanity = this.currentInsanity;
+            playerDataObject.playerData.currentFuel = this.currentFuel;
             playerDataObject.Save();
             save = false;
         }
 
-        Debug.Log(insanityValue + " " + lamparinaFuel);
+        Debug.Log(currentInsanity + " " + currentFuel);
     }
 
     public void UpdateStatsUI()
     {
-        insanityBar.fillAmount = insanityValue / 100f;
-        fuelBar.fillAmount = lamparinaFuel / 100f;
+        insanityBar.fillAmount = currentInsanity / 100f;
+        fuelBar.fillAmount = currentFuel / 100f;
     }
 
     public void Fade()
@@ -92,22 +97,28 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        insanityValue -= damage;
-        postprocessingControl.espiritualEnergy = insanityValue;
+        currentInsanity -= damage;
+        postprocessingControl.espiritualEnergy = currentInsanity;
         postprocessingControl.UpdatePPEE();
 
-        if (insanityValue <= 0)
+        if (currentInsanity <= 0)
         {
             Fade();
-            insanityValue = 0;
+            currentInsanity = 0;
         }
     }
 
     public void Heal(int healingAmount)
     {
-        insanityValue += healingAmount;
-        if (insanityValue >= 100) insanityValue = 100;
-        postprocessingControl.espiritualEnergy = insanityValue;
+        currentInsanity += healingAmount;
+        if (currentInsanity >= _maxInsanity) currentInsanity = _maxInsanity;
+        postprocessingControl.espiritualEnergy = currentInsanity;
         postprocessingControl.UpdatePPEE();
+    }
+
+    public void FillLamparina(float fillAmount)
+    {
+        currentFuel += fillAmount;
+        if (currentFuel >= _maxFuel) currentFuel = _maxInsanity;
     }
 }

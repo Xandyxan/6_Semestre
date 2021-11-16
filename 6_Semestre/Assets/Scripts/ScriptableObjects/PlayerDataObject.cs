@@ -30,8 +30,8 @@ public class PlayerDataObject : ScriptableObject
             Stream stream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open, FileAccess.Read);
             PlayerData newContainer = (PlayerData)formatter.Deserialize(stream);
 
-            playerData.health = newContainer.health;
-            playerData.lamparinaFuel = newContainer.lamparinaFuel;
+            playerData.currentInsanity = newContainer.currentInsanity;
+            playerData.currentFuel = newContainer.currentFuel;
 
             stream.Close();
         }
@@ -49,6 +49,8 @@ public class PlayerDataObject : ScriptableObject
 [System.Serializable]
 public class PlayerData
 {
-    public float health;
-    public float lamparinaFuel;
+    public float maxInsanity;
+    public float maxFuel;
+    public float currentInsanity;
+    public float currentFuel;
 }

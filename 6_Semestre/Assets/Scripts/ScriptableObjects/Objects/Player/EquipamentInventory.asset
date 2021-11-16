@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af03d624643eba74a9ca79ed38e29549, type: 3}
   m_Name: EquipamentInventory
   m_EditorClassIdentifier: 
-  _savePath: /inventory.SaveEquip2
+  _savePath: /player.Equip.Save3
   database: {fileID: 11400000, guid: 252465ba8e85d4b478069f39a9e4c3ca, type: 2}
   Container:
     Items:
     - allowedItems: 01000000
       item:
-        Name: Sword
-        Id: 5
-      amount: 1
+        Name: 
+        Id: -1
+      amount: 0
     - allowedItems: 00000000
       item:
         Name: 

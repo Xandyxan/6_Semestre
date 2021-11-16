@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
-  m_Name: Querosene
+  m_Script: {fileID: 11500000, guid: 79d191f0af4e62547a1d8ee15eb79c1a, type: 3}
+  m_Name: Querosone
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -4979197222717623240, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 1
@@ -20,3 +20,4 @@ MonoBehaviour:
     Id: 2
   description: "Liqu\xEDdo altamente inflam\xE1vel, parece ser o suficiente para
     encher a lamparina."
+  amountToFill: 25
