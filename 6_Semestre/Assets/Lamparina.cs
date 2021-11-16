@@ -6,6 +6,7 @@ public class Lamparina : MonoBehaviour
 {
     // Fazer com que manter manter a lanterna ligada gaste combustivel, o que torna o brilho dela cada vez mais fraco. Caso o combustivel esteja zerado, não permitir
     // que o jogador ative a lamparina
+    private PlayerStats playerStats;
 
     [Header("LightSource")]
     [SerializeField] private GameObject lamparina;
@@ -18,7 +19,6 @@ public class Lamparina : MonoBehaviour
     private float emissionIntensity = 1;
 
     [Header("Fuel")]
-    [SerializeField] private int fuelAmount = 100; // quanto combustivel a lamparina tem
     //[SerializeField] private int fuelUsage = 1; // quanto de combustivel é gasto a cada ciclo
     [SerializeField] private float fuelUnitLifeTime = 2;
 
@@ -26,6 +26,7 @@ public class Lamparina : MonoBehaviour
     {
         lamparinaGlassMaterial = lamparina.GetComponent<Renderer>().materials[1];
         emissionColor = lamparinaGlassMaterial.GetColor("_EmissionColor");
+        playerStats = GetComponent<PlayerStats>();
     }
 
     private void Start()
@@ -38,7 +39,7 @@ public class Lamparina : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(fuelAmount > 0)
+            if(playerStats.currentFuel > 0)
             {
                 lamparina.SetActive(!lamparina.activeInHierarchy);
                 if (lamparina.activeInHierarchy)
@@ -52,7 +53,7 @@ public class Lamparina : MonoBehaviour
             }
             else
             {
-                fuelAmount = 0;
+                playerStats.currentFuel = 0;
             }  
         }
     }
@@ -63,11 +64,13 @@ public class Lamparina : MonoBehaviour
         {
             UpdateLightIntensity();
             yield return new WaitForSeconds(fuelUnitLifeTime);
-            fuelAmount -= 1;
+            playerStats.currentFuel -= 1;
 
-            if(fuelAmount <= 0)
+            Debug.LogWarning("Tá gastando");
+
+            if(playerStats.currentFuel <= 0)
             {
-                fuelAmount = 0;
+                playerStats.currentFuel = 0;
                 lamparina.SetActive(false);
                 break;
             }
@@ -79,7 +82,7 @@ public class Lamparina : MonoBehaviour
 
     private void UpdateLightIntensity()
     {
-        float intensityvalue = fuelAmount / 20f; // começa em 5 e subtrai 0.05f para cada 1 de fuel perdido.
+        float intensityvalue = playerStats.currentFuel / 20f; // começa em 5 e subtrai 0.05f para cada 1 de fuel perdido.
         if (intensityvalue <= 1) intensityvalue = 1;
 
         lamparinaLight.intensity = intensityvalue;

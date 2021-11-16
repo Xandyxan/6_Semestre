@@ -128,8 +128,10 @@ public class PlayerController3rdPerson : MonoBehaviour
 
         // Animation
         animator.SetBool("isWalkingX", isWalking); // arrumar depois
-        animator.SetFloat("Velocity", actualWalkSpeed * 1.7f);
+        animator.SetFloat("Velocity", actualWalkSpeed);
         animator.SetBool("isCrouched", isCrouched);
+
+        //Debug.LogWarning(actualWalkSpeed);
     }
 
     private void HandleInputs()
@@ -172,21 +174,21 @@ public class PlayerController3rdPerson : MonoBehaviour
     private void UpdateCollider()
     {
         //print("Ainda não implementado");
-        if (!isCrouched)
-        {
-            characterController.stepOffset = 0.150f;
+        //if (!isCrouched)
+        //{
+        //    characterController.stepOffset = 0.150f;
 
-            characterController.center = new Vector3(0, 0.0775f, 0);
-            characterController.radius = 0.03f;
-            characterController.height = 0.155f;
-        }
-        else
-        {
-            characterController.stepOffset = 0.150f; // ~ the value dont change cause the player was becoming unable to go up stairs while crouched.
-            characterController.center = new Vector3(0, 0.0775f, 0.02f);
-            characterController.radius = 0.033f;
-            characterController.height = 0.155f;
-        }
+        //    characterController.center = new Vector3(0, 0.0775f, 0);
+        //    characterController.radius = 0.03f;
+        //    characterController.height = 0.155f;
+        //}
+        //else
+        //{
+        //    characterController.stepOffset = 0.150f; // ~ the value dont change cause the player was becoming unable to go up stairs while crouched.
+        //    characterController.center = new Vector3(0, 0.0775f, 0.02f);
+        //    characterController.radius = 0.033f;
+        //    characterController.height = 0.155f;
+        //}
     }
 
     private void UpdateMovement()
