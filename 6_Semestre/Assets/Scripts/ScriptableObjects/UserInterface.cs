@@ -69,7 +69,7 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnClickedOnSlot(BaseEventData baseEventData)
     {
         PointerEventData pointerEventData = (PointerEventData)baseEventData;
-        if (pointerEventData.button == PointerEventData.InputButton.Right && MouseData.interfaceSlot.HasItemOnSlot())
+        if (pointerEventData.button == PointerEventData.InputButton.Right)
         {
             MouseData.descriptionWindow = _descriptWindow;
             MouseData.descriptionWindow.SetActive(true);
