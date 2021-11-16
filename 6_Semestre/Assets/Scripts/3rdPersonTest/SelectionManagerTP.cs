@@ -5,16 +5,25 @@ using UnityEngine;
 public class SelectionManagerTP : MonoBehaviour
 {
     [SerializeField] private string selectableTag = "Selectable";
-    private IInteractable interactable;
+    private Collectable collectable;
 
     private void Update()
     {
+        
+
+        //Debug.Log(interactable);
+    }
+
+    private void OnTriggerStay(Collider col)
+    {
+        collectable = col.GetComponent<Collectable>();
+
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (interactable != null)
+            if (collectable != null)
             {
-                interactable.Interact();
-                interactable = null;
+                collectable.Interact();
+                collectable = null;
             }
             else
             {
@@ -22,15 +31,9 @@ public class SelectionManagerTP : MonoBehaviour
             }
         }
 
-        //Debug.Log(interactable);
-    }
-
-    private void OnTriggerStay(Collider col)
-    {
         if (col.gameObject.CompareTag(selectableTag))
         {
             var selectable = col.gameObject.GetComponent<ISelectable>();
-            interactable = col.gameObject.GetComponent<IInteractable>();
 
             if (selectable != null)
             {
@@ -49,7 +52,7 @@ public class SelectionManagerTP : MonoBehaviour
         if (col.gameObject.CompareTag(selectableTag))
         {
             var selectable = col.gameObject.GetComponent<ISelectable>();
-            interactable = null;
+            //interactable = null;
 
             if (selectable != null)
             {

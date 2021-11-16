@@ -11,16 +11,20 @@ public class Lamparina : MonoBehaviour
 
     [SerializeField] private Light lamparinaLight; // max intensity = 5 -> 0 fuel, 0 intensity. 100 fuel, 5 intensity.
 
-    [SerializeField] private int fuelAmount = 100; // quanto combustivel a lamparina tem
+    private PlayerStats playerStats;
 
     private bool lightActive = false;
 
+    private void Start()
+    {
+        playerStats = GetComponent<PlayerStats>();
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(fuelAmount > 0)
+            if(playerStats.currentFuel > 0)
             {
                 lamparina.SetActive(!lamparina.activeInHierarchy);
                 if (lamparina.activeInHierarchy) StartCoroutine(HandleFuelUsage());
@@ -42,10 +46,10 @@ public class Lamparina : MonoBehaviour
         {
             UpdateLightIntensity();
             yield return new WaitForSeconds(2.5f);
-            fuelAmount -= 5;
-            if(fuelAmount <= 0)
+            playerStats.currentFuel -= 5;
+            if(playerStats.currentFuel <= 0)
             {
-                fuelAmount = 0;
+                playerStats.currentFuel = 0;
                 lamparina.SetActive(false);
                 break;
             }
@@ -57,6 +61,6 @@ public class Lamparina : MonoBehaviour
 
     private void UpdateLightIntensity()
     {
-        lamparinaLight.intensity = fuelAmount / 20;
+        lamparinaLight.intensity = playerStats.currentFuel / 20;
     }
 }
