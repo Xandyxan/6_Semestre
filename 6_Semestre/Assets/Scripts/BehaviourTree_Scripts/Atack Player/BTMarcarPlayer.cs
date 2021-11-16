@@ -8,12 +8,12 @@ public class BTMarcarPlayer : BTNode
     {
         status = Status.FAILURE;
 
-        PlayerTestBT player = GameObject.FindObjectOfType<PlayerTestBT>();
+        PlayerStats playerStats = GameObject.FindObjectOfType<PlayerStats>();
 
         NPC npc = bt.GetComponent<NPC>();
-        if (player)
+        if (playerStats)
         {
-            npc.player = player;
+            npc.player = playerStats;
             status = Status.SUCCESS;
         }
         else

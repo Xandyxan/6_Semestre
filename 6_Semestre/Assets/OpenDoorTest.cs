@@ -22,7 +22,7 @@ public class OpenDoorTest : MonoBehaviour
     private void OpenDoor()
     {
         door.Interact();
-        CinemachineShake.Instance.ShakeCamera(.3f, 1f, 1.7f, camToShake);
+        CinemachineShake.Instance.ShakeCamera(.25f, .5f, 1.2f, camToShake);
         Destroy(this);
     }
 }

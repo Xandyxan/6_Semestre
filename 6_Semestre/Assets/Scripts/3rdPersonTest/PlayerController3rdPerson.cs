@@ -278,7 +278,7 @@ public class PlayerController3rdPerson : MonoBehaviour
 
     public void ActivateSoundSource()
     {
-        if(isRunning)
-        soundSource.SetActive(true);
+        //if(isRunning)
+        //soundSource.SetActive(true);
     }
 }

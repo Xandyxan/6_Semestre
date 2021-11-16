@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class UserInterfaceExtension : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ConsumeItem()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        MouseData.descriptionWindow.SetActive(false);
+        MouseData.interfaceSlot.ConsumeItem(MouseData.interfaceSlot.parent.playerStats, -1);
     }
 }

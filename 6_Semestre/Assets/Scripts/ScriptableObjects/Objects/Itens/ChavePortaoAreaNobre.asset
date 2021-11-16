@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
+  m_Name: ChavePortaoAreaNobre
+  m_EditorClassIdentifier: 
+  uiDisplay: {fileID: 908941860185151170, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
+  stackbable: 0
+  type: 2
+  data:
+    Name: "Chave do Port\xE3o da \xC1rea Nobre"
+    Id: -1
+  description: 

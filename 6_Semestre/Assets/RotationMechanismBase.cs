@@ -117,6 +117,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         ShowPlayerLayer();
         Select();
         interactionCam.Priority = 5;
+        descriptionCam.Priority = 5;
     }
 
     void IInteractable.Interact()

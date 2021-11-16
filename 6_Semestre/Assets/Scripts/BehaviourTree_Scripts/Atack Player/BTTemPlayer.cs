@@ -8,8 +8,8 @@ public class BTTemPlayer : BTNode
     {
         status = Status.FAILURE;
 
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player) status = Status.SUCCESS;
+        PlayerStats playerStats = GameObject.FindObjectOfType<PlayerStats>();
+        if (playerStats) status = Status.SUCCESS;
 
         Print(bt);
         yield break;
