@@ -1,0 +1,1405 @@
+fileFormatVersion: 2
+guid: 3ebdb02f1dabc7a429d14ebebd9012de
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Tonho_Idle_Anim(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:AntonioCarlos_CHAR
+      parentName: Tonho_Idle_Anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoHair
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoHead
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoHands
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoShirt
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoPants
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoShoes
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:TonhoBelt
+      parentName: Tonho_RIG:AntonioCarlos_CHAR
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:CONTROLES
+      parentName: Tonho_Idle_Anim(Clone)
+      position: {x: -0, y: 1.1188285, z: 0.01814985}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Master_Ctrl
+      parentName: Tonho_RIG:CONTROLES
+      position: {x: -0, y: -1.1188285, z: -0.01814985}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Root_Ctrl
+      parentName: Tonho_RIG:_Master_Ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Body_Ctrl
+      parentName: Tonho_RIG:_Root_Ctrl
+      position: {x: 0.04848474, y: 0.9340034, z: 0.024447786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Waist_Ctrl
+      parentName: Tonho_RIG:_Body_Ctrl
+      position: {x: 0.0023501765, y: 0.0003832145, z: -0.016084233}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Torax_Ctrl
+      parentName: Tonho_RIG:_Body_Ctrl
+      position: {x: -0.0038743631, y: 0.28559715, z: 0.010148122}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Arm_Ctrls_R_NULL
+      parentName: Tonho_RIG:_Torax_Ctrl
+      position: {x: -8.881784e-18, y: -1.5805953, z: 0.11720313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Clav_Ctrl_R_NULL
+      parentName: Tonho_RIG:_Arm_Ctrls_R_NULL
+      position: {x: 0.033801343, y: 1.7006516, z: -0.14223196}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Clav_Ctrl_R
+      parentName: Tonho_RIG:_Clav_Ctrl_R_NULL
+      position: {x: 0.000051460986, y: -0.00059414044, z: 0.00018399734}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Shoulder_Ctrl_R_NULL
+      parentName: Tonho_RIG:_Clav_Ctrl_R
+      position: {x: 0.12406847, y: 0.011344685, z: -0.00018399734}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Shoulder_Ctrl_R
+      parentName: Tonho_RIG:_Shoulder_Ctrl_R_NULL
+      position: {x: 0.00068672025, y: 0.021529887, z: -0.017601077}
+      rotation: {x: 0.036897983, y: -0.004081417, z: -0.21218188, w: 0.97652483}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Elbow_Ctrl_R_NULL
+      parentName: Tonho_RIG:_Shoulder_Ctrl_R
+      position: {x: 0.27960274, y: -0.27299827, z: 0.02411058}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Elbow_Ctrl_R
+      parentName: Tonho_RIG:_Elbow_Ctrl_R_NULL
+      position: {x: -0.12756573, y: 0.049388275, z: -0.010758848}
+      rotation: {x: 0.16884807, y: 0.036721006, z: -0.025205392, w: 0.98463523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Wrist_Ctrl_R_NULL
+      parentName: Tonho_RIG:_Elbow_Ctrl_R
+      position: {x: 0.15476926, y: -0.16815723, z: 0.21506909}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Wrist_Ctrl_R
+      parentName: Tonho_RIG:_Wrist_Ctrl_R_NULL
+      position: {x: -0.036590267, y: 0.014327276, z: -0.057326805}
+      rotation: {x: 0.0014920626, y: 0.15470423, z: -0.014814017, w: 0.98784864}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Fingers_Ctrl_R_NULL
+      parentName: Tonho_RIG:_Wrist_Ctrl_R
+      position: {x: 0.000000007918689, y: 0.000000023539508, z: -8.0419166e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_R_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_R_NULL
+      position: {x: 0.028594386, y: -0.0630129, z: 0.09576281}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_R_Hand
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_R_Finger
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_R_NULL
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_R
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_R_NULL
+      position: {x: 0.002427448, y: 0.019586517, z: -0.01796239}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_R_POS
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_R
+      position: {x: 0.0010781283, y: -0.045241, z: 0.02116178}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_R_Hand
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_R_Finger
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_R_NULL
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_R
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_R_NULL
+      position: {x: 0.00087110564, y: 0.011514572, z: 0.003936638}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_R_POS
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_R
+      position: {x: -0.0030020298, y: -0.03798411, z: 0.010594365}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_R_Hand
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_R_Finger
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_R_NULL
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_R
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_R_NULL
+      position: {x: 0.0017594303, y: 0.014371365, z: 0.0016428402}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_R_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_R_NULL
+      position: {x: 0.04316119, y: -0.07186539, z: 0.07780851}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_R_Hand
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_R_Finger
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_R_NULL
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_R
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_R_NULL
+      position: {x: 0.004736369, y: 0.022365935, z: -0.01880565}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_R_POS
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_R
+      position: {x: 0.00968577, y: -0.04592756, z: 0.021822313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_R_Hand
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_R_Finger
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_R_NULL
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_R
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_R_NULL
+      position: {x: -0.006662088, y: 0.010168974, z: 0.0024972586}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_R_POS
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_R
+      position: {x: -0.00018992875, y: -0.035732176, z: 0.0145676695}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_R_Hand
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_R_Finger
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_R_NULL
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_R
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_R_NULL
+      position: {x: -0.003089986, y: 0.007892898, z: -0.005380505}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_R_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_R_NULL
+      position: {x: 0.057479188, y: -0.08545771, z: 0.05739141}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_R_Hand
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_R_Finger
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_R_NULL
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_R
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_R_NULL
+      position: {x: 0.0024782666, y: 0.025594639, z: -0.012253412}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_R_POS
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_R
+      position: {x: 0.008173657, y: -0.045790732, z: 0.019379431}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_R_Hand
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_R_Finger
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_R_NULL
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_R
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_R_NULL
+      position: {x: -0.0034816556, y: 0.0151537545, z: -0.0029864185}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_R_POS
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_R
+      position: {x: 0.0051325397, y: -0.038531054, z: 0.01570606}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_R_Hand
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_R_Finger
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_R_NULL
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_R
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_R_NULL
+      position: {x: -0.0069893436, y: 0.015123079, z: -0.009384076}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_R_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_R_NULL
+      position: {x: 0.054019604, y: -0.09159028, z: 0.036060955}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_R_Hand
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_R_Finger
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_R_NULL
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_R
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_R_NULL
+      position: {x: 0.007952703, y: 0.021464752, z: -0.00821521}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_R_POS
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_R
+      position: {x: 0.008759166, y: -0.035599645, z: 0.0069555673}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_R_Hand
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_R_Finger
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_R_NULL
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_R
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_R_NULL
+      position: {x: -0.0015276066, y: 0.009264122, z: 0.001345347}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_R_POS
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_R
+      position: {x: 0.002297146, y: -0.036083248, z: 0.011652698}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_R_Hand
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_R_Finger
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_R_NULL
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_R
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_R_NULL
+      position: {x: -0.0047741816, y: 0.01607905, z: -0.008470115}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_R_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_R_NULL
+      position: {x: -0.0026776143, y: -0.010659096, z: 0.03826778}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_R_Hand
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_R_Finger
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_R_NULL
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_R
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_R_NULL
+      position: {x: -0.0022852162, y: 0.00042766373, z: -0.010646562}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_R_POS
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_R
+      position: {x: -0.014220317, y: -0.044706315, z: 0.02706601}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_R_Hand
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_R_Finger
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_R_NULL
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_R
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_R_NULL
+      position: {x: -0.00026562836, y: 0.017045652, z: 0.00802312}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_R_POS
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_R
+      position: {x: -0.01263906, y: -0.039347313, z: 0.0143771125}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_R_Hand
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_R_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_R_Finger
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_R_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_R_NULL
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_R_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_R
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_R_NULL
+      position: {x: 0.0077721206, y: 0.018172983, z: 0.007538326}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Arm_Ctrls_L_NULL
+      parentName: Tonho_RIG:_Torax_Ctrl
+      position: {x: -8.881784e-18, y: -1.5805953, z: 0.11720313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Clav_Ctrl_L_NULL
+      parentName: Tonho_RIG:_Arm_Ctrls_L_NULL
+      position: {x: -0.033801343, y: 1.7006516, z: -0.14223196}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Clav_Ctrl_L
+      parentName: Tonho_RIG:_Clav_Ctrl_L_NULL
+      position: {x: -0.000051460986, y: -0.00059414044, z: 0.00018399734}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Shoulder_Ctrl_L_NULL
+      parentName: Tonho_RIG:_Clav_Ctrl_L
+      position: {x: -0.12406847, y: 0.011344685, z: -0.00018399734}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Shoulder_Ctrl_L
+      parentName: Tonho_RIG:_Shoulder_Ctrl_L_NULL
+      position: {x: -0.0006865772, y: 0.02153004, z: -0.01760105}
+      rotation: {x: 0.036897883, y: 0.004082728, z: 0.21218413, w: 0.97652435}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Elbow_Ctrl_L_NULL
+      parentName: Tonho_RIG:_Shoulder_Ctrl_L
+      position: {x: -0.27960274, y: -0.27299827, z: 0.02411058}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Elbow_Ctrl_L
+      parentName: Tonho_RIG:_Elbow_Ctrl_L_NULL
+      position: {x: 0.12756585, y: 0.04938965, z: -0.010758879}
+      rotation: {x: 0.06116054, y: 0.010943567, z: -0.0117882285, w: 0.99799836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Wrist_Ctrl_L_NULL
+      parentName: Tonho_RIG:_Elbow_Ctrl_L
+      position: {x: -0.15476926, y: -0.16815723, z: 0.21506909}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Wrist_Ctrl_L
+      parentName: Tonho_RIG:_Wrist_Ctrl_L_NULL
+      position: {x: 0.036590207, y: 0.0143284965, z: -0.057326887}
+      rotation: {x: 0.0014961705, y: -0.15470539, z: 0.014816944, w: 0.9878484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Fingers_Ctrl_L_NULL
+      parentName: Tonho_RIG:_Wrist_Ctrl_L
+      position: {x: -0.000000007918689, y: 0.000000023539508, z: -8.0419166e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_L_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_L_NULL
+      position: {x: -0.028487014, y: -0.051498488, z: 0.102445975}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_L_Hand
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_L_Finger
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_L_NULL
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Base_L
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_L_NULL
+      position: {x: 0.0010398943, y: 0.0055115274, z: -0.020900745}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_L_POS
+      parentName: Tonho_RIG:_Ind_Ctrl_Base_L
+      position: {x: -0.0055191494, y: -0.0411901, z: 0.027724465}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_L_Hand
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_L_Finger
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_L_NULL
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Mid_L
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_L_NULL
+      position: {x: 0.00028717777, y: 0.014610966, z: -0.004508657}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_L_POS
+      parentName: Tonho_RIG:_Ind_Ctrl_Mid_L
+      position: {x: -0.00066306215, y: -0.036032036, z: 0.016287982}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_L_Hand
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_L_Finger
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_L_NULL
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ind_Ctrl_Tip_L
+      parentName: Tonho_RIG:_Ind_Ctrl_Tip_L_NULL
+      position: {x: 0.0006177054, y: 0.011766516, z: -0.0053333733}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_L_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_L_NULL
+      position: {x: -0.044719733, y: -0.060567856, z: 0.08610091}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_L_Hand
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_L_Finger
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_L_NULL
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Base_L
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_L_NULL
+      position: {x: -0.0074321236, y: 0.0044528726, z: -0.016767526}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_L_POS
+      parentName: Tonho_RIG:_Middle_Ctrl_Base_L
+      position: {x: -0.0076430636, y: -0.044818215, z: 0.024744285}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_L_Hand
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_L_Finger
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_L_NULL
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Mid_L
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_L_NULL
+      position: {x: 0.0074662864, y: 0.01325381, z: -0.008032796}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_L_POS
+      parentName: Tonho_RIG:_Middle_Ctrl_Mid_L
+      position: {x: 0.0016586212, y: -0.03485061, z: 0.016484102}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_L_Hand
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_L_Finger
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_L_NULL
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Middle_Ctrl_Tip_L
+      parentName: Tonho_RIG:_Middle_Ctrl_Tip_L_NULL
+      position: {x: 0.0012610336, y: 0.011452096, z: -0.0086199315}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_L_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_L_NULL
+      position: {x: -0.061241798, y: -0.07457939, z: 0.06773484}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_L_Hand
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Base_L
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_L_Hand
+      position: {x: -0.0021846693, y: 0.0147139495, z: -0.022596626}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_L_POS
+      parentName: Tonho_RIG:_Ring_Ctrl_Base_L
+      position: {x: -0.015273471, y: -0.040733494, z: 0.025429623}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_L_Hand
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_L_Finger
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_L_NULL
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Mid_L
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_L_NULL
+      position: {x: 0.010582196, y: 0.01009644, z: -0.009036323}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_L_POS
+      parentName: Tonho_RIG:_Ring_Ctrl_Mid_L
+      position: {x: -0.011149608, y: -0.034654967, z: 0.020793863}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_L_Hand
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_L_Finger
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_L_NULL
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Ring_Ctrl_Tip_L
+      parentName: Tonho_RIG:_Ring_Ctrl_Tip_L_NULL
+      position: {x: 0.013866511, y: 0.011246613, z: -0.014472279}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_L_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_L_NULL
+      position: {x: -0.0594968, y: -0.082857355, z: 0.046926297}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_L_Hand
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_L_Finger
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_L_NULL
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Base_L
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_L_NULL
+      position: {x: -0.0007440869, y: 0.017712303, z: -0.020917645}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_L_POS
+      parentName: Tonho_RIG:_Pinky_Ctrl_Base_L
+      position: {x: -0.0112348385, y: -0.032556836, z: 0.014362056}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_L_Hand
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_L_Finger
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_L_NULL
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Mid_L
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_L_NULL
+      position: {x: 0.0023043656, y: 0.0078617055, z: -0.0027216217}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_L_POS
+      parentName: Tonho_RIG:_Pinky_Ctrl_Mid_L
+      position: {x: -0.0043030307, y: -0.03298812, z: 0.018339321}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_L_Hand
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_L_Finger
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_L_NULL
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Pinky_Ctrl_Tip_L
+      parentName: Tonho_RIG:_Pinky_Ctrl_Tip_L_NULL
+      position: {x: 0.0032663867, y: 0.013274453, z: -0.014477398}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_L_POS
+      parentName: Tonho_RIG:_Fingers_Ctrl_L_NULL
+      position: {x: 0.003876419, y: -0.0074314117, z: 0.038922444}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_L_Hand
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_L_Finger
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_L_NULL
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Base_L
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_L_NULL
+      position: {x: 0.0017211611, y: -0.0007237479, z: -0.010736722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_L_POS
+      parentName: Tonho_RIG:_Thumb_Ctrl_Base_L
+      position: {x: 0.011794909, y: -0.038195547, z: 0.03654341}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_L_Hand
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_L_Finger
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_L_NULL
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Mid_L
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_L_NULL
+      position: {x: 0.0022162446, y: 0.012562995, z: 0.0002383938}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_L_POS
+      parentName: Tonho_RIG:_Thumb_Ctrl_Mid_L
+      position: {x: 0.009911603, y: -0.03587789, z: 0.023004247}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_L_Hand
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_L_POS
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_L_Finger
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_L_Hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_L_NULL
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_L_Finger
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Thumb_Ctrl_Tip_L
+      parentName: Tonho_RIG:_Thumb_Ctrl_Tip_L_NULL
+      position: {x: -0.0056497473, y: 0.016373876, z: 0.000527703}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Neck_Ctrl_NULL
+      parentName: Tonho_RIG:_Torax_Ctrl
+      position: {x: -8.881784e-18, y: 0.20075075, z: -0.036825642}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Neck_Ctrl
+      parentName: Tonho_RIG:_Neck_Ctrl_NULL
+      position: {x: 3.0393848e-17, y: 0.04725981, z: -0.01932552}
+      rotation: {x: -0.056386195, y: -0.000033103184, z: 0.0000018728161, w: 0.99840903}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Head_Ctrl_NULL
+      parentName: Tonho_RIG:_Neck_Ctrl
+      position: {x: -0, y: 0.09962969, z: 0.026218342}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Head_Ctrl
+      parentName: Tonho_RIG:_Head_Ctrl_NULL
+      position: {x: -0.0000021780895, y: 0.007466551, z: 0.013856084}
+      rotation: {x: 0.061003182, y: -0.000032848944, z: 0.00002249793, w: 0.9981376}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Jaw_Ctrl_NULL
+      parentName: Tonho_RIG:_Head_Ctrl
+      position: {x: -0, y: -0.029161142, z: 0.108923845}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:_Jaw_Ctrl
+      parentName: Tonho_RIG:_Jaw_Ctrl_NULL
+      position: {x: -4.920197e-17, y: -0.01519982, z: -0.052055586}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:joint3
+      parentName: Tonho_Idle_Anim(Clone)
+      position: {x: -0.05083492, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pelvis
+      parentName: Tonho_RIG:joint3
+      position: {x: 0.050834917, y: 0.93400353, z: 0.012234309}
+      rotation: {x: 0.5644764, y: -0.4258715, z: -0.55183655, w: 0.44212717}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:spine_1
+      parentName: Tonho_RIG:pelvis
+      position: {x: -0.0881387, y: 0, z: 0}
+      rotation: {x: 0.0008466156, y: -0.0053384593, z: 0.0915751, w: 0.9957835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:spine_2
+      parentName: Tonho_RIG:spine_1
+      position: {x: -0.092784084, y: 6.33521e-17, z: 0}
+      rotation: {x: -0.0000022953448, y: 0.00029974288, z: 0.057844106, w: 0.9983256}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:spine_3
+      parentName: Tonho_RIG:spine_2
+      position: {x: -0.106560476, y: 1.110223e-18, z: 0}
+      rotation: {x: 0, y: 0, z: 0.091512755, w: 0.99580395}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:torax
+      parentName: Tonho_RIG:spine_3
+      position: {x: -0.11849969, y: -0.0013022657, z: 8.760091e-17}
+      rotation: {x: -7.540283e-26, y: -1.1102232e-16, z: -0.021902598, w: 0.99976015}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:neck
+      parentName: Tonho_RIG:torax
+      position: {x: -0.13700825, y: -0.0017651787, z: -0.004683763}
+      rotation: {x: 0.97640926, y: -0.21572141, z: 0.009447098, w: -0.00029556992}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:head_1
+      parentName: Tonho_RIG:neck
+      position: {x: -0.114348456, y: 0.0000000032818919, z: -0.0000021780882}
+      rotation: {x: 0.00002810794, y: -0.000028198465, z: -0.11030237, w: 0.9938981}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:head_2
+      parentName: Tonho_RIG:head_1
+      position: {x: -0.06362976, y: 9.742207e-17, z: 1.9756622e-18}
+      rotation: {x: 0.99979603, y: -0.020196615, z: -1.236686e-18, w: 6.121985e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:head_3
+      parentName: Tonho_RIG:head_2
+      position: {x: -0.11020372, y: 4.157785e-16, z: -4.4753883e-18}
+      rotation: {x: -0.4935917, y: 0.5063272, z: 0.4935917, w: 0.5063272}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:joint4
+      parentName: Tonho_RIG:head_1
+      position: {x: 0.0005808107, y: -0.012321831, z: -4.7222586e-17}
+      rotation: {x: 0, y: 0, z: 0.91886324, w: 0.39457628}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:joint5
+      parentName: Tonho_RIG:joint4
+      position: {x: -0.06233716, y: 4.2632563e-16, z: 1.7763568e-17}
+      rotation: {x: -2.7755574e-17, y: 2.3245295e-16, z: -0.2469588, w: 0.96902597}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:joint6
+      parentName: Tonho_RIG:joint5
+      position: {x: -0.049876492, y: -2.6423307e-16, z: 0}
+      rotation: {x: -0.09707033, y: -0.7004123, z: -0.09707033, w: 0.7004123}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:clav_l
+      parentName: Tonho_RIG:torax
+      position: {x: -0.016037462, y: 0.0101892585, z: 0.026693232}
+      rotation: {x: -0.4569599, y: 0.4593925, z: 0.43099764, w: 0.62800264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:shoulder_l
+      parentName: Tonho_RIG:clav_l
+      position: {x: -0.13287893, y: -0.000000010394783, z: 0.000000009235761}
+      rotation: {x: 0.054291822, y: 0.08532482, z: 0.0842144, w: 0.99130225}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:elbow_l
+      parentName: Tonho_RIG:shoulder_l
+      position: {x: -0.27072924, y: -2.8690408e-10, z: 0.0000000017075987}
+      rotation: {x: 0.3557942, y: 0.023079727, z: -0.020040384, w: 0.93406445}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:wrist_l
+      parentName: Tonho_RIG:elbow_l
+      position: {x: -0.25002435, y: 0.000000001465758, z: 0.0000000031930392}
+      rotation: {x: -0.02296595, y: 0.00027495043, z: 0.1350745, w: 0.9905692}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_1_l
+      parentName: Tonho_RIG:wrist_l
+      position: {x: -0.09354544, y: 0.028073492, z: -0.020121822}
+      rotation: {x: -0.34711602, y: -0.027170394, z: -0.09836958, w: 0.9322531}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_2_l
+      parentName: Tonho_RIG:mid_1_l
+      position: {x: -0.037122417, y: -3.5527136e-17, z: -7.105427e-17}
+      rotation: {x: -0.053900935, y: -0.00944948, z: 0.034288682, w: 0.99791265}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_3_l
+      parentName: Tonho_RIG:mid_2_l
+      position: {x: -0.024856746, y: -2.664535e-16, z: 3.907985e-16}
+      rotation: {x: -0.031987414, y: -0.011230294, z: 0.035706043, w: 0.9987872}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_4_l
+      parentName: Tonho_RIG:mid_3_l
+      position: {x: -0.029349767, y: -1.01307845e-17, z: -1.4960255e-16}
+      rotation: {x: 0.2794373, y: 0.07762093, z: -0.7387613, w: 0.60837615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_1_l
+      parentName: Tonho_RIG:wrist_l
+      position: {x: -0.089296564, y: 0.039047126, z: 0.0043830527}
+      rotation: {x: -0.32690272, y: -0.005970162, z: -0.10536506, w: 0.9391471}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_2_l
+      parentName: Tonho_RIG:ind_1_l
+      position: {x: -0.03567632, y: -2.1316282e-16, z: 3.5527135e-16}
+      rotation: {x: -0.07665245, y: -0.019159932, z: 0.029743122, w: 0.9964299}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_3_l
+      parentName: Tonho_RIG:ind_2_l
+      position: {x: -0.026623668, y: -2.8865798e-16, z: -2.1316282e-16}
+      rotation: {x: -0.018253146, y: -0.010789646, z: 0.030797796, w: 0.9993008}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_4_l
+      parentName: Tonho_RIG:ind_3_l
+      position: {x: -0.027740516, y: 8.4565903e-17, z: 1.4432899e-17}
+      rotation: {x: 0.107218005, y: -0.083427936, z: -0.7819064, w: 0.60841304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_1_l
+      parentName: Tonho_RIG:wrist_l
+      position: {x: -0.087409645, y: 0.0142227495, z: -0.042444132}
+      rotation: {x: -0.34243393, y: -0.034268495, z: -0.08737201, w: 0.9348427}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_2_l
+      parentName: Tonho_RIG:ring_1_l
+      position: {x: -0.03505585, y: 0.00066851906, z: 0.00014597815}
+      rotation: {x: -0.053897277, y: -0.007294184, z: 0.026816588, w: 0.99815977}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_3_l
+      parentName: Tonho_RIG:ring_2_l
+      position: {x: -0.024398377, y: 0.0001110898, z: 0.00003106175}
+      rotation: {x: -0.03199013, y: -0.010484299, z: 0.033342365, w: 0.9988769}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_4_l
+      parentName: Tonho_RIG:ring_3_l
+      position: {x: -0.029349767, y: -1.01307845e-17, z: -1.4960255e-16}
+      rotation: {x: 0.2794373, y: 0.07762093, z: -0.7387613, w: 0.60837615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_1_l
+      parentName: Tonho_RIG:wrist_l
+      position: {x: -0.021360269, y: 0.013938465, z: 0.015547702}
+      rotation: {x: -0.58537513, y: 0.3816574, z: -0.11302212, w: 0.7063283}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_2_l
+      parentName: Tonho_RIG:thumb_1_l
+      position: {x: -0.046970632, y: 1.4210854e-16, z: 4.2632563e-16}
+      rotation: {x: 0.14131074, y: -0.023695668, z: -0.031019121, w: 0.9891955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_3_l
+      parentName: Tonho_RIG:thumb_2_l
+      position: {x: -0.030859742, y: -4.1744386e-16, z: 1.4210854e-16}
+      rotation: {x: 0.0805982, y: -0.036004342, z: -0.012444211, w: 0.9960185}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_4_l
+      parentName: Tonho_RIG:thumb_3_l
+      position: {x: -0.03041822, y: -2.1081697e-16, z: 5.4711982e-17}
+      rotation: {x: 0.1890839, y: -0.20240387, z: -0.6559441, w: 0.7021519}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_1_l
+      parentName: Tonho_RIG:wrist_l
+      position: {x: -0.07982241, y: -0.0039419634, z: -0.04649873}
+      rotation: {x: -0.32056537, y: -0.060910728, z: -0.04498466, w: 0.944195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_2_l
+      parentName: Tonho_RIG:pinky_1_l
+      position: {x: -0.028585158, y: 0.0027617381, z: 0.00060305453}
+      rotation: {x: -0.053613987, y: -0.002877819, z: 0.014928436, w: 0.9984461}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_3_l
+      parentName: Tonho_RIG:pinky_2_l
+      position: {x: -0.020079127, y: 0.0011578946, z: 0.0003237582}
+      rotation: {x: -0.036735088, y: -0.020579532, z: -0.019914854, w: 0.9989146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_4_l
+      parentName: Tonho_RIG:pinky_3_l
+      position: {x: -0.024343766, y: -0.0013159935, z: 0.0011970547}
+      rotation: {x: 0.2794373, y: 0.07762093, z: -0.7387613, w: 0.60837615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:clav_r
+      parentName: Tonho_RIG:torax
+      position: {x: -0.014951186, y: 0.009980738, z: -0.031631246}
+      rotation: {x: -0.4694365, y: -0.4466354, z: 0.6209881, w: -0.44104433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:shoulder_r
+      parentName: Tonho_RIG:clav_r
+      position: {x: 0.13287948, y: -0.0000027360845, z: 0.000000006144978}
+      rotation: {x: 0.054291125, y: 0.08532501, z: 0.08421291, w: 0.9913024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:elbow_r
+      parentName: Tonho_RIG:shoulder_r
+      position: {x: 0.2707304, y: 0.00000066123283, z: -0.000000027248497}
+      rotation: {x: 0.36439708, y: 0.03094016, z: -0.014350739, w: 0.93061894}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:wrist_r
+      parentName: Tonho_RIG:elbow_r
+      position: {x: 0.25002512, y: 0.00000093702187, z: -0.000000089819615}
+      rotation: {x: -0.020263841, y: 0.019722372, z: 0.15208544, w: 0.98796284}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_1_r
+      parentName: Tonho_RIG:wrist_r
+      position: {x: 0.08594095, y: -0.038925085, z: 0.00031625573}
+      rotation: {x: -0.31581426, y: -0.011103656, z: -0.23891422, w: 0.9181819}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_2_r
+      parentName: Tonho_RIG:ind_1_r
+      position: {x: 0.04085072, y: 0.008779923, z: 0.00503328}
+      rotation: {x: -0.07567393, y: -0.061652273, z: 0.090064004, w: 0.9911412}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_3_r
+      parentName: Tonho_RIG:ind_2_r
+      position: {x: 0.026485784, y: 0.0022332848, z: 0.0015390229}
+      rotation: {x: -0.013170196, y: -0.021173846, z: 0.10818009, w: 0.9938185}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ind_4_r
+      parentName: Tonho_RIG:ind_3_r
+      position: {x: 0.023813669, y: -0.0016601945, z: 0.0011751759}
+      rotation: {x: 0.107218005, y: -0.083427936, z: -0.7819064, w: 0.60841304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_1_r
+      parentName: Tonho_RIG:wrist_r
+      position: {x: 0.0837222, y: -0.026293723, z: 0.022911532}
+      rotation: {x: -0.35616076, y: -0.07026929, z: -0.11206987, w: 0.9250147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_2_r
+      parentName: Tonho_RIG:mid_1_r
+      position: {x: 0.043242507, y: 0.00049337983, z: -0.0030177454}
+      rotation: {x: -0.0577954, y: 0.02120425, z: 0.040035732, w: 0.99729997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_3_r
+      parentName: Tonho_RIG:mid_2_r
+      position: {x: 0.029497901, y: -0.000101264115, z: 0.00022410211}
+      rotation: {x: -0.03126155, y: -0.008384614, z: 0.05416872, w: 0.99800706}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:mid_4_r
+      parentName: Tonho_RIG:mid_3_r
+      position: {x: 0.027592653, y: -0.00082164427, z: -0.00002995232}
+      rotation: {x: 0.2794373, y: 0.07762093, z: -0.7387613, w: 0.60837615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_1_r
+      parentName: Tonho_RIG:wrist_r
+      position: {x: 0.08662017, y: -0.013224287, z: 0.039217092}
+      rotation: {x: -0.29922634, y: -0.045264073, z: -0.1563465, w: 0.94019717}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_2_r
+      parentName: Tonho_RIG:ring_1_r
+      position: {x: 0.03490097, y: 0.0028074249, z: 0.0018470564}
+      rotation: {x: -0.049791813, y: -0.010723742, z: 0.039493054, w: 0.9979209}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_3_r
+      parentName: Tonho_RIG:ring_2_r
+      position: {x: 0.024226472, y: 0.0015747377, z: 0.0013957726}
+      rotation: {x: -0.031204674, y: -0.030838579, z: 0.104894534, w: 0.99351513}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ring_4_r
+      parentName: Tonho_RIG:ring_3_r
+      position: {x: 0.028629184, y: -0.0021362915, z: 0.00089289754}
+      rotation: {x: 0.2794373, y: 0.07762093, z: -0.7387613, w: 0.60837615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_1_r
+      parentName: Tonho_RIG:wrist_r
+      position: {x: 0.022810487, y: -0.0124240955, z: -0.014750143}
+      rotation: {x: -0.58730155, y: 0.3872004, z: -0.16193286, w: 0.6920481}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_2_r
+      parentName: Tonho_RIG:thumb_1_r
+      position: {x: 0.046893526, y: 0.0006279313, z: 0.0026083768}
+      rotation: {x: 0.13798419, y: -0.019046826, z: -0.03517507, w: 0.9896264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_3_r
+      parentName: Tonho_RIG:thumb_2_r
+      position: {x: 0.030766299, y: 0.0013665409, z: 0.0019730583}
+      rotation: {x: 0.078339346, y: -0.060224257, z: -0.000001044943, w: 0.99510604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:thumb_4_r
+      parentName: Tonho_RIG:thumb_3_r
+      position: {x: 0.030418528, y: -0.00000032246564, z: -0.000000052081273}
+      rotation: {x: 0.1890839, y: -0.20240387, z: -0.6559441, w: 0.7021519}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_1_r
+      parentName: Tonho_RIG:wrist_r
+      position: {x: 0.08518545, y: 0.005182248, z: 0.047435425}
+      rotation: {x: -0.3051673, y: -0.060561445, z: -0.12890548, w: 0.94158846}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_2_r
+      parentName: Tonho_RIG:pinky_1_r
+      position: {x: 0.028485099, y: 0.0005934221, z: 0.0017341721}
+      rotation: {x: -0.05244873, y: -0.056060396, z: -0.014599481, w: 0.996942}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_3_r
+      parentName: Tonho_RIG:pinky_2_r
+      position: {x: 0.020244453, y: 0.0023637002, z: -0.001003942}
+      rotation: {x: -0.031298537, y: -0.060785044, z: 0.122090876, w: 0.9901613}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:pinky_4_r
+      parentName: Tonho_RIG:pinky_3_r
+      position: {x: 0.01891625, y: -0.0026026159, z: -0.004888754}
+      rotation: {x: 0.2794373, y: 0.07762093, z: -0.7387613, w: 0.60837615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:femur_l
+      parentName: Tonho_RIG:pelvis
+      position: {x: 0.038398743, y: -0.0053903353, z: 0.088147275}
+      rotation: {x: -0.21321355, y: 0.97296375, z: 0.05977322, w: 0.06564136}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:knee_l
+      parentName: Tonho_RIG:femur_l
+      position: {x: -0.37585407, y: -8.881784e-18, z: 2.0678933e-16}
+      rotation: {x: 0.0002897237, y: -0.015982779, z: 0.17183071, w: 0.98499686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ankle_l
+      parentName: Tonho_RIG:knee_l
+      position: {x: -0.42901924, y: 7.105427e-17, z: -7.443653e-18}
+      rotation: {x: -0.025337579, y: 0.06417981, z: -0.5148683, w: 0.8544879}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ball_l
+      parentName: Tonho_RIG:ankle_l
+      position: {x: -0.14278577, y: -1.379452e-16, z: -7.771561e-18}
+      rotation: {x: 0.006363346, y: 0.018764379, z: -0.31245545, w: 0.9497258}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:toe_pe_l
+      parentName: Tonho_RIG:ball_l
+      position: {x: -0.1169756, y: -4.9287828e-17, z: -2.7755576e-17}
+      rotation: {x: -0.0030971465, y: -0.680188, z: -0.0033377265, w: 0.7330236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:femur_r
+      parentName: Tonho_RIG:pelvis
+      position: {x: 0.04331281, y: -0.004140886, z: -0.08590885}
+      rotation: {x: 0.97332996, y: 0.22793876, z: 0.010967518, w: 0.023505196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:knee_r
+      parentName: Tonho_RIG:femur_r
+      position: {x: 0.37585407, y: -0.000000030904825, z: 0.000000036151935}
+      rotation: {x: 0.0008120832, y: -0.019264817, z: 0.20789155, w: 0.97796184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ankle_r
+      parentName: Tonho_RIG:knee_r
+      position: {x: 0.4290189, y: 0.000000116042735, z: -0.00000018690176}
+      rotation: {x: -0.0003341849, y: 0.024757355, z: -0.536678, w: 0.8434238}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:ball_r
+      parentName: Tonho_RIG:ankle_r
+      position: {x: 0.14278607, y: -0.00000004216826, z: -0.00000023359601}
+      rotation: {x: 0.0063633462, y: 0.018764379, z: -0.31245545, w: 0.9497258}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tonho_RIG:toe_pe_r
+      parentName: Tonho_RIG:ball_r
+      position: {x: 0.11697538, y: 0.000000058068622, z: -0.0000001175664}
+      rotation: {x: -0.0030971465, y: -0.680188, z: -0.0033377265, w: 0.7330236}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: Tonho_RIG:joint3
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

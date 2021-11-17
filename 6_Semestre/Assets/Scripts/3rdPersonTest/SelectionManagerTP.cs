@@ -25,7 +25,7 @@ public class SelectionManagerTP : MonoBehaviour
         //Debug.Log(interactable);
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerStay(Collider col)
     {
         if (col.gameObject.CompareTag(selectableTag))
         {
@@ -41,6 +41,19 @@ public class SelectionManagerTP : MonoBehaviour
                 Debug.LogError("There is no ISelectable interface into the object/script");
             }
 
+        }
+
+        Collectable collectable = col.GetComponent<Collectable>();
+        if(collectable)
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                collectable.Interact();
+            }
+        }
+        else
+        {
+            //Debug.LogError("There is no ISelectable interface into the object/script");
         }
 
     }
