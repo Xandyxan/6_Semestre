@@ -14,6 +14,8 @@ public class NPC : MonoBehaviour
     [Tooltip("To make it chose it's own waypoints, add BTSelecionarWaypoints")]
     public List<Transform> waypoints = new List<Transform>();
 
+    public bool spawned;
+
     protected virtual void Start()
     {
        bt = GetComponent<BehaviourTree>();

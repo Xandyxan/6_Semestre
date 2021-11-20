@@ -16,10 +16,11 @@ public class BTFollowPlayer : BTNode
             {
                 //npc.npcAgent.speed = .8f;
                 npc.npcAgent.SetDestination(npc.player.transform.position);
-
+                npc.npcAnim.SetBool("IsWalking", true);
                 if (npc.npcAgent.remainingDistance <= npc.npcAgent.stoppingDistance)
                 {
-                   // npc.npcAgent.SetDestination(npc.transform.position); 
+                    // npc.npcAgent.SetDestination(npc.transform.position); 
+                    npc.npcAnim.SetBool("IsWalking", false);
                     status = Status.SUCCESS;
                     break;
                 }else if(npc.npcAgent.remainingDistance > npc.profile.playerDtRange)

@@ -49,6 +49,7 @@ public class SelectionManagerTP : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 collectable.Interact();
+                collectable = null;
             }
         }
         else

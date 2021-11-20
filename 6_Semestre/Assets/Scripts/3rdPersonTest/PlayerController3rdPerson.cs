@@ -27,8 +27,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     private float actualWalkSpeed;  // player speed;
     private float walkSpeed = 1.6f;   // default speed for the player walking
     private float runSpeed = 3.0f;  // default speed for the player running
-   
-    private float crouchSpeed = 1f; // default speed for the player walking while crouched
+  
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
 
     private Vector3 targetDir = Vector3.zero;
@@ -39,7 +38,7 @@ public class PlayerController3rdPerson : MonoBehaviour
     float turnSmoothVelocity;
 
     [Header("States")]
-    private bool isCrouched, isRunning, isWalking; // isWalking indicates if the player is moving.
+    private bool isRunning, isWalking; // isWalking indicates if the player is moving.
 
     // local temporário pra var de soundSource
     [SerializeField] private GameObject soundSource;
@@ -129,7 +128,6 @@ public class PlayerController3rdPerson : MonoBehaviour
         // Animation
         animator.SetBool("isWalkingX", isWalking); // arrumar depois
         animator.SetFloat("Velocity", actualWalkSpeed);
-        animator.SetBool("isCrouched", isCrouched);
 
         //Debug.LogWarning(actualWalkSpeed);
     }
@@ -146,17 +144,9 @@ public class PlayerController3rdPerson : MonoBehaviour
 
         if (Input.GetAxis("Horizontal") >= 0 || Input.GetAxis("Vertical") >= 0) { UpdateCollider(); }
 
-        if (Input.GetButtonDown("Crouch"))
-        {
-            if (isCrouched) isCrouched = false;
-            else isCrouched = true;
-            isRunning = false;
-        }
-
         if (Input.GetButton("Run"))
         {
             isRunning = true;
-            isCrouched = false;
         }
         else isRunning = false;
 
@@ -234,7 +224,7 @@ public class PlayerController3rdPerson : MonoBehaviour
         }
         else
         {
-            if (!isCrouched && !isRunning)
+            if (!isRunning)
             {
                // if (currentDir.y > -0.0001f && currentDir.y < 0.0001f) //From any state to -> To idle stand state
                    // actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, 0, Time.deltaTime * 10f);
@@ -244,22 +234,12 @@ public class PlayerController3rdPerson : MonoBehaviour
 
                 actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, walkSpeed, Time.deltaTime * 50f);
             }
-            else if (isRunning && !isCrouched)
+            else
             {
                 if (currentDir.y > 0f) // If the player is standing and running
                     actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, runSpeed, Time.deltaTime * 2f);
 
                 actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, runSpeed, Time.deltaTime * 2f);
-            }
-            else if (isCrouched && !isRunning)
-            {
-              //  if (currentDir.y > -0.0001f && currentDir.y < 0.0001f) //From any state to -> To idle crouch state
-                  //  actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, 0, Time.deltaTime * 50f);
-
-                 if (currentDir.y > 0f && isCrouched && !isRunning) //From any state to -> To walk crouch state
-                    actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, crouchSpeed, Time.deltaTime * 50f);
-
-                actualWalkSpeed = Mathf.Lerp(actualWalkSpeed, crouchSpeed, Time.deltaTime * 50f);
             }
         } 
     }

@@ -18,4 +18,8 @@ public class EnemyNPCProfile : ScriptableObject
     public float waypointSelectionRange;
 
     public int damage;
+
+    //public float atackRangeLong; // por quanto os longs tão sendo usados pra suportar os dois ataques do obscuro (ranged e melee)
+
+    // public float playerDtRangeLong;
 }
