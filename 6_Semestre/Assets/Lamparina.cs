@@ -12,6 +12,7 @@ public class Lamparina : MonoBehaviour
     [SerializeField] private GameObject lamparina;
     [SerializeField] private Light lamparinaLight; // max intensity = 5 -> 0 fuel, 0 intensity. 100 fuel, 5 intensity.
     private bool lightActive = false;
+    [SerializeField] private GameObject lightSource;
 
     [Header("Emission")]
     private Material lamparinaGlassMaterial; // max emission = 5 -> 0 fuel, 0 intensity. 100 fuel, 5 intensity. Ativar emission junto à luz.
@@ -21,6 +22,7 @@ public class Lamparina : MonoBehaviour
     [Header("Fuel")]
     //[SerializeField] private int fuelUsage = 1; // quanto de combustivel é gasto a cada ciclo
     [SerializeField] private float fuelUnitLifeTime = 2;
+    private bool lamparinaOn = false;
 
     private void Awake()
     {
@@ -32,23 +34,28 @@ public class Lamparina : MonoBehaviour
     private void Start()
     {
         lamparina.SetActive(false);
+        lightSource.SetActive(false);
         SetIntensity(5);
+        lamparinaGlassMaterial.DisableKeyword("_EMISSION");
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(playerStats.currentFuel > 0)
+            if (playerStats.currentFuel > 0)
             {
-                lamparina.SetActive(!lamparina.activeInHierarchy);
-                if (lamparina.activeInHierarchy)
+                lamparinaOn = !lamparinaOn;
+                if (lamparinaOn)
                 {
+                    lightSource.SetActive(true);
                     StartCoroutine(HandleFuelUsage());
                 }
                 else
                 {
                     StopCoroutine(HandleFuelUsage());
+                    lightSource.SetActive(false);
+                    lamparinaGlassMaterial.DisableKeyword("_EMISSION");
                 }        
             }
             else
@@ -62,6 +69,7 @@ public class Lamparina : MonoBehaviour
     {
         while (lamparina.activeInHierarchy)
         {
+            lamparinaGlassMaterial.EnableKeyword("_EMISSION");
             UpdateLightIntensity();
             yield return new WaitForSeconds(fuelUnitLifeTime);
             playerStats.currentFuel -= 1;
@@ -77,7 +85,7 @@ public class Lamparina : MonoBehaviour
 
             UpdateLightIntensity();
             yield return null;
-        } 
+        }
     }
 
     private void UpdateLightIntensity()

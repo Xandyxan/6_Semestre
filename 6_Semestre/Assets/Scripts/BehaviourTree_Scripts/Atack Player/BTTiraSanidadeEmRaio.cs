@@ -13,7 +13,7 @@ public class BTTiraSanidadeEmRaio : BTNode
         if (npc.player)
         {
             Ray raio = new Ray(bt.transform.position, npc.player.transform.position - bt.transform.position);
-            Debug.DrawRay(bt.transform.position, npc.player.transform.position - bt.transform.position, Color.magenta);
+           // Debug.DrawRay(bt.transform.position, npc.player.transform.position - bt.transform.position, Color.magenta);
             RaycastHit hit;
             if (Physics.Raycast(raio, out hit, npc.profile.atackRange))
             {

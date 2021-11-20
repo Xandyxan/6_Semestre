@@ -42,7 +42,7 @@ public class PortaoInteraction : MonoBehaviour, IInteractable, ISelectable
         mainCam = Camera.main;
         keyAnimator = chaveObj.GetComponent<Animator>();
         portaoAnim = GetComponent<Animator>();
-       // PlayerPrefs.SetInt("PortaoNobre", 0);
+        //PlayerPrefs.SetInt("PortaoNobre", 0);
     }
     private void Start()
     {

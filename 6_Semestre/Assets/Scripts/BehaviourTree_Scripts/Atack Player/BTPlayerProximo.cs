@@ -13,7 +13,12 @@ public class BTPlayerProximo : BTNode
         {
             if (Vector3.Distance(bt.transform.position, playerStats.transform.position) < npc.profile.playerDtRange)
             {
+                npc.player = playerStats; // antes tava num BT separado, mas acho que só tava pesando a toa, dai juntei aqui. Qualquer coisa, colocar fora da detecção de distância pra ter a ref.
                 status = Status.SUCCESS;
+            }
+            else
+            {
+                npc.player = null;
             }
         }
        

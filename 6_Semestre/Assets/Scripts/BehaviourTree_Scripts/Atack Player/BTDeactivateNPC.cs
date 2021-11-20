@@ -8,7 +8,7 @@ public class BTDeactivateNPC : BTNode
     {
         status = Status.FAILURE;
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(3f);
         bt.gameObject.SetActive(false);
         status = Status.SUCCESS;
 

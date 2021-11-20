@@ -61,9 +61,10 @@ public class CollectItemInteraction : MonoBehaviour, IInteractable, ISelectable
         if(canCollect && Input.GetKeyDown(KeyCode.Space))
         {
           //  playerInventory.AddItem(new Item(this.item), 1);
-            itemObject.SetActive(false);
+            playerInventory.AddItem(new Item(this.item), 1);
             gameObject.tag = "Untagged";
             itemCollected = true;
+            GameManager.instance.endDemoEvent.Invoke(); // só pra demo aaaaaaaaaa
             StopInteracting();
             Deselect();
         }
