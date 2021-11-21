@@ -15,7 +15,7 @@ public class BTMoverAteFonteLuz : BTNode
         GameObject alvo = null;
         float distance = Mathf.Infinity;
         
-        foreach(GameObject luzObj in lightSources)
+        foreach(GameObject luzObj in lightSources) // rever mais tarde, talvez seja interessante ele se mover até a luz mais distante (talvez não seja, testar seria bom)
         {
             float dist = Vector3.Distance(luzObj.transform.position, bt.transform.position);
             if(dist < distance)
@@ -30,10 +30,12 @@ public class BTMoverAteFonteLuz : BTNode
             while (alvo.activeInHierarchy == true)
             {
                 npc.npcAgent.SetDestination(alvo.transform.position);
+                npc.npcAnim.SetBool("FollowLight", true);
 
-                if (npc.npcAgent.remainingDistance < 1)
+                if (npc.npcAgent.remainingDistance <= npc.npcAgent.stoppingDistance)
                 {
                     status = Status.SUCCESS;
+                    npc.npcAnim.SetBool("FollowLight", false);
                     break;
                 }
                 yield return null;

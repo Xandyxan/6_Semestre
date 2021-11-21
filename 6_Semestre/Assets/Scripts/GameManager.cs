@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public PauseGameTrue pauseGameTrue;
     public delegate void PauseGameFalse();
     public PauseGameFalse pauseGameFalse;
+
+    public delegate void EndDemoDelegate();
+    public EndDemoDelegate endDemoEvent;
     #endregion
 
     [Header("Pause Menu Screens")]
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour
         // print(_instance.name);
 
         if (!mainMenuScreen) SetLockCursor(true);
+        else SetLockCursor(false);
         if (playerMovement == null) playerInScene = false;
     }
 

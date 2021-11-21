@@ -12,18 +12,28 @@ public class NPCDarkGhost : NPC
         segueLuz.children.Add(new BTLightSourceProximo());
         segueLuz.children.Add(new BTMoverAteFonteLuz());
 
-        BTSequence terrorRadius = new BTSequence();
-        terrorRadius.children.Add(new BTTemPlayer());
-        terrorRadius.children.Add(new BTPlayerProximo());
-        terrorRadius.children.Add(new BTMarcarPlayer());
-        terrorRadius.children.Add(new BTTiraSanidadeEmRaio());
+        //BTSequence terrorRadius = new BTSequence();
+        //terrorRadius.children.Add(new BTTemPlayer());
+        //terrorRadius.children.Add(new BTPlayerProximo());
+        //terrorRadius.children.Add(new BTMarcarPlayer());
+        //terrorRadius.children.Add(new BTTiraSanidadeEmRaio());
 
         BTInversor naoPlayerProximo = new BTInversor();
         naoPlayerProximo.child = new BTPlayerProximo();
 
         BTInversor naoLightSourceProximo = new BTInversor();
         naoLightSourceProximo.child = new BTLightSourceProximo();
-     
+
+        BTSequenceParalelo aproachPlayer = new BTSequenceParalelo();
+        aproachPlayer.children.Add(naoLightSourceProximo);
+        aproachPlayer.children.Add(new BTFollowPlayer()); // teoricamente isso funciona, talvez mudar pra um em que ele não se move, apenas rotaciona para a direção do player sla
+
+        BTSequence attackPlayer = new BTSequence(); // da uma porrada no player caso ele esteja colado no fantasma. Não desaparece após acertar o jogador.
+        attackPlayer.children.Add(new BTTemPlayer());
+        attackPlayer.children.Add(new BTPlayerProximo());
+        attackPlayer.children.Add(aproachPlayer);
+        attackPlayer.children.Add(new BTActivateHitBox());
+
 
         BTSequenceParalelo moveToWaypoint = new BTSequenceParalelo();
         moveToWaypoint.children.Add(naoPlayerProximo);
@@ -36,8 +46,9 @@ public class NPCDarkGhost : NPC
         patrol.children.Add(moveToWaypoint);
 
         BTSelector selecao = new BTSelector();
-        selecao.children.Add(terrorRadius);
+        //selecao.children.Add(terrorRadius); // o dano em área (-0.5 de sanidade por segundo)
         selecao.children.Add(segueLuz);
+        selecao.children.Add(attackPlayer); // a porrada melee
         selecao.children.Add(patrol);
 
         base.Start();

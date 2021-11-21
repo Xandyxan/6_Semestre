@@ -10,6 +10,9 @@ public class NPCPaleGhost : NPC
 
     protected override void Start()
     {
+        BTSequence spawn = new BTSequence();
+        spawn.children.Add(new BTSpawn());
+
         BTSequence evitaLuz = new BTSequence();
         evitaLuz.children.Add(new BTTemLightSource());
         evitaLuz.children.Add(new BTLightSourceProximo());
@@ -34,10 +37,9 @@ public class NPCPaleGhost : NPC
         BTSequence attackPlayer = new BTSequence();
         attackPlayer.children.Add(new BTTemPlayer());
         attackPlayer.children.Add(new BTPlayerProximo());
-        attackPlayer.children.Add(new BTMarcarPlayer());
         attackPlayer.children.Add(aproachPlayer);
         attackPlayer.children.Add(new BTActivateHitBox());
-        attackPlayer.children.Add(new BTDeactivateNPC());
+        //attackPlayer.children.Add(new BTDeactivateNPC());
 
         BTSequence patrol = new BTSequence();
         patrol.children.Add(new BTTemWaypoints());
@@ -45,6 +47,7 @@ public class NPCPaleGhost : NPC
         patrol.children.Add(moveToWaypoint);
 
         BTSelector selecao = new BTSelector();
+        selecao.children.Add(spawn);
         selecao.children.Add(evitaLuz);
         selecao.children.Add(patrol);
         selecao.children.Add(attackPlayer);

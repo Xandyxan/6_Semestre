@@ -12,21 +12,21 @@ public class BTActivateHitBox : BTNode
         NPC npc = bt.GetComponent<NPC>();
         if (npc.player)
         {
-           // if (Vector3.Distance(npc.transform.position, npc.player.transform.position) <= npc.profile.atackRange)
-           // {
+            if (Vector3.Distance(npc.transform.position, npc.player.transform.position) <= npc.profile.atackRange)
+            {
                 npc.transform.LookAt(npc.player.transform);
                 //Debug.Log("ATTACK NHOMMMMMM");
 
                 if (npc.npcAnim)
                 {
                     npc.npcAnim.SetTrigger("Attack");
-                    npc.GetComponent<NPCPaleGhost>().hitbox.SetActive(true);
+                   // npc.GetComponent<NPCPaleGhost>().hitbox.SetActive(true);
                     yield return new WaitForSeconds(.8f);
 
                     status = Status.SUCCESS;
                 }
                
-            //}
+            }
         }
      
         if(status == Status.RUNNING) status = Status.FAILURE;
