@@ -18,11 +18,13 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     [SerializeField] private PlayerStats _playerStats;
 
     public PlayerStats playerStats { get => _playerStats; set => _playerStats = value; }
+    private bool isDragging;
 
 
     private void Awake()
     {
         //EventSystem.current.SetSelectedGameObject(gameObject);
+        isDragging = false;
     }
 
     protected virtual void Start()
@@ -41,9 +43,9 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
         UtilsClass.AddEvent(gameObject, EventTriggerType.PointerExit, delegate { OnExitInterface(gameObject); });
 
         //Plus
-        UtilsClass.AddEventTriggerListener(this.GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnClickedOutSlot);
         UtilsClass.AddEventTriggerListener(this.GetComponent<EventTrigger>(), EventTriggerType.Deselect, OnDeselect);
         UtilsClass.AddEventTriggerListener(this.GetComponent<EventTrigger>(), EventTriggerType.Select, OnSelect);
+        UtilsClass.AddEventTriggerListener(this.GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnClickedOutSlot);
     }
 
     protected virtual void Update()
@@ -69,27 +71,38 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnClickedOnSlot(BaseEventData baseEventData)
     {
         PointerEventData pointerEventData = (PointerEventData)baseEventData;
-        if (pointerEventData.button == PointerEventData.InputButton.Right)
+
+        if (MouseData.interfaceSlot != null)
         {
-            MouseData.descriptionWindow = _descriptWindow;
-            MouseData.descriptionWindow.SetActive(true);
-            MouseData.descriptionWindow.transform.position = Input.mousePosition + new Vector3(1, 1, 1);
-        }
-        else
-        {
-            if (MouseData.descriptionWindow.activeSelf == true)
-                MouseData.descriptionWindow.SetActive(false);
+            if (MouseData.interfaceSlot.itemObject.stackbable)
+            {
+                if (pointerEventData.button == PointerEventData.InputButton.Right)
+                {
+                    MouseData.descriptionWindow = _descriptWindow;
+                    MouseData.descriptionWindow.SetActive(true);
+                    MouseData.descriptionWindow.transform.position = Input.mousePosition + new Vector3(1, 1, 1);
+                }
+                else
+                {
+                    if (MouseData.descriptionWindow.activeSelf == true)
+                        MouseData.descriptionWindow.SetActive(false);
+                }
+            }
         }
     }
 
-    public void OnClickedOnSlotObj(GameObject obj)
+    public virtual void OnClickedOnSlotObj(GameObject obj)
     {
         if (slotsOnInterface[obj].amount > 0)
         {
             MouseData.currentItemID = slotsOnInterface[obj].item.GetItemID();
             MouseData.interfaceSlot = slotsOnInterface[obj];
 
-            //Debug.Log(slotsOnInterface[obj].amount);
+            //Debug.LogError(slotsOnInterface[obj].amount);
+        }
+        else
+        {
+            Debug.LogError("Do not have itens on this slot");
         }
     }
 
@@ -107,13 +120,17 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnExit(GameObject obj)
     {
         MouseData.slotHoveredOver = null;
-        _descriptionText.text = "";
-        _itemName.text = "";
+        if (!isDragging)
+        {
+            _descriptionText.text = "";
+            _itemName.text = "";
+        }
     }
 
     public void OnDragStart(GameObject obj)
     {
         MouseData.tempItemBeingDragged = CreateTempItem(obj);
+        isDragging = true;
     }
 
     public GameObject CreateTempItem(GameObject obj)
@@ -150,7 +167,9 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
             InventorySlot mouseHoverSlotData = MouseData.interfaceMouseIsOver.slotsOnInterface[MouseData.slotHoveredOver];  //get the DATA of the current Slot where the mouse is
             inventory.SwapItems(slotsOnInterface[obj], mouseHoverSlotData);
         }
-
+        isDragging = false;
+        _descriptionText.text = "";
+        _itemName.text = "";
     }
     public void OnDrag(GameObject obj)
     {
@@ -208,6 +227,8 @@ public static class MouseData
     public static bool mouseIsOverUI;
 
     public static int currentItemID;
+
+    public static Image actualDocumentSelected;
 }
 
 public static class ExtensionMethods
@@ -216,17 +237,48 @@ public static class ExtensionMethods
     {
         foreach (KeyValuePair<GameObject, InventorySlot> _slot in _slotsOnInterface)
         {
+            Image slotImage = _slot.Key.transform.GetChild(0).GetComponent<Image>();
+            Text slotCountItem = _slot.Key.transform.GetChild(0).GetChild(0).GetComponent<Text>();
+
             if (_slot.Value.item.Id >= 0)
             {
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = _slot.Value.itemObject.uiDisplay;
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
-                _slot.Key.GetComponentInChildren<Text>().text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
+                slotImage.sprite = _slot.Value.itemObject.uiDisplay;
+                slotImage.color = new Color(1, 1, 1, 1);
+                slotCountItem.text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
             }
             else
             {
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = null;
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
-                _slot.Key.GetComponentInChildren<Text>().text = "";
+                slotImage.sprite = null;
+                slotImage.color = new Color(1, 1, 1, 0);
+                slotCountItem.text = "";
+            }
+        }
+    }
+
+    public static void UpdateDocumentSlotDisplay(this Dictionary<GameObject, InventorySlot> _slotsOnInterface)
+    {
+        foreach (KeyValuePair<GameObject, InventorySlot> _slot in _slotsOnInterface)
+        {
+            Image slotImage = _slot.Key.transform.GetChild(0).GetComponent<Image>();
+            Text slotCountItem = _slot.Key.transform.GetChild(0).GetChild(0).GetComponent<Text>();
+            Text documentName = _slot.Key.transform.GetChild(1).GetComponent<Text>();
+            Text authorName = _slot.Key.transform.GetChild(2).GetComponent<Text>();
+
+            if (_slot.Value.item.Id >= 0)
+            {
+                slotImage.sprite = _slot.Value.itemObject.uiDisplay;
+                slotImage.color = new Color(1, 1, 1, 1);
+                slotCountItem.text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
+                documentName.text = _slot.Value.itemObject.data.Name;
+                authorName.text = _slot.Value.itemObject.author;
+            }
+            else
+            {
+                slotImage.sprite = null;
+                slotImage.color = new Color(1, 1, 1, 0);
+                slotCountItem.text = "";
+                documentName.text = "";
+                authorName.text = "";
             }
         }
     }

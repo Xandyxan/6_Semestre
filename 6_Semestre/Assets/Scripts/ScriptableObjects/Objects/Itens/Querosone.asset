@@ -16,8 +16,9 @@ MonoBehaviour:
   stackbable: 1
   type: 2
   data:
-    Name: 
+    Name: Quersone
     Id: 2
   description: "Liqu\xEDdo altamente inflam\xE1vel, parece ser o suficiente para
     encher a lamparina."
+  author: 
   amountToFill: 25

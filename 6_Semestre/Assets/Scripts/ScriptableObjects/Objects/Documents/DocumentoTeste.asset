@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
+  m_Name: DocumentoTeste
+  m_EditorClassIdentifier: 
+  uiDisplay: {fileID: -1544719591585537677, guid: 76ac0c014fe2c38438d128eeaa42a247, type: 3}
+  stackbable: 1
+  type: 3
+  data:
+    Name: Documento Perdido
+    Id: 0
+  description: "\t\n\tLimite. Limite da cidade, da paci\xEAncia, da corda. Acorda!
+    Vai fazer alguma coisa da vida. No Aur\xE9lio \xE9 o que representa para algu\xE9m
+    motivo de est\xEDmulo, de amor a vida. N\xE3o tenho. Talvez consiga comprar um
+    dia. Quando tem sol \xE9 sempre mais legal. O diferente \xE9 igual. Penso que
+    Schopenhauer faz muito sentido e Baudelaire \xE9 completamente louco. Tudo acaba.
+    Quanto antes melhor. N\xE3o gosto de cicatrizes.\r\n\r\n\tLembrei que sempre
+    esque\xE7o das coisas. Melhor anotar. Notei tamb\xE9m que passou desapercebido
+    pela maioria. O maior sempre ganha do menor. Menos bl\xE1 bl\xE1 bl\xE1 e mais
+    a\xE7\xE3o. S\xE3o eles que v\xE3o pagar a conta. Conta para ela da sua outra
+    garota. Rota, dire\xE7\xE3o, caminho, sentido. Sinto que n\xE3o vai terminar
+    bem. Em algum lugar do passado esta o futuro. Sempre algu\xE9m abusa da boa vontade
+    de pessoas com boa vontade.\r\n\r\n\tTem gente que escolhe e outros que s\xE3o
+    escolhidos. \xC9 simples complicar. N\xE3o importa, mas deveria importar. A concorr\xEAncia
+    melhora a qualidade. Mostre-me como. Como arroz e feij\xE3o muito raramente.
+    Periodicidade \xE9 uma das caracter\xEDsticas do jornalismo. Regras padronizam
+    as coisas. Respeitar o bom senso. Tenho um pequeno problema com as mulheres.
+    Pequenos detalhes fazem uma grande diferen\xE7a.\r\n\r\n\tCalma que passa. Para
+    toda panela tem uma tampa. N\xE3o sei se ainda da tempo. Devagar com isso para
+    n\xE3o ficar paran\xF3ico. Beleza Americana diz tudo. Slayer \xE9 estilo de vida.
+    Sobre aquilo n\xE3o tenho nada a comentar. Poderia ficar aqui contando por tudo
+    que j\xE1 passei. Quem n\xE3o passa a bola n\xE3o faz gol. Vou marcar um encontro
+    com ela. E se eu dissesse que me causa um certo medo ser feliz? Quem planta alface
+    n\xE3o colhe couve-flor.\n"
+  author: 'Autor: Desconhecido'
