@@ -24,7 +24,7 @@ public class StaticInterface : UserInterface
             UtilsClass.AddEvent(obj, EventTriggerType.EndDrag, delegate { OnDragEnd(obj); });
             UtilsClass.AddEvent(obj, EventTriggerType.Drag, delegate { OnDrag(obj); });
 
-            UtilsClass.AddEventTriggerListener(obj.GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnClickedOnSlot);
+            //UtilsClass.AddEventTriggerListener(obj.GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnClickedOnSlot);
 
             slotsOnInterface.Add(obj, inventory.Container.Items[i]);
         }

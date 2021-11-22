@@ -16,8 +16,8 @@ public class ItemObject : ScriptableObject
     public ItemType type;
     public Item data = new Item();
 
-    [TextArea(15, 20)]
-    public string description;
+    [TextArea(15, 20)] public string description;
+    public string author;
 
     public Item CreateItem()
     {

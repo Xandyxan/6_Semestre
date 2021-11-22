@@ -12,14 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af03d624643eba74a9ca79ed38e29549, type: 3}
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
-  _savePath: /player.Inventory.Save3
+  _savePath: /player.Inventory.Save
   database: {fileID: 11400000, guid: 252465ba8e85d4b478069f39a9e4c3ca, type: 2}
   Container:
     Items:
     - allowedItems: 
       item:
-        Name: AguaBenta
-        Id: 0
+        Name: Lamparina
+        Id: 1
+      amount: 1
+    - allowedItems: 
+      item:
+        Name: Querosone
+        Id: 2
+      amount: 1
+    - allowedItems: 
+      item:
+        Name: Lamparina
+        Id: 1
       amount: 1
     - allowedItems: 
       item:
@@ -28,19 +38,9 @@ MonoBehaviour:
       amount: 0
     - allowedItems: 
       item:
-        Name: 
-        Id: -1
-      amount: 0
-    - allowedItems: 
-      item:
-        Name: 
-        Id: -1
-      amount: 0
-    - allowedItems: 
-      item:
-        Name: 
-        Id: -1
-      amount: 0
+        Name: Lamparina
+        Id: 1
+      amount: 1
     - allowedItems: 
       item:
         Name: 
