@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3b4f84877957a4b92ca41e2bf6e90d, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  _savePath: player.Data.Save
+  _savePath: /player.Data.Save
   playerData:
     maxInsanity: 100
     maxFuel: 100
-    currentInsanity: 50
-    currentFuel: 50
+    currentInsanity: 0
+    currentFuel: 0

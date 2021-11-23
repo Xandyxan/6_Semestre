@@ -20,5 +20,6 @@ MonoBehaviour:
     Id: 1
   description: "Uma poderosa fonte de luz, \xE9 necess\xE1rio algum tipo de combust\xEDvel
     para poder ser usado."
+  author: 
   speedValue: 0
   defenseValue: 0
