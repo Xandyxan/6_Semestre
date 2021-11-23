@@ -10,7 +10,8 @@ public class NPC : MonoBehaviour
     protected BehaviourTree bt;
     public NavMeshAgent npcAgent;
     public Animator npcAnim;
-    public PlayerStats player; 
+    public PlayerStats player;
+    public Transform lightSource; // pros fantasmas tortuoso e palido
     [Tooltip("To make it chose it's own waypoints, add BTSelecionarWaypoints")]
     public List<Transform> waypoints = new List<Transform>();
 

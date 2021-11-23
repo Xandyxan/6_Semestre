@@ -101,7 +101,7 @@ public class PlayerStats : MonoBehaviour
         fadeScript.StartCoroutine(fadeScript.Fade(3f));
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentInsanity -= damage;
         postprocessingControl.espiritualEnergy = currentInsanity;
