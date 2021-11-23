@@ -16,6 +16,6 @@ MonoBehaviour:
   turningSpeed: 120
   playerDtRange: 3
   lightSourceDtRange: 3
-  atackRange: 0.9
+  atackRange: 0.75
   waypointSelectionRange: 10
   damage: 30

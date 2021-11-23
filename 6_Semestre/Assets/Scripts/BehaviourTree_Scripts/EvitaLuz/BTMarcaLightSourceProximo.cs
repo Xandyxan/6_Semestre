@@ -9,7 +9,7 @@ public class BTMarcaLightSourceProximo : BTNode
         status = Status.RUNNING;
         Print(bt);
 
-        NPCPaleGhost npc = bt.GetComponent<NPCPaleGhost>();
+        NPC npc = bt.GetComponent<NPC>();
 
         GameObject[] lightSources = GameObject.FindGameObjectsWithTag("LightSource");
         GameObject alvo = null;
@@ -29,6 +29,8 @@ public class BTMarcaLightSourceProximo : BTNode
         {
             npc.lightSource = alvo.transform;
             status = Status.SUCCESS;
+            npc.npcAnim.SetBool("IsWalking", false);
+            Print(bt);
             yield break;
         }
 
