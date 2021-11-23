@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.15
   turningSpeed: 100
-  playerDtRange: 0.95
-  lightSourceDtRange: 5
-  atackRange: 0.8
+  playerDtRange: 1
+  lightSourceDtRange: 6
+  atackRange: 0.75
   waypointSelectionRange: 10
   damage: 30
