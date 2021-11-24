@@ -6,7 +6,6 @@ public class NPCPaleGhost : NPC
 {
     [Space]
     public GameObject hitbox;
-    public Transform lightSource;
 
     protected override void Start()
     {

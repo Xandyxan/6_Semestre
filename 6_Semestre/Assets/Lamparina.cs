@@ -79,7 +79,8 @@ public class Lamparina : MonoBehaviour
             if(playerStats.currentFuel <= 0)
             {
                 playerStats.currentFuel = 0;
-                lamparina.SetActive(false);
+                lightSource.SetActive(false);
+                lamparinaGlassMaterial.DisableKeyword("_EMISSION");
                 break;
             }
 

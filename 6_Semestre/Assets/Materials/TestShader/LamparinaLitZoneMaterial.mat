@@ -35,5 +35,5 @@ Material:
     - _Escala: 1
     - _Transparencia: 15
     m_Colors:
-    - _Cor: {r: 1.3041189, g: 0.62133414, b: 0.047794934, a: 1}
+    - _Cor: {r: 0.06145059, g: 0.13946667, b: 1.3041189, a: 1}
   m_BuildTextureStacks: []
