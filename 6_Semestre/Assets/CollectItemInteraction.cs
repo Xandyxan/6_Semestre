@@ -64,7 +64,7 @@ public class CollectItemInteraction : MonoBehaviour, IInteractable, ISelectable
             playerInventory.AddItem(new Item(this.item), 1);
             gameObject.tag = "Untagged";
             itemCollected = true;
-            GameManager.instance.endDemoEvent.Invoke(); // só pra demo aaaaaaaaaa
+            //GameManager.instance.endDemoEvent.Invoke(); // só pra demo aaaaaaaaaa
             StopInteracting();
             Deselect();
         }

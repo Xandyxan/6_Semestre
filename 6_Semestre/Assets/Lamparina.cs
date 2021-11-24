@@ -49,6 +49,7 @@ public class Lamparina : MonoBehaviour
                 if (lamparinaOn)
                 {
                     lightSource.SetActive(true);
+                    lamparinaGlassMaterial.EnableKeyword("_EMISSION");
                     StartCoroutine(HandleFuelUsage());
                 }
                 else
@@ -69,7 +70,7 @@ public class Lamparina : MonoBehaviour
     {
         while (lamparina.activeInHierarchy)
         {
-            lamparinaGlassMaterial.EnableKeyword("_EMISSION");
+            //lamparinaGlassMaterial.EnableKeyword("_EMISSION");
             UpdateLightIntensity();
             yield return new WaitForSeconds(fuelUnitLifeTime);
             playerStats.currentFuel -= 1;

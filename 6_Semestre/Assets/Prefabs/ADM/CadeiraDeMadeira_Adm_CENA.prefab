@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 699413275559698601}
   - component: {fileID: 4475183017364729612}
   - component: {fileID: 1873493560405416902}
+  - component: {fileID: 7237551042825618641}
   m_Layer: 0
   m_Name: CadeiraDeMadeira_Adm_CENA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &699413275559698601
 Transform:
@@ -25,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215891340328565267}
-  m_LocalRotation: {x: -0.70705587, y: -0.008482164, z: -0.008482164, w: 0.7070559}
+  m_LocalRotation: {x: -0.7069325, y: -0.008483035, z: -0.008485996, w: 0.7071793}
   m_LocalPosition: {x: 35.04267, y: 50, z: 16.647902}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -1.375}
 --- !u!33 &4475183017364729612
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7237551042825618641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215891340328565267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0048121046, y: 0.0052326354, z: 0.010650619}
+  m_Center: {x: -0.000033694443, y: 0.000011652129, z: 0.0052566067}

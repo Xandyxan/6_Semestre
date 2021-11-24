@@ -11,12 +11,15 @@ GameObject:
   - component: {fileID: 513145092201350881}
   - component: {fileID: 3508538491940800836}
   - component: {fileID: 1681006368288046478}
+  - component: {fileID: 7424629474847418661}
+  - component: {fileID: 3351843122340894997}
+  - component: {fileID: 543811923510044541}
   m_Layer: 0
   m_Name: MovelGiganteDeMadeira_Adm_CENA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &513145092201350881
 Transform:
@@ -25,13 +28,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888579197542718555}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 41.617435, y: 50, z: 13.225166}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
+  m_LocalScale: {x: 129.00444, y: 120.00001, z: 93.03496}
+  m_Children:
+  - {fileID: 7206451077286591776}
+  - {fileID: 7396069972501729041}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &3508538491940800836
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -81,3 +86,130 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7424629474847418661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888579197542718555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008424775, y: 0.023703441, z: 0.01067112}
+  m_Center: {x: 0.02955913, y: -0.0023680425, z: 0.0053208363}
+--- !u!65 &3351843122340894997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888579197542718555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.034871385, y: 0.012872394, z: 0.010671121}
+  m_Center: {x: 0.00024822578, y: 0.008635815, z: 0.0053208354}
+--- !u!65 &543811923510044541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888579197542718555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008259149, y: 0.023703441, z: 0.01067112}
+  m_Center: {x: -0.02904341, y: -0.00236805, z: 0.0053208363}
+--- !u!1 &2515226337157409791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7206451077286591776}
+  - component: {fileID: 6131601286287195436}
+  m_Layer: 0
+  m_Name: colliderQuinaMovelGigante
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7206451077286591776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2515226337157409791}
+  m_LocalRotation: {x: 0.68792045, y: 0.16360162, z: 0.16360162, w: 0.68792045}
+  m_LocalPosition: {x: -0.021317096, y: 0.0049166586, z: 0.0068791355}
+  m_LocalScale: {x: 0.007862896, y: 0.010748647, z: 0.008208504}
+  m_Children: []
+  m_Father: {fileID: 513145092201350881}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 26.755, z: 0}
+--- !u!65 &6131601286287195436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2515226337157409791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1465712, y: 1.1499637, z: 1}
+  m_Center: {x: -0.20990367, y: -0.07498205, z: 0.0000000027262814}
+--- !u!1 &7684461978346016253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7396069972501729041}
+  - component: {fileID: 8900863185470471616}
+  m_Layer: 0
+  m_Name: colliderQuinaMovelGigante (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7396069972501729041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7684461978346016253}
+  m_LocalRotation: {x: 0.5998202, y: 0.374454, z: 0.374454, w: 0.5998202}
+  m_LocalPosition: {x: 0.0241, y: 0.006, z: 0.0068791355}
+  m_LocalScale: {x: 0.007862896, y: 0.010748647, z: 0.008208504}
+  m_Children: []
+  m_Father: {fileID: 513145092201350881}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 26.049, y: 90, z: 90}
+--- !u!65 &8900863185470471616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7684461978346016253}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1465714, y: 1.1499637, z: 1.1760215}
+  m_Center: {x: -0.21055216, y: -0.07498205, z: 0.021286601}
