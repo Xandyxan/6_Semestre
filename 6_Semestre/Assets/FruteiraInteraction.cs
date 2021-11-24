@@ -25,6 +25,7 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
     [SerializeField] private GameObject obscuroInimigo;
     [Tooltip("NPC acting que irá ficar resmungando")]
     [SerializeField] private GameObject famintoNPC;
+    [SerializeField] private GameObject damageArea;
 
     [Header("Camera")]
     [SerializeField] private Cinemachine.CinemachineVirtualCamera interactionCam;
@@ -135,6 +136,7 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
     private void ChangeGhost()
     {
         gameObject.tag = "Selectable";
+        damageArea.SetActive(false);
         obscuroInimigo.SetActive(false);
         famintoNPC.SetActive(true);
     }
