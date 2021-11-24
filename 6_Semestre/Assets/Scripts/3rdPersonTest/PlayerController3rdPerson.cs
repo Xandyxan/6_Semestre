@@ -71,7 +71,7 @@ public class PlayerController3rdPerson : MonoBehaviour
         */
     }
 
-    private void SubscribeToDelegates()
+    private void SubscribeToDelegates()     //ta sendo usado com Invoke
     {
         GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff;
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;

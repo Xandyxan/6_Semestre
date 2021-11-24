@@ -6,8 +6,13 @@ public class FakeSaveManager : MonoBehaviour
 {
     [SerializeField] private InventoryObject inventoryObject;
     [SerializeField] private InventoryObject equipamentInventory;
+    [SerializeField] private InventoryObject documentInventory;
+    [SerializeField] private PlayerDataObject playerData;
+
     [SerializeField] private string inventorySavePath;
     [SerializeField] private string equipamentSavePath;
+    [SerializeField] private string documentSavePath;
+    [SerializeField] private string playerDataPath;
 
     private void Awake()
     {
@@ -22,12 +27,16 @@ public class FakeSaveManager : MonoBehaviour
         ChangeTo();
         inventoryObject.Save();
         equipamentInventory.Save();
+        documentInventory.Save();
+        playerData.Save();
     }
 
     public void ChangeTo()
     {
         inventoryObject.savePath = this.inventorySavePath;
         equipamentInventory.savePath = this.equipamentSavePath;
+        documentInventory.savePath = this.documentSavePath;
+        playerData.savePath = this.playerDataPath;
     }
 
     public void Load()
@@ -35,11 +44,15 @@ public class FakeSaveManager : MonoBehaviour
         ChangeTo();
         inventoryObject.Load();
         equipamentInventory.Load();
+        documentInventory.Load();
+        playerData.Load();
     }
 
     public void DeleteSave()
     {
         inventoryObject.DeleteSave();
         equipamentInventory.DeleteSave();
+        documentInventory.DeleteSave();
+        playerData.DeleteSave();
     }
 }

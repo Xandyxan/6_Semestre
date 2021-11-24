@@ -20,6 +20,8 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public PlayerStats playerStats { get => _playerStats; set => _playerStats = value; }
     private bool isDragging;
 
+    public AcucenaPuzzle acucenaPuzzle;
+
 
     private void Awake()
     {
@@ -157,16 +159,42 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     public void OnDragEnd(GameObject obj)
     {
         Destroy(MouseData.tempItemBeingDragged);
-        if (MouseData.interfaceMouseIsOver == null)
+        if (MouseData.interfaceMouseIsOver == null && GameManager.instance.isOnPuzzle == false)
         {
             slotsOnInterface[obj].RemoveItem();
             return;
         }
+        else if(MouseData.interfaceMouseIsOver == null && GameManager.instance.isOnPuzzle)
+        {
+            if(GameManager.instance.puzzleNumber == 0)
+            {
+                if(slotsOnInterface[obj].GetItemIDFromSlot() == 9)
+                {
+                    acucenaPuzzle.ActivateFlowers(0);
+                    slotsOnInterface[obj].RemoveItem();
+                }
+                else if(slotsOnInterface[obj].GetItemIDFromSlot() == 13)
+                {
+                    acucenaPuzzle.ActivateFlowers(1);
+                    slotsOnInterface[obj].RemoveItem();
+                }
+                else if(slotsOnInterface[obj].GetItemIDFromSlot() == 12)
+                {
+                    acucenaPuzzle.ActivateFlowers(2);
+                    slotsOnInterface[obj].RemoveItem();
+                }
+            }
+
+            acucenaPuzzle.CheckFlowers();
+        }
+
+
         if (MouseData.slotHoveredOver)
         {
             InventorySlot mouseHoverSlotData = MouseData.interfaceMouseIsOver.slotsOnInterface[MouseData.slotHoveredOver];  //get the DATA of the current Slot where the mouse is
             inventory.SwapItems(slotsOnInterface[obj], mouseHoverSlotData);
         }
+
         isDragging = false;
         _descriptionText.text = "";
         _itemName.text = "";

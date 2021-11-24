@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af03d624643eba74a9ca79ed38e29549, type: 3}
   m_Name: DocumentInventory
   m_EditorClassIdentifier: 
-  _savePath: /player.Document.Save
+  _savePath: /player.Document.Save3
   database: {fileID: 11400000, guid: f66c8c97e52f05546a8b4ecda24d838e, type: 2}
   Container:
     Items:
     - allowedItems: 
       item:
-        Name: DocumentoTeste
-        Id: 0
+        Name: DocumentoTeste2
+        Id: 1
       amount: 1
     - allowedItems: 
       item:
