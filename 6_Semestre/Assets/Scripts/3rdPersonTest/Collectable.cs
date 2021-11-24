@@ -10,17 +10,23 @@ public class Collectable : MonoBehaviour, IInteractable, ISelectable
     public ItemObject item;
     [SerializeField] private InventoryObject playerInventory;
 
+    private bool check;
+
     private void Awake()
     {
         if (playerInventory == null) playerInventory = FindObjectOfType<InventoryObject>();
+        check = false;
         //necessita refatoração
     }
 
     public void Interact()
     {
-        playerInventory.AddItem(new Item(this.item), 1);
-        this.gameObject.SetActive(false);
-
+        if (!check)
+        {
+            playerInventory.AddItem(new Item(this.item), 1);
+            this.gameObject.SetActive(false);
+            check = true;
+        }
         //Deselect();
     }
 

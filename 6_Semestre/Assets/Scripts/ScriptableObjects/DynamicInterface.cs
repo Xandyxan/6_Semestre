@@ -29,7 +29,7 @@ public class DynamicInterface : UserInterface
 
             
             UtilsClass.AddEvent(obj, EventTriggerType.PointerClick, delegate { OnClickedOnSlotObj(obj); });
-            UtilsClass.AddEventTriggerListener(obj.GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnClickedOnSlot);
+            UtilsClass.AddEventTriggerListener(obj.GetComponent<EventTrigger>(), EventTriggerType.PointerClick, OnClickedOnSlot );
 
             slotsOnInterface.Add(obj, inventory.Container.Items[i]);
         }

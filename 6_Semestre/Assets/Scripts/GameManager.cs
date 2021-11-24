@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
     private bool playerInScene; // pensei em utilizar o mesmo método que estavamos usando pra tratar a interação com o celular, só que com o inventário
     [SerializeField] private PlayerController3rdPerson playerMovement;
 
+    public bool isOnPuzzle;
+    public int puzzleNumber;
     
     //----------------------------------------------------------------------------\\
 
