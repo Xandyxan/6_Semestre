@@ -22,6 +22,7 @@ public class Lamparina : MonoBehaviour
     [Header("Fuel")]
     //[SerializeField] private int fuelUsage = 1; // quanto de combustivel é gasto a cada ciclo
     [SerializeField] private float fuelUnitLifeTime = 2;
+    [SerializeField] private float gastaFuel = 1;
     private bool lamparinaOn = false;
 
     private void Awake()
@@ -73,7 +74,7 @@ public class Lamparina : MonoBehaviour
             //lamparinaGlassMaterial.EnableKeyword("_EMISSION");
             UpdateLightIntensity();
             yield return new WaitForSeconds(fuelUnitLifeTime);
-            playerStats.currentFuel -= 1;
+            playerStats.currentFuel -= gastaFuel;
 
             Debug.LogWarning("Tá gastando");
 
