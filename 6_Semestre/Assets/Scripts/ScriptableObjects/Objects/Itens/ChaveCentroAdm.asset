@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -4339687924595514662, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 0
-  type: 2
+  type: 3
   data:
     Name: Chave do Centro Administrativo
-    Id: -1
-  description: 
+    Id: 4
+  description: "Chave antiga e muito pesada, recebi de \"presente\" do Padre Augusto
+    para auxiliar minhas investiga\xE7\xF5es."
+  author: 

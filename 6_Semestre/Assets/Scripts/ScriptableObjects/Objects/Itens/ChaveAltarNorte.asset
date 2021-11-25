@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -6916279113174247892, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 0
-  type: 2
+  type: 3
   data:
     Name: ChaveAltarNorte
-    Id: -1
-  description: Chave do Altar Norte
+    Id: 1
+  description: "Chave do Altar que se localiza na regi\xE3o norte do Centro Administrativo."
+  author: 
