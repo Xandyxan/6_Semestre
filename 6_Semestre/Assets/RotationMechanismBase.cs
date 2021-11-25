@@ -37,20 +37,29 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
 
     [SerializeField] private bool isHorizontal;
 
+    // teste de condição pra adicionar o final boss. Se não for eu choro
+    [Header("Final Puzzle")]
+    [SerializeField] private bool finalPuzzle;
+    [SerializeField] private List<GameObject> selectionFeedbacks = new List<GameObject>();
+
     private bool solved;
 
     private void Awake()
     {
-        foreach (RotationMechanism mecha in mechanisms)
-        {
-            Renderer mechaRend = mecha.transform.GetComponent<Renderer>();
-            mecha.SetIsSelected(false);
-            mechanismRenderes.Add(mechaRend);
-        }
         mainCam = Camera.main;
     }
 
-  
+    private void Start()
+    {
+        foreach (RotationMechanism mecha in mechanisms)
+        {
+            // Renderer mechaRend = mecha.transform.GetComponent<Renderer>();
+            Renderer mechaRend = mecha.GetRenderer();
+            mecha.SetIsSelected(false);
+            mechanismRenderes.Add(mechaRend);
+        }
+    }
+
     void Update()
     {
         if (isInteracting)
@@ -85,15 +94,27 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
             if (selectionIndex > mechanisms.Count - 1) { selectionIndex = 0; }
             else if (selectionIndex < 0) { selectionIndex = mechanisms.Count - 1; }
 
-          for(int i = 0; i < mechanisms.Count; i++)
+            for (int i = 0; i < mechanisms.Count; i++)
             {
-                mechanismRenderes[i].material.DisableKeyword("_EMISSION");
+                if (!finalPuzzle)
+                {
+                    mechanismRenderes[i].material.DisableKeyword("_EMISSION");
+                }
+                else
+                {
+                    selectionFeedbacks[i].SetActive(false);
+                }
                 mechanisms[i].SetIsSelected(false);
             }
-            mechanismRenderes[selectionIndex].material.EnableKeyword("_EMISSION");
+            if (!finalPuzzle)
+            {
+                mechanismRenderes[selectionIndex].material.EnableKeyword("_EMISSION");
+            }
+            else
+            {
+                selectionFeedbacks[selectionIndex].SetActive(true);
+            }
             mechanisms[selectionIndex].SetIsSelected(true);
-
-          
         }
     }
 
@@ -105,9 +126,19 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
     {
         if (!isInteracting) { return; }
         print("StoppedInteracting");
-        foreach (Renderer rend in mechanismRenderes)
+        if (!finalPuzzle)
         {
-            rend.material.DisableKeyword("_EMISSION");
+            foreach (Renderer rend in mechanismRenderes)
+            {
+                rend.material.DisableKeyword("_EMISSION");
+            }
+        }
+        else
+        {
+            foreach(GameObject feedback in selectionFeedbacks)
+            {
+                feedback.SetActive(false);
+            }
         }
         isInteracting = false;
         
@@ -205,5 +236,10 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
     {
         mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Player"));
         // playerController.SetCanMove(false);
+    }
+
+    public List<Renderer> GetMechanismRenderers()
+    {
+        return mechanismRenderes;
     }
 }
