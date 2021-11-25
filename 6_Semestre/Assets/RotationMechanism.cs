@@ -37,6 +37,10 @@ public class RotationMechanism : MonoBehaviour
     [Space]
     [SerializeField] bool isHorizontal; // caso as peças estejam na horizontal, a rotação ocorre em x, caso não, a rotação ocorre em y.
     [SerializeField] bool autoCheckForConclusion; // caso true, checa a conclusão automaticamente a cada rotação, caso não, o check é chamado externamente.
+    // new changes
+    [Space]
+    [Header("Selected Feedback")]
+    [SerializeField] private Renderer mecRenderer;
 
     private void Awake()
     {
@@ -65,6 +69,15 @@ public class RotationMechanism : MonoBehaviour
             tempRotation.z += rotAmountZ * i;
         }
             rotations[i] = tempRotation;
+        }
+
+        if(mecRenderer == null) 
+        { 
+            mecRenderer = transform.GetComponent<Renderer>();
+        }
+        else
+        {
+            print(this.name + "tem renderer");
         }
        
     }
@@ -111,5 +124,10 @@ public class RotationMechanism : MonoBehaviour
     public int GetAtualPosition()
     {
         return atualPos;
+    }
+
+    public Renderer GetRenderer()
+    {
+        return mecRenderer;
     }
 }
