@@ -4,8 +4,10 @@ using UnityEngine;
 
 public sealed class AcucenaPuzzle : MonoBehaviour, ISelectable, IInteractable
 {
-    [Header("Puzzle Camera")]
+    [Header("Puzzle Cameras")]
     [SerializeField] private Cinemachine.CinemachineVirtualCamera puzzleCamera;
+    [SerializeField] private Cinemachine.CinemachineVirtualCamera acucenaCamera;
+    [SerializeField] private Cinemachine.CinemachineVirtualCamera keyCamera;
 
     [Header("Selection")]
     [Tooltip("The visual feedback for an item that can be interacted with")]
@@ -17,9 +19,13 @@ public sealed class AcucenaPuzzle : MonoBehaviour, ISelectable, IInteractable
     [Header("Flowers Array")]
     [SerializeField] private GameObject[] flowers;
 
+    [Header("Others")]
     [SerializeField] private DialogueManager2 dialogueManager;
+    [SerializeField] private GameObject acucenaCharacter;
+    [SerializeField] private GameObject key;
 
     private bool isInteracting;
+    private bool isCompleted;
 
     public void Deselect()
     {
@@ -34,7 +40,11 @@ public sealed class AcucenaPuzzle : MonoBehaviour, ISelectable, IInteractable
     {
         if (!isInteracting)
         {
-            StartInteract();
+            if (!isCompleted)
+            {
+                StartInteract();
+            }
+
         }
         else
         {
@@ -45,15 +55,16 @@ public sealed class AcucenaPuzzle : MonoBehaviour, ISelectable, IInteractable
     private void Awake()
     {
         isInteracting = false;
+        isCompleted = false;
     }
     private void Start()
     {
-        
+
     }
 
     private void Update()
     {
-        
+
     }
 
     private void StartInteract()
@@ -80,9 +91,25 @@ public sealed class AcucenaPuzzle : MonoBehaviour, ISelectable, IInteractable
         GameManager.instance.puzzleNumber = -1;
     }
 
-    private void FinishPuzzle()
+    private IEnumerator FinishPuzzle()
     {
+        isCompleted = true;
+        StopInteract();
+        acucenaCharacter.SetActive(true);
+        acucenaCamera.gameObject.SetActive(true);
+        acucenaCamera.Priority = 15;
+        key.SetActive(true);
+        Invoke("ExecuteDialogue", 2f);
 
+        yield return new WaitForSeconds(8f);
+        keyCamera.gameObject.SetActive(true);
+        keyCamera.Priority = 16;
+
+        yield return new WaitForSeconds(3f);
+        acucenaCamera.gameObject.SetActive(false);
+        keyCamera.gameObject.SetActive(false);
+        acucenaCharacter.SetActive(false);
+        isCompleted = true;
     }
 
     public void ActivateFlowers(int i)      //dalia = 0, violeta = 1, rosa = 2;
@@ -92,21 +119,28 @@ public sealed class AcucenaPuzzle : MonoBehaviour, ISelectable, IInteractable
 
     public void CheckFlowers()
     {
-        int count = 0;
-
-        for(int i = 0; i < flowers.Length; i++)
+        if (!isCompleted)
         {
-            if(flowers[i].activeSelf)
+            int count = 0;
+
+            for (int i = 0; i < flowers.Length; i++)
             {
-                count++;
+                if (flowers[i].activeSelf)
+                {
+                    count++;
+                }
+            }
+
+            if (count == flowers.Length)
+            {
+                //Debug.LogError("Todas as flores estão ai");
+                StartCoroutine(FinishPuzzle());
             }
         }
+    }
 
-        if (count == flowers.Length)
-        {
-            //Debug.LogError("Todas as flores estão ai");
-            dialogueManager.ExecuteDialogue(4);
-            StopInteract();
-        }
+    public void ExecuteDialogue()
+    {
+        dialogueManager.ExecuteDialogue(4);
     }
 }
