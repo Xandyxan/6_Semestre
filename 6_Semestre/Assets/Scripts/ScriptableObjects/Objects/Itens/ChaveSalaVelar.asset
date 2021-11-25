@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: 6583974370328973843, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 0
-  type: 2
+  type: 3
   data:
     Name: Chave das Salas de Velar
-    Id: -1
-  description: 
+    Id: 7
+  description: "Chave id\xEAntica \xE0 chave do Centro Administrativo, com exce\xE7\xE3o
+    de seu tamanho potencializado."
+  author: 

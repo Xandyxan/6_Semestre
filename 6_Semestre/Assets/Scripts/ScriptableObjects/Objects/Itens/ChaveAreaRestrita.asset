@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -7932489129725869664, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 0
-  type: 2
+  type: 3
   data:
     Name: "Chave da \xC1rea Restrita"
     Id: -1
-  description: "Chave da \xC1rea Restrita"
+  description: "Uma chave pesada, possui o s\xEDmbolo de uma Torre em sua cabe\xE7a. "
+  author: 

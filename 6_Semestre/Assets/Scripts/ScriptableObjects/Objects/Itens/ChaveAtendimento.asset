@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -4112466477040027998, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 0
-  type: 2
+  type: 3
   data:
     Name: Chave de Atendimento
-    Id: -1
-  description: 
+    Id: 3
+  description: "Chave pequena da sala de atendimento, aparentemente pertence \xE0
+    uma das funcion\xE1rias."
+  author: 
