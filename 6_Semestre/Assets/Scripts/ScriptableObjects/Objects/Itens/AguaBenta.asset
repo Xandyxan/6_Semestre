@@ -18,5 +18,7 @@ MonoBehaviour:
   data:
     Name: "\xC1gua Benta"
     Id: 0
-  description: Use para restaurar um pouco de sua sanidade mental.
+  description: "\xC1gua batizada pelo Padre Augusto. Use para restaurar um pouco
+    de sua sanidade mental."
+  author: 
   healthValue: 25

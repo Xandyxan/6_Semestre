@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: 908941860185151170, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
   stackbable: 0
-  type: 2
+  type: 3
   data:
     Name: "Chave do Port\xE3o da \xC1rea Nobre"
-    Id: -1
-  description: 
+    Id: 6
+  description: Chave velha, completamente abandonada numa sala antiga.
+  author: 
