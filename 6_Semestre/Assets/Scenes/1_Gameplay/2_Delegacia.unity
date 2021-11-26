@@ -1338,9 +1338,9 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 40
     OrthographicSize: 5
-    NearClipPlane: 0.001
+    NearClipPlane: 0.01
     FarClipPlane: 1000
     Dutch: 0
     LensShift: {x: 0, y: 0}
@@ -2808,6 +2808,8 @@ MonoBehaviour:
   _itemName: {fileID: 1195181034}
   _playerStats: {fileID: 1547982618}
   acucenaPuzzle: {fileID: 0}
+  fruteiraInteraction: {fileID: 0}
+  mariaInteraction: {fileID: 0}
   inventoryPrefab: {fileID: 2195647970850106066, guid: 43f3829068e36aa41945478bdc8f30d1, type: 3}
   X_START_POINT: -130
   Y_START_POINT: 55
@@ -3904,6 +3906,8 @@ MonoBehaviour:
   dialogueManager: {fileID: 1814860627}
   dialogueNumber: 3
   otherItem: {fileID: 0}
+  hasItemToUnlock: 0
+  itemUnlock: {fileID: 0}
 --- !u!135 &212914176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5692,8 +5696,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canUse: 0
+  playerInventory: {fileID: 11400000, guid: cf84ed24bd731b446b0a5ba7e98c0f79, type: 2}
+  itemUnlock: {fileID: 11400000, guid: 538e212630c77dd4f8b8b1175f3ea530, type: 2}
   textFeedback: {fileID: 1776554337}
-  sceneToLoad: 0
+  sceneToLoad: 3
   dialogueManager: {fileID: 1814860627}
   dialogueIndex: 4
 --- !u!65 &307052435
@@ -6836,6 +6842,8 @@ MonoBehaviour:
   _itemName: {fileID: 1195181034}
   _playerStats: {fileID: 1547982618}
   acucenaPuzzle: {fileID: 0}
+  fruteiraInteraction: {fileID: 0}
+  mariaInteraction: {fileID: 0}
   inventoryPrefab: {fileID: 2195647970850106066, guid: 43f3829068e36aa41945478bdc8f30d1, type: 3}
   X_START_POINT: -70
   Y_START_POINT: 35
@@ -9263,6 +9271,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &478287195
 GameObject:
   m_ObjectHideFlags: 0
@@ -11248,6 +11259,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1001 &581837040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14313,6 +14327,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1001 &719085983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16312,6 +16329,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!4 &806804876
 Transform:
   m_ObjectHideFlags: 0
@@ -16686,6 +16706,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &828846657
 GameObject:
   m_ObjectHideFlags: 0
@@ -16769,9 +16792,9 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 30
     OrthographicSize: 5
-    NearClipPlane: 0.3
+    NearClipPlane: 0.01
     FarClipPlane: 1000
     Dutch: 0
     LensShift: {x: 0, y: 0}
@@ -24089,6 +24112,8 @@ MonoBehaviour:
   _itemName: {fileID: 1195181034}
   _playerStats: {fileID: 1547982618}
   acucenaPuzzle: {fileID: 0}
+  fruteiraInteraction: {fileID: 0}
+  mariaInteraction: {fileID: 0}
   slots:
   - {fileID: 644276316}
   - {fileID: 809939400}
@@ -25974,6 +25999,8 @@ MonoBehaviour:
   _itemName: {fileID: 0}
   _playerStats: {fileID: 1547982618}
   acucenaPuzzle: {fileID: 0}
+  fruteiraInteraction: {fileID: 0}
+  mariaInteraction: {fileID: 0}
   inventoryPrefab: {fileID: 8357189379363798592, guid: 75767830387df744f8944b3c60c0161b, type: 3}
   transcricaoText: {fileID: 17556992}
 --- !u!114 &1337641322
@@ -28425,6 +28452,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!4 &1488696328
 Transform:
   m_ObjectHideFlags: 0
@@ -30489,7 +30519,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
-    NearClipPlane: 0.001
+    NearClipPlane: 0.01
     FarClipPlane: 1000
     Dutch: 0
     LensShift: {x: 0, y: 0}
@@ -30851,6 +30881,8 @@ MonoBehaviour:
   dialogueManager: {fileID: 1814860627}
   dialogueNumber: 2
   otherItem: {fileID: 212914173}
+  hasItemToUnlock: 0
+  itemUnlock: {fileID: 0}
 --- !u!135 &1584432838
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38135,6 +38167,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 5
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1001 &1950420876
 PrefabInstance:
   m_ObjectHideFlags: 0

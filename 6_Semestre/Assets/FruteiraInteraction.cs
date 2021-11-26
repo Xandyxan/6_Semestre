@@ -46,6 +46,10 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
     [Header("Recompensa do Puzzle")]
     [SerializeField] private GameObject chaveVelar;
 
+    [Header("New")]
+    [SerializeField] private GameObject smallInventory;
+    [SerializeField] private GameObject[] fruits;
+
     private void Awake()
     {
         mainCam = Camera.main;
@@ -67,9 +71,14 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
 
             GameManager.instance.removePlayerControlEvent?.Invoke();
             HidePlayerLayer();
-
+            interactionCam.gameObject.SetActive(true);
             interactionCam.Priority = 15;
-            chaveVelar.SetActive(true);
+
+            smallInventory.SetActive(true);
+            GameManager.instance.SetLockCursor(false);
+            GameManager.instance.isOnPuzzle = true;
+            GameManager.instance.puzzleNumber = 1;
+
             print("Aparece opção do player realizar oferenda pro fantasma");
         }
 
@@ -85,11 +94,15 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
         print("StoppedInteracting");
 
         Select();
-        interactionCam.Priority = 5;
+        interactionCam.gameObject.SetActive(false);
 
         isInteracting = false;
 
+        smallInventory.SetActive(false);
         GameManager.instance.returnPlayerControlEvent?.Invoke();
+        GameManager.instance.SetLockCursor(true);
+        GameManager.instance.isOnPuzzle = false;
+        GameManager.instance.puzzleNumber = -1;
 
         ShowPlayerLayer();
     }
@@ -106,14 +119,14 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
 
     private void HidePlayerLayer()
     {
-        mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Player"));
+        //mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Player"));
         // playerController.SetCanMove(false);
     }
 
     private void ShowPlayerLayer()
     {
         //playerController.SetCanMove(true);
-        mainCam.cullingMask |= 1 << LayerMask.NameToLayer("Player");
+        //mainCam.cullingMask |= 1 << LayerMask.NameToLayer("Player");
 
     }
 
@@ -139,5 +152,15 @@ public class FruteiraInteraction : MonoBehaviour, IInteractable, ISelectable
         damageArea.SetActive(false);
         obscuroInimigo.SetActive(false);
         famintoNPC.SetActive(true);
+    }
+
+    public void FinishPuzzle()
+    {
+        solved = true;
+        foreach(GameObject fruits in fruits)
+        {
+            fruits.SetActive(true);
+            chaveVelar.SetActive(true);
+        }
     }
 }

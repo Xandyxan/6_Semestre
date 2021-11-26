@@ -3894,6 +3894,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 2
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &229320225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5721,6 +5724,8 @@ MonoBehaviour:
   mainMenuScreen: 0
   usingInventory: 0
   playerMovement: {fileID: 0}
+  isOnPuzzle: 0
+  puzzleNumber: 0
 --- !u!4 &306934085
 Transform:
   m_ObjectHideFlags: 0
@@ -7271,6 +7276,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &409712143
 GameObject:
   m_ObjectHideFlags: 0
@@ -27899,15 +27907,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 100.00005
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100.00004
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 100.00004
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28740,6 +28748,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 3
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &591498406
 GameObject:
   m_ObjectHideFlags: 0
@@ -33919,6 +33930,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 4
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &938786416
 GameObject:
   m_ObjectHideFlags: 0
@@ -34534,15 +34548,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 100.00005
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100.00004
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 100.00004
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35579,6 +35593,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 4
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1071178873
 GameObject:
   m_ObjectHideFlags: 0
@@ -36948,6 +36965,9 @@ MonoBehaviour:
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
   _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1195979759
 GameObject:
   m_ObjectHideFlags: 0
@@ -45192,6 +45212,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408728416177316836, guid: 4c8880df73c0e5842973adac07b36ddb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0419998
       objectReference: {fileID: 0}
@@ -47545,12 +47577,16 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100.00004
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 100.00004
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8667730952948732436, guid: 43c25f9377b3dd94aafe6add44772ef6, type: 3}
       propertyPath: m_LocalPosition.x

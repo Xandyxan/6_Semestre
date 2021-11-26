@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class DoorInteract : MonoBehaviour, ISelectable, IInteractable 
 {
     public bool canUse;
+    [SerializeField] private InventoryObject playerInventory;
+    [SerializeField] private ItemObject itemUnlock;
+
     [SerializeField] GameObject textFeedback;
     [SerializeField] private int sceneToLoad;
     [SerializeField] private DialogueManager2 dialogueManager;
@@ -13,14 +16,15 @@ public class DoorInteract : MonoBehaviour, ISelectable, IInteractable
 
     public void Deselect()
     {
-        textFeedback.SetActive(false);
+        if (textFeedback) textFeedback.SetActive(false);
     }
 
     public void Interact()
     {
-        if(canUse)
+        if (playerInventory.FindItemOnInventory2(itemUnlock.data.Id))
         {
             SceneManager.LoadScene(sceneToLoad);
+            playerInventory.RemoveItem(itemUnlock.data, -1);
         }
         else
         {
@@ -30,7 +34,7 @@ public class DoorInteract : MonoBehaviour, ISelectable, IInteractable
 
     public void Select()
     {
-        textFeedback.SetActive(true);
+        if(textFeedback) textFeedback.SetActive(true);
     }
 
     // Start is called before the first frame update
