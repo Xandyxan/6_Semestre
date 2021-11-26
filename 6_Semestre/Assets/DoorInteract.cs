@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DoorInteract : MonoBehaviour, ISelectable, IInteractable 
 {
-    [HideInInspector] public bool canUse;
+    public bool canUse;
     [SerializeField] GameObject textFeedback;
     [SerializeField] private int sceneToLoad;
     [SerializeField] private DialogueManager2 dialogueManager;
