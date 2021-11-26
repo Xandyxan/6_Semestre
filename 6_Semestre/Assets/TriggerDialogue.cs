@@ -10,7 +10,9 @@ public class TriggerDialogue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        PlayerStats playerStats = other.GetComponent<PlayerStats>();
+
+        if (playerStats)
         {
             dialogue.ExecuteDialogue(dialogueIndex);
            
