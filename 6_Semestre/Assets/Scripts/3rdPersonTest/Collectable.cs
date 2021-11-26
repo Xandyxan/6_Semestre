@@ -12,6 +12,11 @@ public class Collectable : MonoBehaviour, IInteractable, ISelectable
 
     private bool check;
 
+    [SerializeField] private DoorInteract doorInteract;
+    [SerializeField] private DialogueManager2 dialogueManager;
+    [SerializeField] private int dialogueNumber;
+    [SerializeField] private GameObject otherItem;
+
     private void Awake()
     {
         if (playerInventory == null) playerInventory = FindObjectOfType<InventoryObject>();
@@ -26,13 +31,13 @@ public class Collectable : MonoBehaviour, IInteractable, ISelectable
             playerInventory.AddItem(new Item(this.item), 1);
             this.gameObject.SetActive(false);
             check = true;
+
+            if(doorInteract) doorInteract.canUse = true;
+            if (dialogueManager) dialogueManager.ExecuteDialogue(dialogueNumber);
+            if (otherItem) otherItem.SetActive(true);
+
         }
         //Deselect();
-    }
-
-    private void CollectItem(Collectable _item)
-    {
-
     }
 
     public void Deselect()

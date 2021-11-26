@@ -18,9 +18,9 @@ MonoBehaviour:
     Items:
     - allowedItems: 
       item:
-        Name: 
-        Id: -1
-      amount: 0
+        Name: NotifTonho
+        Id: 2
+      amount: 1
     - allowedItems: 
       item:
         Name: 

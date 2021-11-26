@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
+  m_Name: FichaTecCorpo
+  m_EditorClassIdentifier: 
+  uiDisplay: {fileID: 21300000, guid: 11155baec76a8d241825ff897482337f, type: 3}
+  stackbable: 1
+  type: 3
+  data:
+    Name: "Ficha T\xE9cnica de Fl\xE1via Queiroz"
+    Id: 2
+  description: "\nFicha T\xE9cnica de Fl\xE1via Queiroz\n\nFotografia: (Foto de Fl\xE1via)\n\nNome
+    Completo: Fl\xE1via Sarney Queiroz\n\nData de Nascimento: 18/02/1941 (24 anos)\n\nLocal
+    de Nascimento: S\xE3o Paulo, Santo Andr\xE9\n\nTipo Sangu\xEDneo: AB+\n\nAltura:
+    1,65m\n\nPeso: 55kg\n\nLocal da Morte: Matagal pr\xF3ximo \xE0 estrada principal
+    do Cemit\xE9rio\n\nInforma\xE7\xF5es Gerais: \n\n\tFl\xE1via se mudou para c\xE1
+    faz alguns meses, no mesmo dia que Josefel Zanatas se acidentou no cemit\xE9rio
+    e foi parar no hospital. \n\n\tEla estava de visita na casa de sua tia, Dona
+    Matilde. Conversamos com a senhora Matilde para avisar sobre o ocorrido e perguntamos
+    se ela sabia para onde sua sobrinha estava indo, pelo que descobrimos, ela iria
+    retornar para sua cidade natal hoje.\n\nNOTAS DE Coronel Borges\n\n\tComo ela
+    n\xE3o era daqui n\xE3o sabemos tanto sobre a garota, mas as pessoas diziam que
+    ela era bem descrente de religi\xE3o, n\xE3o ouvia muito os avisos dos moradores
+    locais e n\xE3o entendia das supersti\xE7\xF5es. Parece que muita gente avisou
+    para ela n\xE3o ficar dando sopa perto do cemit\xE9rio, agora a menina t\xE1
+    a\xED, morta. \n\n\tVoc\xEA sendo um profissional da capital e todo sabich\xE3o,
+    espero que consiga encontrar o assassino!\n\n\tN\xE3o enrola muito sen\xE3o vai
+    come\xE7ar a apodrecer, o padre precisa preparar o corpo pro vel\xF3rio o quanto
+    antes!\n"
+  author: Coronel Borges
