@@ -24,11 +24,16 @@ public class DoorInteract : MonoBehaviour, ISelectable, IInteractable
         if (playerInventory.FindItemOnInventory2(itemUnlock.data.Id))
         {
             SceneManager.LoadScene(sceneToLoad);
-            playerInventory.RemoveItem(itemUnlock.data, -1);
+            //playerInventory.RemoveItem(itemUnlock.data, -1);
+        }
+        else if(canUse)
+        {
+            SceneManager.LoadScene(sceneToLoad);
+            
         }
         else
         {
-            dialogueManager.ExecuteDialogue(dialogueIndex);
+            if(dialogueManager) dialogueManager.ExecuteDialogue(dialogueIndex);
         }
     }
 

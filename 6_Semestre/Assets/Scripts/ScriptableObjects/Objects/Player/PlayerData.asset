@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _savePath: /player.Data.Save
   playerData:
-    maxInsanity: 100
-    maxFuel: 100
+    maxInsanity: 9999
+    maxFuel: 9999
     currentInsanity: 100
     currentFuel: 100

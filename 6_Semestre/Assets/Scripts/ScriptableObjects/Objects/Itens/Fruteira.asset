@@ -17,6 +17,6 @@ MonoBehaviour:
   type: 3
   data:
     Name: Fruteira
-    Id: -1
+    Id: 14
   description: Uma fruteira com uma variedade grande de frutas.
   author: 

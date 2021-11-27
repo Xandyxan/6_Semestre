@@ -17,6 +17,6 @@ MonoBehaviour:
   type: 3
   data:
     Name: "Chave da \xC1rea Restrita"
-    Id: -1
+    Id: 2
   description: "Uma chave pesada, possui o s\xEDmbolo de uma Torre em sua cabe\xE7a. "
   author: 
