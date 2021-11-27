@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 1
   data:
     Name: Lamparina
-    Id: 1
+    Id: 10
   description: "Uma poderosa fonte de luz, \xE9 necess\xE1rio algum tipo de combust\xEDvel
     para poder ser usado."
   author: 

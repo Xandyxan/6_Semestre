@@ -17,6 +17,7 @@ MonoBehaviour:
   type: 3
   data:
     Name: "Cora\xE7\xE3o"
-    Id: 3
+    Id: 8
   description: "Um antigo cora\xE7\xE3o pesado feito em pedra rara, parece se encaixar
     em algum lugar familiar."
+  author: 
