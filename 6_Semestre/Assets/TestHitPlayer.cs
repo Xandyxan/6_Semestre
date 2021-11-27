@@ -23,7 +23,7 @@ public class TestHitPlayer : MonoBehaviour
                 playerStats.TakeDamage(parentNpc.profile.damage);
                 alreadHit = true;
                 Invoke("SetAlreadHitFalse", .6f);
-                CinemachineShake.Instance.ShakeCamera(.4f, .1f);
+                //CinemachineShake.Instance.ShakeCamera(.4f, .1f);
             }
            
         }

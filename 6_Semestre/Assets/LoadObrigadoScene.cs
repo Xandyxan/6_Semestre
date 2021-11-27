@@ -10,7 +10,7 @@ public class LoadObrigadoScene : MonoBehaviour
 
     private void Start()
     {
-        col.enabled = false;
+        col.enabled = true;
         GameManager.instance.endDemoEvent += EnableCollider;
     }
 

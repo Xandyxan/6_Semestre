@@ -21,6 +21,8 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
     private bool isDragging;
 
     public AcucenaPuzzle acucenaPuzzle;
+    public FruteiraInteraction fruteiraInteraction;
+    public VirgemMariaInteraction mariaInteraction;
 
 
     private void Awake()
@@ -183,9 +185,25 @@ public abstract class UserInterface : MonoBehaviour, IDeselectHandler, IPointerE
                     acucenaPuzzle.ActivateFlowers(2);
                     slotsOnInterface[obj].RemoveItem();
                 }
+                acucenaPuzzle.CheckFlowers();
             }
-
-            acucenaPuzzle.CheckFlowers();
+            else if(GameManager.instance.puzzleNumber == 1)
+            {
+                if (slotsOnInterface[obj].GetItemIDFromSlot() == 14)
+                {
+                    fruteiraInteraction.FinishPuzzle();
+                    slotsOnInterface[obj].RemoveItem();
+                }
+            }
+            else if(GameManager.instance.puzzleNumber == 2)
+            {
+                if (slotsOnInterface[obj].GetItemIDFromSlot() == 8)
+                {
+                    mariaInteraction.RunCoroutine();
+                    slotsOnInterface[obj].RemoveItem();
+                }
+            }
+            
         }
 
 

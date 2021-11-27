@@ -16,5 +16,5 @@ MonoBehaviour:
   playerData:
     maxInsanity: 100
     maxFuel: 100
-    currentInsanity: 0
-    currentFuel: 0
+    currentInsanity: 100
+    currentFuel: 100

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb36dab4c2f5274685de28bc10d75f8, type: 3}
   m_Name: ChavePequena
   m_EditorClassIdentifier: 
-  uiDisplay: {fileID: 0}
-  stackbable: 0
+  uiDisplay: {fileID: 6598758004038731708, guid: b8d960833de43aa4d9c84380f7faf9f6, type: 3}
+  stackbable: 1
   type: 3
   data:
-    Name: 
+    Name: Chave Pequena
     Id: 5
   description: "Chave muito pequena, a encontrei debaixo de uma garrafa de caf\xE9.
     Onde ser\xE1 que devo usar?"

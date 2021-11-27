@@ -45,6 +45,10 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private string _taskHUDText;
     public string taskHUDText { get => _taskHUDText; set => _taskHUDText = value; }
 
+    public GameObject cameraToDesactive;
+    public ItemObject item;
+    [SerializeField] private InventoryObject playerInventory;
+
     private void Awake()
     {
         dialogueManager = GetComponentInParent<DialogueManager2>();
@@ -85,7 +89,8 @@ public class Dialogue : MonoBehaviour
             {
                 dialogueManager.GetDialogueTextUI().text = speechs[i];
                 yield return new WaitForSeconds(_countProvisorio);
-                
+                if(cameraToDesactive) cameraToDesactive.SetActive(false);
+                if(item) playerInventory.AddItem(new Item(this.item), 1);
             }
 
             if (onlyOnce) alreadyExecuted = true;

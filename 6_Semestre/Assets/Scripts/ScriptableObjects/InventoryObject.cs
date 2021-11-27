@@ -39,6 +39,12 @@ public class InventoryObject : ScriptableObject
         return true;
     }
 
+    public void RemoveItem(Item _item, int _amount)
+    {
+        InventorySlot slot = FindItemOnInventory(_item);
+        slot.ChangeAmount(_amount);
+    }
+
     public int EmptySlotCount
     {
         get
@@ -65,6 +71,23 @@ public class InventoryObject : ScriptableObject
         }
 
         return null;
+    }
+
+    public bool FindItemOnInventory2(int _id)
+    {
+        bool check = false;
+
+        for (int i = 0; i < Container.Items.Length; i++)
+        {
+            if (Container.Items[i].item.Id == _id)
+            {
+                check = true;
+                Debug.LogError("Tem item no inventário");
+                return check;
+            }
+        }
+        
+        return check;
     }
 
     public InventorySlot SetEmptySlot(Item _item, int _amount)
