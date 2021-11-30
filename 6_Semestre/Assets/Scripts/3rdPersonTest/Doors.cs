@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doors : MonoBehaviour, IInteractable, IObjectiveObj
+public class Doors : MonoBehaviour, IInteractable, IObjectiveObj, ISelectable
 {
     [Header("Use only one movement type & axis")]
     public bool understandable; // variavel que não usa pra nada, understandable
@@ -30,13 +30,14 @@ public class Doors : MonoBehaviour, IInteractable, IObjectiveObj
     public GameObject areaTrigger;
 
     [Header("Selected")]
-
+    [SerializeField] private GameObject selectionFeedback;
    // [SerializeField] string _objectDescription;
 
     [SerializeField] bool _triggerDialogue;
     [SerializeField] int _dialogueIndex;
     [SerializeField] protected string openPathSound, closePathSound;
     protected bool soundBuffer;
+
 
    // public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
     public bool triggerDialogue { get => _triggerDialogue; set => _triggerDialogue = value; }
@@ -212,6 +213,16 @@ public class Doors : MonoBehaviour, IInteractable, IObjectiveObj
     public void SetRotationSpeed(float desiredDPS)
     {
         degreesPerSecond = desiredDPS;
+    }
+
+    public void Select()
+    {
+        selectionFeedback.SetActive(true);
+    }
+
+    public void Deselect()
+    {
+        selectionFeedback.SetActive(false);
     }
 
     //NOTAS PARA FUTURA ATUALIZAÇÃO
