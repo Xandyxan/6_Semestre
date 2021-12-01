@@ -78,13 +78,13 @@ public class GameManager : MonoBehaviour
         {
             if (!mainMenuScreen)
             {
-                if (!isPausedGame)
+                if (!isPausedGame && !Dialogue.isSomeDialogueRunning)
                 {
                     inventoryUiObject.SetActive(true);
                     SetPauseGame(true, false);
                     usingInventory = true;
                 }
-                else if (isPausedGame && usingInventory)
+                else if (isPausedGame && usingInventory && !Dialogue.isSomeDialogueRunning)
                 {
                     inventoryUiObject.SetActive(false);
                     SetPauseGame(false, false);
@@ -209,17 +209,5 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("levelAt", 2);
     }
-/*
-    public void SetTaskText(string actualTask)  // scripts vão chamar pra colocar um "Pegue uma toalha" aparecendo no canto da tela
-    {
-        taskText.text = actualTask;
-        taskText.gameObject.SetActive(true);
-    }
 
-    public void ConcludeCurrentTask()    // quando uma condição de task acaba, o script da task chama esse método
-    {
-        taskText.text = "";
-        taskText.gameObject.SetActive(false);
-    }
-*/
 }
