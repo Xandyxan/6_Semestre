@@ -40,6 +40,9 @@ public class PlayerController3rdPerson : MonoBehaviour
     [Header("States")]
     private bool isRunning, isWalking; // isWalking indicates if the player is moving.
 
+    [Header("Movement Setup")]
+    [SerializeField] private bool canMoveOnStart;
+
     // local temporário pra var de soundSource
     [SerializeField] private GameObject soundSource;
 
@@ -48,7 +51,18 @@ public class PlayerController3rdPerson : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         actualWalkSpeed = walkSpeed;
-        canMove = true;
+        
+        if(canMoveOnStart)
+        {
+            canMove = true;
+        }
+        else
+        {
+            canMove = false;
+        }
+            
+
+        //SubscribeToDelegates();
     }
 
 
@@ -77,7 +91,7 @@ public class PlayerController3rdPerson : MonoBehaviour
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
         GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
         GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
-    }
+}
 
     private void OnDisable()
     {
@@ -244,14 +258,14 @@ public class PlayerController3rdPerson : MonoBehaviour
         } 
     }
 
-    private void TurnPlayerControllerOn()
+    public void TurnPlayerControllerOn()
     {
         canMove = true;
         this.enabled = true;
         print("Player controller on");
     }
 
-    private void TurnPlayerControllerOff()
+    public void TurnPlayerControllerOff()
     {
         canMove = false;
         this.enabled = false;

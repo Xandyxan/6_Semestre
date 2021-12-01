@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class FadeImage : MonoBehaviour
 {
     [Header("Duration of fade")]
-    [SerializeField] private float durationTime;
+    [SerializeField] private float delayTime;
 
     [Header("Color fade")]
     [SerializeField] private Color startColor;
@@ -17,7 +17,8 @@ public class FadeImage : MonoBehaviour
     [SerializeField] private float intervalTime;
 
     private Image imagem;
-
+    
+    [Header("Scene Management")]
     [SerializeField] bool loadScene;
     [SerializeField] int sceneIndex;
 

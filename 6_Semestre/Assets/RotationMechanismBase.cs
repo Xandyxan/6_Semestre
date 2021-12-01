@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Cinemachine;
 
 
 public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
@@ -42,7 +43,10 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
     [SerializeField] private bool finalPuzzle;
     [SerializeField] private List<GameObject> selectionFeedbacks = new List<GameObject>();
 
+    [SerializeField] private List<CinemachineVirtualCamera> mechanismsCam = new List<CinemachineVirtualCamera>(); // foca no mecanismo selecionado
+
     private bool solved;
+
 
     private void Awake()
     {
@@ -103,6 +107,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
                 else
                 {
                     selectionFeedbacks[i].SetActive(false);
+                    mechanismsCam[i].Priority = 5;
                 }
                 mechanisms[i].SetIsSelected(false);
             }
@@ -113,6 +118,7 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
             else
             {
                 selectionFeedbacks[selectionIndex].SetActive(true);
+                mechanismsCam[selectionIndex].Priority = 20;
             }
             mechanisms[selectionIndex].SetIsSelected(true);
         }
@@ -135,9 +141,15 @@ public class RotationMechanismBase : MonoBehaviour, IInteractable, ISelectable
         }
         else
         {
+            print("PAROU INTERAÇÃO BOSS");
             foreach(GameObject feedback in selectionFeedbacks)
             {
                 feedback.SetActive(false);
+            }
+
+            foreach(CinemachineVirtualCamera vcam in mechanismsCam)
+            {
+                vcam.Priority = 5;
             }
         }
         isInteracting = false;
