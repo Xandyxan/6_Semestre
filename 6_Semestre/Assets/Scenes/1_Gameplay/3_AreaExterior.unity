@@ -551,7 +551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46822345
 GameObject:
@@ -4199,6 +4199,64 @@ Transform:
   m_Father: {fileID: 1025528198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &248300331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248300332}
+  - component: {fileID: 248300333}
+  m_Layer: 0
+  m_Name: Dialogue1 (34)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248300332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248300331}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248300333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248300331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cigana
+  speechs:
+  - "Mas lhe garanto, vagar pelo cemit\xE9rio \xE0 noite n\xE3o \xE9 boa ideia, somente
+    aqueles com presen\xE7as f\xFAnebres podem caminhar pelo lugar sem se preocupar!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 1131189593}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &249821305
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,6 +5545,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2112453319}
+  - {fileID: 1173856609}
+  - {fileID: 1425665341}
+  - {fileID: 1447589188}
   m_Father: {fileID: 442920666}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5685,6 +5746,64 @@ Transform:
   m_Father: {fileID: 1936655743}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 1.6193496, y: 2.1806753, z: -43.636375}
+--- !u!1 &333132570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333132571}
+  - component: {fileID: 333132572}
+  m_Layer: 0
+  m_Name: Dialogue1 (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &333132571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333132570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333132572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333132570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cigana
+  speechs:
+  - "Hahahahaha! Tu \xE9s o delegado aqui, n\xE3o me envolverei com problemas de
+    tua realidade mundana! Hahahaha!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 248300331}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &334241814
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,7 +6272,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &358901043
 PrefabInstance:
@@ -7284,9 +7403,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1173856609}
-  - {fileID: 1425665341}
-  - {fileID: 1447589188}
   - {fileID: 1997208751}
   - {fileID: 1403930494}
   - {fileID: 1656890125}
@@ -7308,8 +7424,6 @@ Transform:
   - {fileID: 892502339}
   - {fileID: 43242158}
   - {fileID: 1365636814}
-  - {fileID: 1832032878}
-  - {fileID: 1903907473}
   m_Father: {fileID: 442920666}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7454,6 +7568,7 @@ Transform:
   - {fileID: 319758646}
   - {fileID: 424802624}
   - {fileID: 1990604313}
+  - {fileID: 721587614}
   m_Father: {fileID: 1141022809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7494,8 +7609,23 @@ MonoBehaviour:
   - {fileID: 998440672}
   - {fileID: 892502338}
   - {fileID: 43242157}
+  - {fileID: 1365636815}
+  - {fileID: 1832032879}
+  - {fileID: 1903907474}
+  - {fileID: 1717239135}
+  - {fileID: 1944285626}
+  - {fileID: 1352672723}
+  - {fileID: 1463205728}
+  - {fileID: 1433063001}
+  - {fileID: 2127354486}
+  - {fileID: 333132572}
+  - {fileID: 248300333}
+  - {fileID: 1131189595}
+  - {fileID: 1072340011}
+  - {fileID: 1774776349}
+  - {fileID: 1450339536}
   hasInitialDialogue: 1
-  initialDialogue: 17
+  initialDialogue: 0
   hasDelayInitialDialogue: 0
   delayTime: 1
 --- !u!4 &443285559 stripped
@@ -7560,7 +7690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444233733
 GameObject:
@@ -7679,7 +7809,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &462057366
 PrefabInstance:
@@ -8500,7 +8630,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &494787800
 GameObject:
@@ -10280,7 +10410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615603891
 GameObject:
@@ -10368,7 +10498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &617128813
 GameObject:
@@ -10403,7 +10533,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10632,7 +10762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &631481319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11943,6 +12073,48 @@ RectTransform:
   m_AnchoredPosition: {x: 17.700073, y: -22.299988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &721587613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721587614}
+  m_Layer: 0
+  m_Name: Dialogo_Cigana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721587614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721587613}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1717239134}
+  - {fileID: 1944285625}
+  - {fileID: 1352672722}
+  - {fileID: 1463205727}
+  - {fileID: 1433063000}
+  - {fileID: 2127354485}
+  - {fileID: 333132571}
+  - {fileID: 248300332}
+  - {fileID: 1131189594}
+  - {fileID: 1072340010}
+  - {fileID: 1774776348}
+  - {fileID: 1450339535}
+  m_Father: {fileID: 442920666}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &724315004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 765746538381098817, guid: f2c08caa13f0dcf49b49a7e6fa6f0bd2, type: 3}
@@ -13798,7 +13970,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 21
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &892926151
 GameObject:
@@ -13818,7 +13990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &892926152
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15306,7 +15478,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.000015258789, y: 0}
-  m_SizeDelta: {x: 180, y: 18}
+  m_SizeDelta: {x: 180, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &998440671
 GameObject:
@@ -15364,7 +15536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 20
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008731111
 GameObject:
@@ -15532,7 +15704,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025111633
 GameObject:
@@ -16397,8 +16569,66 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1072340009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072340010}
+  - component: {fileID: 1072340011}
+  m_Layer: 0
+  m_Name: Dialogue1 (36)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1072340010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072340009}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072340011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072340009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cigana
+  speechs:
+  - "Achas mesmo que encontrar o assassino resolver\xE1 algo? Delegado, tu sabes
+    pouco dessa cidade, n\xE3o \xE9 mesmo? Hahahaha!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 1774776347}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1079695491
 GameObject:
   m_ObjectHideFlags: 0
@@ -16985,6 +17215,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 765746538381098817, guid: f2c08caa13f0dcf49b49a7e6fa6f0bd2, type: 3}
   m_PrefabInstance: {fileID: 2135369345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1131189593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131189594}
+  - component: {fileID: 1131189595}
+  m_Layer: 0
+  m_Name: Dialogue1 (35)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131189594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131189593}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1131189595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131189593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: "Ant\xF4nio Carlos"
+  speechs:
+  - "Pelo jeito, voc\xEA n\xE3o vai me ajudar mesmo! Olha cigana, eu respeito muito
+    suas vertentes religiosas, mas se isso for atrapalhar a investiga\xE7\xE3o, por
+    favor, fique de fora!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 1072340009}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!4 &1131576383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4720802594195991715, guid: 227041677068a3845ace3ed70014a958, type: 3}
@@ -17833,8 +18122,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424802624}
-  m_RootOrder: 0
+  m_Father: {fileID: 319758646}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174836541
 GameObject:
@@ -20183,7 +20472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1333365927
 GameObject:
@@ -20689,6 +20978,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.734979, y: 1, z: 6.3087244}
   m_Center: {x: -0.72936773, y: 0, z: 0.10279226}
+--- !u!1 &1352672721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352672722}
+  - component: {fileID: 1352672723}
+  m_Layer: 0
+  m_Name: Dialogue1 (29)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1352672722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352672721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1352672723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352672721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: "Ant\xF4nio Carlos"
+  speechs:
+  - Outro papo fiado?
+  onlyOnce: 0
+  nextDialogue: {fileID: 1463205726}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1355093473
 GameObject:
   m_ObjectHideFlags: 0
@@ -20828,7 +21174,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 23
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1365636815
 MonoBehaviour:
@@ -21213,7 +21559,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1403541916
 MonoBehaviour:
@@ -21299,7 +21645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405630455
 GameObject:
@@ -21685,8 +22031,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424802624}
-  m_RootOrder: 1
+  m_Father: {fileID: 319758646}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425712621
 GameObject:
@@ -21842,6 +22188,64 @@ Transform:
   m_Father: {fileID: 1642187750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1433062999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433063000}
+  - component: {fileID: 1433063001}
+  m_Layer: 0
+  m_Name: Dialogue1 (31)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433063000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433062999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1433063001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433062999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cigana
+  speechs:
+  - "E eu deveria me preocupar? Hahaha! Eu vejo o futuro e o guio, querido delegado!
+    Tu n\xE3o sabes de nada e eu sei de tudo!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 2127354484}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1001 &1435119722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22015,8 +22419,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424802624}
-  m_RootOrder: 2
+  m_Father: {fileID: 319758646}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449052931
 GameObject:
@@ -22097,6 +22501,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449052931}
   m_CullTransparentMesh: 1
+--- !u!1 &1450339534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450339535}
+  - component: {fileID: 1450339536}
+  m_Layer: 0
+  m_Name: Dialogue1 (38)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450339535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450339534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1450339536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450339534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cigana
+  speechs:
+  - "Eu nada vejo, nada escuto! Hahahaha! Sei de tudo, mas nada digo! Teu destino
+    est\xE1 no cemit\xE9rio, mas n\xE3o posso dizer se \xE9 bom ou ruim! Hahahaha!
+    Ingresse no labirinto dos mortos! Hahahahaha!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 0}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1450412776
 GameObject:
   m_ObjectHideFlags: 0
@@ -22320,6 +22783,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463165646}
   m_CullTransparentMesh: 1
+--- !u!1 &1463205726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463205727}
+  - component: {fileID: 1463205728}
+  m_Layer: 0
+  m_Name: Dialogue1 (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1463205727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463205726}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463205728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463205726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: "Ant\xF4nio Carlos"
+  speechs:
+  - "Observe cigana, eu verdadeiramente acredito que voc\xEA n\xE3o tenha entrosamento
+    com os assassinatos, mas o modo que voc\xEA dialoga n\xE3o ajuda, compreende?"
+  onlyOnce: 0
+  nextDialogue: {fileID: 1433062999}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1001 &1464700296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23110,7 +23631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1545615678
 PrefabInstance:
@@ -25190,7 +25711,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656890123
 GameObject:
@@ -25247,7 +25768,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1662137600
 GameObject:
@@ -25691,7 +26212,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1990604313}
+  m_Father: {fileID: 721587614}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1717239135
@@ -25708,9 +26229,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: "Ant\xF4nio Carlos"
   speechs:
-  - Que cheiro de morte! Deve estar por aqui.
+  - Boa noite senhora!
   onlyOnce: 0
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 1944285624}
   restrictCharMovement: 0
   endSound: 0
   postProcessEffect: {fileID: 0}
@@ -26726,6 +27247,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774407294}
   m_CullTransparentMesh: 1
+--- !u!1 &1774776347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774776348}
+  - component: {fileID: 1774776349}
+  m_Layer: 0
+  m_Name: Dialogue1 (37)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1774776348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774776347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1774776349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774776347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: "Ant\xF4nio Carlos"
+  speechs:
+  - "N\xE3o irei repetir novamente! Fique longe de atrapalhar as investiga\xE7\xF5es
+    e n\xE3o se meter\xE1 em problemas!"
+  onlyOnce: 0
+  nextDialogue: {fileID: 1450339534}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1777759804
 GameObject:
   m_ObjectHideFlags: 0
@@ -27071,7 +27650,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1786094974
 GameObject:
@@ -27723,8 +28302,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424802624}
-  m_RootOrder: 24
+  m_Father: {fileID: 1990604313}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1832032879
 MonoBehaviour:
@@ -28879,8 +29458,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424802624}
-  m_RootOrder: 25
+  m_Father: {fileID: 1990604313}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1903907474
 MonoBehaviour:
@@ -29032,7 +29611,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.0000076293945}
-  m_SizeDelta: {x: 310, y: 22.57708}
+  m_SizeDelta: {x: 310, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1905438449
 GameObject:
@@ -29905,6 +30484,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6544202826356707928, guid: adde07435eba9794aae906582aa964a9, type: 3}
   m_PrefabInstance: {fileID: 234412483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1944285624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944285625}
+  - component: {fileID: 1944285626}
+  m_Layer: 0
+  m_Name: Dialogue1 (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944285625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944285624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944285626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944285624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cigana
+  speechs:
+  - "Boa noite meu corajoso amiguinho! Tu n\xE3o devias estar aqui, sabia?"
+  onlyOnce: 0
+  nextDialogue: {fileID: 1352672721}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!1 &1946570972
 GameObject:
   m_ObjectHideFlags: 0
@@ -29962,7 +30598,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947847155
 GameObject:
@@ -30506,7 +31142,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1717239134}
+  - {fileID: 1832032878}
+  - {fileID: 1903907473}
   m_Father: {fileID: 442920666}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30596,7 +31233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424802624}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2003014125
 GameObject:
@@ -31091,7 +31728,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -33042,6 +33679,64 @@ Transform:
   m_Father: {fileID: 331354033}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.5203183, y: -85.71759, z: -0.038960826}
+--- !u!1 &2127354484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2127354485}
+  - component: {fileID: 2127354486}
+  m_Layer: 0
+  m_Name: Dialogue1 (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2127354485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127354484}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 721587614}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2127354486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127354484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: "Ant\xF4nio Carlos"
+  speechs:
+  - "As pessoas tem confian\xE7a em ti, isso \xE9 ineg\xE1vel, mas j\xE1 que sabe
+    de tudo, que tal me contar quem \xE9 o assassino?"
+  onlyOnce: 0
+  nextDialogue: {fileID: 333132570}
+  restrictCharMovement: 0
+  endSound: 0
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  _countProvisorio: 5
+  _taskHUDText: 
+  cameraToDesactive: {fileID: 0}
+  item: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!4 &2131412096 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9d8e2e836619b544b8d63ba48f2be344, type: 3}
