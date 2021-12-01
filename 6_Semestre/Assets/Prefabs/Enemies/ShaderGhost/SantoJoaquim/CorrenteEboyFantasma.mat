@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CorrenteEboyFantasma
-  m_Shader: {fileID: -6465566751694194690, guid: 566bc47a920bd1b429cc45c2f3314a30, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: aa7cf040d1a26014da48b87cdd965da8, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -50,9 +50,9 @@ Material:
     m_Floats:
     - _Alpha: 1
     - _Amplitude: 0.05
-    - _FresnelPower: 5
+    - _FresnelPower: 1.87
     - _Smoothness: 0.02
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FresnelColor: {r: 0, g: 0.1552862, b: 4.237095, a: 0}
+    - _BaseColor: {r: 0.745728, g: 0.9245283, b: 0.75398684, a: 1}
+    - _FresnelColor: {r: 0.2036313, g: 3.320755, b: 0.82379216, a: 0}
   m_BuildTextureStacks: []
