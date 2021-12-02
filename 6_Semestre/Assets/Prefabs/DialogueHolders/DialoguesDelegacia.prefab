@@ -193,6 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4793441890431364929}
   - component: {fileID: 4793441890431364934}
+  - component: {fileID: 6217105162358381525}
   m_Layer: 0
   m_Name: Dialogue_05
   m_TagString: Untagged
@@ -233,13 +234,30 @@ MonoBehaviour:
     melhor eu ir at\xE9 o local."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  restrictCharMovement: 0
+  restrictCharMovement: 1
   endSound: 0
-  _countProvisorio: 5
+  _countProvisorio: 8.5
   cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
+--- !u!114 &6217105162358381525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793441890431364928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bb159787bdefe4781ea500a16e1917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/2_Delegacia/Delegacia_2_5
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  playOnStart: 0
+  delayTime: 0
 --- !u!1 &4793441890658632688
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4793441891066718834}
   - component: {fileID: 4793441891066718845}
+  - component: {fileID: 913761797390256853}
   m_Layer: 0
   m_Name: Dialogue_03
   m_TagString: Untagged
@@ -457,11 +476,28 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
   endSound: 0
-  _countProvisorio: 5
+  _countProvisorio: 7
   cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
+--- !u!114 &913761797390256853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793441891066718844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bb159787bdefe4781ea500a16e1917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/2_Delegacia/Delegacia_2_3
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  playOnStart: 0
+  delayTime: 0
 --- !u!1 &4793441891395112235
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4793441891794649905}
   - component: {fileID: 4793441891794649910}
+  - component: {fileID: 1975844846491019134}
   m_Layer: 0
   m_Name: Dialogue_04
   m_TagString: Untagged
@@ -568,10 +605,27 @@ MonoBehaviour:
     de l\xE1?"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  restrictCharMovement: 0
+  restrictCharMovement: 1
   endSound: 0
-  _countProvisorio: 5
+  _countProvisorio: 11
   cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
+--- !u!114 &1975844846491019134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793441891794649904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bb159787bdefe4781ea500a16e1917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/2_Delegacia/Delegacia_2_4
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  playOnStart: 0
+  delayTime: 0

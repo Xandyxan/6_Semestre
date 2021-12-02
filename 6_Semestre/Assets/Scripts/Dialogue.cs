@@ -39,6 +39,7 @@ public class Dialogue : MonoBehaviour
     public GameObject cameraToDesactive;
     public ItemObject item;
     [SerializeField] private InventoryObject playerInventory;
+    [SerializeField] private DoorInteract doorInteract;
 
     private void Awake()
     {
@@ -125,6 +126,7 @@ public class Dialogue : MonoBehaviour
 
         if (endSound) dialogueSound.PlayOneShoot2D();
 
+        if (doorInteract) doorInteract.canUse = true;
     }
 
     public void RunCoroutine() { StartCoroutine(SpeechCoroutine()); }

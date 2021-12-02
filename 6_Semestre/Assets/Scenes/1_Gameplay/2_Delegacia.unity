@@ -31930,7 +31930,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1153454421}
   m_HandleRect: {fileID: 1153454420}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -42908,9 +42908,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1365169879}
     m_Modifications:
     - target: {fileID: 4793441890056081458, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: onlyOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793441890056081458, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1547982620}
+    - target: {fileID: 4793441890301960346, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: onlyOnce
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4793441890301960346, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
       propertyPath: playerController
       value: 
@@ -42919,10 +42927,22 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1547982620}
+    - target: {fileID: 4793441890431364934, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: restrictCharMovement
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793441890658632689, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: _countProvisorio
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4793441890658632689, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1547982620}
+    - target: {fileID: 4793441890679224912, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: onlyOnce
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4793441890679224912, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
       propertyPath: playerController
       value: 
@@ -42931,6 +42951,10 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1547982620}
+    - target: {fileID: 4793441891066718845, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: restrictCharMovement
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4793441891395112232, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -42983,6 +43007,10 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1547982620}
+    - target: {fileID: 4793441891794649910, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
+      propertyPath: restrictCharMovement
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b25cdff0dcd4eb146af809ee23dde705, type: 3}
 --- !u!1 &4795137804235311617
