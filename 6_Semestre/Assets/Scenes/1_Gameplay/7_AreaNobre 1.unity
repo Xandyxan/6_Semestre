@@ -3559,6 +3559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   characterName: "Instru\xE7\xF5es"
   speechs:
   - "Fantasmas reagem de forma diferente \xE0 luz"
@@ -3567,10 +3568,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
   endSound: 0
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
-  _taskHUDText: 
+  cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
@@ -3993,6 +3992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   characterName: "Instru\xE7\xF5es"
   speechs:
   - Pressione F para ligar a lamparina
@@ -4001,10 +4001,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 1016555328}
   restrictCharMovement: 0
   endSound: 0
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
   _countProvisorio: 4
-  _taskHUDText: 
+  cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
@@ -26231,6 +26229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   characterName: "Ant\xF4nio Carlos"
   speechs:
   - A porta foi aberta!
@@ -26238,10 +26237,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
   endSound: 0
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
   _countProvisorio: 3
-  _taskHUDText: 
+  cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
@@ -31263,14 +31260,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554334944}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.016000735, y: -0.36100006, z: 0.118000045}
+  m_LocalRotation: {x: 0.09324314, y: -0.90039164, z: 0.1781752, w: 0.3858164}
+  m_LocalPosition: {x: 0.488, y: -0.053001404, z: -0.328}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1712400496}
   m_Father: {fileID: 1985603076}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.129, y: -133.998, z: -1.896}
 --- !u!114 &554334946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36094,6 +36091,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2c08caa13f0dcf49b49a7e6fa6f0bd2, type: 3}
+--- !u!4 &825441086 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7943559270117513665, guid: 05e01611e3ea6cd40a3659a366a15036, type: 3}
+  m_PrefabInstance: {fileID: 920388693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &835711244
 GameObject:
   m_ObjectHideFlags: 0
@@ -36123,6 +36125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   characterName: "Ant\xF4nio Carlos"
   speechs:
   - "Olha os detalhes pra \xE9poca. O escultor at\xE9 fez as ma\xE7\xE3s."
@@ -36131,10 +36134,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
   endSound: 0
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
-  _taskHUDText: 
+  cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
@@ -39291,6 +39292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   characterName: "Instru\xE7\xF5es"
   speechs:
   - Utilize E para interagir
@@ -39298,10 +39300,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
   endSound: 0
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
   _countProvisorio: 4
-  _taskHUDText: 
+  cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
@@ -39489,6 +39489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c610eca3cf6e947a6df916dcac31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   characterName: "Instru\xE7\xF5es"
   speechs:
   - "Enquanto interagindo, pressione ESPA\xC7O para abrir gavetas"
@@ -39496,10 +39497,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
   endSound: 0
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
   _countProvisorio: 2
-  _taskHUDText: 
+  cameraToActive: {fileID: 0}
   cameraToDesactive: {fileID: 0}
   item: {fileID: 0}
   playerInventory: {fileID: 0}
@@ -48023,7 +48022,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 5
+  m_Priority: 50
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -61757,7 +61756,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60.000004
+  field of view: 48
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -61782,8 +61781,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974025635}
-  m_LocalRotation: {x: 0.0029528737, y: 0.9811616, z: -0.19258204, w: 0.015015072}
-  m_LocalPosition: {x: 17.41, y: 52.34, z: 12.88}
+  m_LocalRotation: {x: -0.13823916, y: 0.6934623, z: -0.14781143, w: -0.6914852}
+  m_LocalPosition: {x: 15.39, y: 51.541, z: 9.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63977,6 +63976,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5609b9348d5accc408c4e5a4d30aa220, type: 3}
+--- !u!1 &2089035335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089035336}
+  - component: {fileID: 2089035337}
+  m_Layer: 0
+  m_Name: Point Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2089035336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089035335}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: 0.00369, y: 0.01602, z: -0.00809}
+  m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.010000002}
+  m_Children: []
+  m_Father: {fileID: 825441086}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &2089035337
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089035335}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.8301887, g: 0.70459414, b: 0.3563546, a: 1}
+  m_Intensity: 4
+  m_Range: 15
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.1
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &2089538330
 GameObject:
   m_ObjectHideFlags: 0
@@ -67613,7 +67705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.139
+      value: -0.106
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalPosition.y
@@ -67621,23 +67713,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.652
+      value: -0.959
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.6457251
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.6457249
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.2881653
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.28816533
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -67649,7 +67741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842816598546756488, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 48.099
       objectReference: {fileID: 0}
     - target: {fileID: 6511653183626078514, guid: e88124acd0fb82840a197ad6ec607327, type: 3}
       propertyPath: m_Name
@@ -76233,7 +76325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1561f2c1d990c4a8019ad9d4a0f297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationTime: 3
+  delayTime: 0
   startColor: {r: 0, g: 0, b: 0, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
   hasNextFade: 0
@@ -77169,7 +77261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -30.002197, y: -46}
+  m_AnchoredPosition: {x: -30.002136, y: -46}
   m_SizeDelta: {x: 735.7512, y: 107}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &7581263015031120156
