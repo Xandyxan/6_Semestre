@@ -19276,7 +19276,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2025497270}
   m_HandleRect: {fileID: 2025497269}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -35059,7 +35059,7 @@ MonoBehaviour:
   characterName: "Ant\xF4nio Carlos"
   speechs:
   - Que cheiro de morte! Deve estar por aqui.
-  onlyOnce: 0
+  onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 1
   endSound: 0
