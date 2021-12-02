@@ -8,10 +8,15 @@ public class ChangeCameraOnTrigger : MonoBehaviour
     private CinemachineBrain brain;
     [SerializeField] private CinemachineVirtualCamera thisAreaCam;
     public CinemachineVirtualCamera VirtualCamera;
+
+    [Header("Others")]
+    [SerializeField] private GameObject _object;
+    private bool alreadyDone;
    
     private void Awake()
     {
         brain = Camera.main.GetComponent<CinemachineBrain>();
+        alreadyDone = false;
     }
    
     IEnumerator Start()
@@ -27,6 +32,12 @@ public class ChangeCameraOnTrigger : MonoBehaviour
             print("AHHAHAHAHAAHAHH MUAHAHAHA");
 
             StartCoroutine(UpdateActiveCam()); // lembrar de ajustar o trecho de UpdateActiveCam no script do player, para que a movimentação seja de acordo com isso.
+
+            if(!alreadyDone && _object != null)
+            {
+                _object.SetActive(true);
+                alreadyDone = true;
+            }
         }
     }
 
