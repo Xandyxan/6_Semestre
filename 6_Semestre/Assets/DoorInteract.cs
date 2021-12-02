@@ -21,7 +21,7 @@ public class DoorInteract : MonoBehaviour, ISelectable, IInteractable
 
     public void Interact()
     {
-        if (playerInventory.FindItemOnInventory2(itemUnlock.data.Id))
+        if (playerInventory != null && playerInventory.FindItemOnInventory2(itemUnlock.data.Id))
         {
             SceneManager.LoadScene(sceneToLoad);
             //playerInventory.RemoveItem(itemUnlock.data, -1);
@@ -31,7 +31,7 @@ public class DoorInteract : MonoBehaviour, ISelectable, IInteractable
             SceneManager.LoadScene(sceneToLoad);
             
         }
-        else
+        else if(!canUse || playerInventory != null || playerInventory.FindItemOnInventory2(itemUnlock.data.Id))
         {
             if(dialogueManager) dialogueManager.ExecuteDialogue(dialogueIndex);
         }

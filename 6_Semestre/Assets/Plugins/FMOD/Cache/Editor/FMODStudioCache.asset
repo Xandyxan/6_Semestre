@@ -1,5 +1,164 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8617952361004268547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Exterior_3_2
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Exterior_3_2
+  guid: 74ed034ecfc1e149b5fb1f508a9d5028
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9921
+--- !u!114 &-8272607796036481488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_4
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_4
+  guid: f2b5a9db88198949854cf50d85860041
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7280
+--- !u!114 &-7912832853602232239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_8
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_8
+  guid: 090de348c004b440b9e20421ac9d5abd
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13804
+--- !u!114 &-7465092422855113237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_0
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_0
+  guid: 6e46498c6669064886a260412276cfb3
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4330
+--- !u!114 &-7191861548053476637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Delegacia_2_3
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Delegacia_2_3
+  guid: 317d42742f3e284e8d33505ba492f482
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7038
+--- !u!114 &-7139337296391068618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_13
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_13
+  guid: 927bf9e2163a984dae09da6d604dc18d
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 93660
+--- !u!114 &-7108429989804817564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_4
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_4
+  guid: b8510ddbb34b814d9bbc3a1a476b83e2
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 12015
 --- !u!114 &-6500629622236144974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,11 +197,34 @@ MonoBehaviour:
   Path: ../../FMOD-TumuloProfano/Build/Desktop/Dublagens.bank
   Name: Dublagens
   StudioPath: bank:/Dublagens
-  lastModified: 637739060098544260
+  lastModified: 637739935687059365
   FileSizes:
   - Name: Desktop
-    Value: 6933376
+    Value: 29610976
   Exists: 1
+--- !u!114 &-5971577509192793182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_7
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_7
+  guid: 552769053a1c624b81693f185b9ce9cd
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2200
 --- !u!114 &-5957203218450695665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,11 +240,80 @@ MonoBehaviour:
   Path: ../../FMOD-TumuloProfano/Build/Desktop/Sfx.bank
   Name: Sfx
   StudioPath: bank:/Sfx
-  lastModified: 637739060098783602
+  lastModified: 637739935688704622
   FileSizes:
   - Name: Desktop
     Value: 482
   Exists: 1
+--- !u!114 &-5919641148110684863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_16
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_16
+  guid: de9e923feb4b2945860831847a72063b
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9293
+--- !u!114 &-5869160419634267533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Antonio_Delegacia_2_0
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Antonio_Delegacia_2_0
+  guid: ec800e316b8aa546b2df2350cf991898
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6708
+--- !u!114 &-5763990578239229971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_9
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_9
+  guid: 3e67f48d44ae284989f93a04710a031c
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5089
 --- !u!114 &-5361242410764338162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +329,7 @@ MonoBehaviour:
   Path: ../../FMOD-TumuloProfano/Build/Desktop/Ambiente.bank
   Name: Ambiente
   StudioPath: bank:/Ambiente
-  lastModified: 637739060085395909
+  lastModified: 637739935584878312
   FileSizes:
   - Name: Desktop
     Value: 482
@@ -97,6 +348,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/2_Delegacia/Delegacia_2_2
   guid: 3d2573dee2392c46b0e45e425e67dcb6
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8641
+--- !u!114 &-4680347462341225667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_10
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_10
+  guid: 6543d3e604109742905314ed8044d94e
   Banks:
   - {fileID: -6492666910826985692}
   IsStream: 0
@@ -105,7 +378,282 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 8641
+  Length: 9200
+--- !u!114 &-4108254216860491066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Cigana_Exterior_3_0
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Cigana_Exterior_3_0
+  guid: 57aad329891bc0418915ba53ba468046
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7476
+--- !u!114 &-3784511998409877893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_3
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_3
+  guid: cf8962a99f1ddf488599c88d97b6148b
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11059
+--- !u!114 &-3341533016801190240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_10
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_10
+  guid: 8dece80fe578d54096dbfcd549d4a82c
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9664
+--- !u!114 &-3328447677920843047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_17
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_17
+  guid: 0480956146424a49b42edfd972493404
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11065
+--- !u!114 &-3225859702197241360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_8
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_8
+  guid: f68f54ca606dd047afad102ba4c415ee
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7284
+--- !u!114 &-2905633686968957926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_6
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_6
+  guid: 0c218db06a7d2a4a8fc190636d9b49bf
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10774
+--- !u!114 &-2633894688502642968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Exterior_3_0
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Exterior_3_0
+  guid: 5b0873e82760c047bb3c7196f7dbfe43
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6249
+--- !u!114 &-2540455349929781567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_14
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_14
+  guid: 292dd0a302d4f149a7d56a6f212086ab
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1800
+--- !u!114 &-1838084896741480641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Cigana_Exterior_3_1
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Cigana_Exterior_3_1
+  guid: 617b37984650da4293ebc53552724aae
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16832
+--- !u!114 &-1784551962529291525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Cigana_Exterior_3_4
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Cigana_Exterior_3_4
+  guid: 9ddeccde6142a5429d7e95bf2b43dbaf
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 13931
+--- !u!114 &-1608303423051668070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_3
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_3
+  guid: 820af3060690ae48be3aad04ef5117c8
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8890
+--- !u!114 &-785190329153381839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_6
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_6
+  guid: 987d1dea4a33f246bd94afb860655b96
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6460
 --- !u!114 &-531397344663748895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,11 +669,57 @@ MonoBehaviour:
   Path: ../../FMOD-TumuloProfano/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637739060098753978
+  lastModified: 637739935688685013
   FileSizes:
   - Name: Desktop
-    Value: 1296
+    Value: 2718
   Exists: 1
+--- !u!114 &-408764557973074260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Antonio_Delegacia_2_2
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Antonio_Delegacia_2_2
+  guid: 3d2573dee2392c46b0e45e425e67dcb6
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8641
+--- !u!114 &-213324799142064127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_0
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_0
+  guid: 5b0873e82760c047bb3c7196f7dbfe43
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6249
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,15 +741,55 @@ MonoBehaviour:
   - {fileID: -5957203218450695665}
   EditorEvents:
   - {fileID: -6500629622236144974}
-  - {fileID: 2088399407055986446}
-  - {fileID: -5084433170532461319}
-  - {fileID: 1786558070869442308}
+  - {fileID: 175984237212169836}
+  - {fileID: 8696817201311990295}
+  - {fileID: -408764557973074260}
+  - {fileID: 1069184626782573412}
+  - {fileID: -213324799142064127}
+  - {fileID: 5011674995157564924}
+  - {fileID: -1608303423051668070}
+  - {fileID: 6608700056994816767}
+  - {fileID: 3728120585805870891}
+  - {fileID: -5869160419634267533}
+  - {fileID: -7912832853602232239}
+  - {fileID: -2905633686968957926}
+  - {fileID: 6474207121045335302}
+  - {fileID: 2683301797913118956}
+  - {fileID: 1632850823626628749}
+  - {fileID: -5763990578239229971}
+  - {fileID: -5971577509192793182}
+  - {fileID: -4680347462341225667}
+  - {fileID: 5295792535245058033}
+  - {fileID: -7465092422855113237}
+  - {fileID: 1158998895751749456}
+  - {fileID: 1476614608226675261}
+  - {fileID: -3341533016801190240}
+  - {fileID: -785190329153381839}
+  - {fileID: -7108429989804817564}
+  - {fileID: 3811718330332700525}
+  - {fileID: 2046165553463429129}
+  - {fileID: -3784511998409877893}
+  - {fileID: -8272607796036481488}
+  - {fileID: -3225859702197241360}
+  - {fileID: 7465495966363977585}
+  - {fileID: -3328447677920843047}
+  - {fileID: -2540455349929781567}
+  - {fileID: 6118439724462784059}
+  - {fileID: 4794330699755583707}
+  - {fileID: -4108254216860491066}
+  - {fileID: -1838084896741480641}
+  - {fileID: -7139337296391068618}
+  - {fileID: -1784551962529291525}
+  - {fileID: 8301778752674672769}
+  - {fileID: 3395387223656788074}
+  - {fileID: 3714995093652612835}
+  - {fileID: -5919641148110684863}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3715997899651808249}
   StringsBanks:
   - {fileID: -531397344663748895}
-  stringsBankWriteTime: 637739060098753978
+  stringsBankWriteTime: 637739935688685013
   cacheVersion: 8
 --- !u!114 &93112442099735347
 MonoBehaviour:
@@ -172,11 +806,126 @@ MonoBehaviour:
   Path: ../../FMOD-TumuloProfano/Build/Desktop/Musicas.bank
   Name: Musicas
   StudioPath: bank:/Musicas
-  lastModified: 637739060098773619
+  lastModified: 637739935688694639
   FileSizes:
   - Name: Desktop
     Value: 482
   Exists: 1
+--- !u!114 &175984237212169836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_1
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_1
+  guid: 1ff7b876271e544dbc206c539359f8d6
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5025
+--- !u!114 &1069184626782573412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Antonio_Delegacia_2_1
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Antonio_Delegacia_2_1
+  guid: 47976a246a2fc3418a54137df3419ef3
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5484
+--- !u!114 &1158998895751749456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_7
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_7
+  guid: 886230274484844eba8fc45bc91652b9
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9534
+--- !u!114 &1476614608226675261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_1
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_1
+  guid: 8aabe0cca916e24697ce48b47072183b
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4568
+--- !u!114 &1632850823626628749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_9
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_9
+  guid: 3dbf2fe125fc2a44b22bd8a2b8b67e48
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10959
 --- !u!114 &1786558070869442308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +940,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/2_Delegacia/Delegacia_2_0
   guid: ec800e316b8aa546b2df2350cf991898
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6708
+--- !u!114 &2046165553463429129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_5
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_5
+  guid: c7e3e9b94a06f944861522af353cec5f
   Banks:
   - {fileID: -6492666910826985692}
   IsStream: 0
@@ -199,7 +970,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 6708
+  Length: 8600
 --- !u!114 &2088399407055986446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +985,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/2_Delegacia/Delegacia_2_1
   guid: 47976a246a2fc3418a54137df3419ef3
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5484
+--- !u!114 &2683301797913118956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_2
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_2
+  guid: 38ec74efc27c5540bf93b07a6ad5d068
   Banks:
   - {fileID: -6492666910826985692}
   IsStream: 0
@@ -222,7 +1015,53 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5484
+  Length: 4330
+--- !u!114 &3395387223656788074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Cigana_Exterior_3_3
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Cigana_Exterior_3_3
+  guid: d7d5101719ded444994bc768c9ed49c7
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15600
+--- !u!114 &3714995093652612835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_15
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_15
+  guid: ddce3cc97f91614891d0ad0b21ba11d8
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10172
 --- !u!114 &3715997899651808249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,8 +1077,349 @@ MonoBehaviour:
   Path: ../../FMOD-TumuloProfano/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637739060098574149
+  lastModified: 637739935688601020
   FileSizes:
   - Name: Desktop
     Value: 1724
   Exists: 1
+--- !u!114 &3728120585805870891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Antonio_Delegacia_2_4
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Antonio_Delegacia_2_4
+  guid: e5db3452468d2d4892b0a6f90424a800
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11033
+--- !u!114 &3811718330332700525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_11
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_11
+  guid: c7ba714624525d4f8a4447955172b0c7
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5941
+--- !u!114 &4775009113161033322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Exterior_3_3
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Exterior_3_3
+  guid: 820af3060690ae48be3aad04ef5117c8
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8890
+--- !u!114 &4794330699755583707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_18
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_18
+  guid: 4437fe60b5621f4ead934bb4825c5f78
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7570
+--- !u!114 &5011674995157564924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_2
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_2
+  guid: 74ed034ecfc1e149b5fb1f508a9d5028
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9921
+--- !u!114 &5295792535245058033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_11
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_11
+  guid: 664e0aab2f99f24eb0f53404422e95c0
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8182
+--- !u!114 &6118439724462784059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Cigana_Exterior_3_5
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Cigana_Exterior_3_5
+  guid: 3bd0c2ea6e5c754db48a355e7eafaf84
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 25298
+--- !u!114 &6317295128406618446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Exterior_3_1
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Exterior_3_1
+  guid: 1ff7b876271e544dbc206c539359f8d6
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5025
+--- !u!114 &6474207121045335302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Padre_Exterior_3_5
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Padre_Exterior_3_5
+  guid: 2ae5e5798edf5a4f90569adca73deb23
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8635
+--- !u!114 &6580887866107412031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Delegacia_2_5
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Delegacia_2_5
+  guid: e1e4c42d2a007e44a23eeb34e0910489
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8262
+--- !u!114 &6608700056994816767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Antonio_Delegacia_2_5
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Antonio_Delegacia_2_5
+  guid: e1e4c42d2a007e44a23eeb34e0910489
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8262
+--- !u!114 &7465495966363977585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Antonio_Exterior_3_12
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Antonio_Exterior_3_12
+  guid: fb421601650fda4ab8524e064f9b6623
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5411
+--- !u!114 &8301778752674672769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3_Exterior/Cigana_Exterior_3_2
+  m_EditorClassIdentifier: 
+  Path: event:/3_Exterior/Cigana_Exterior_3_2
+  guid: c47dabc7d0aa86439f2866dc98a60de1
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11343
+--- !u!114 &8513347439644348598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Delegacia_2_4
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Delegacia_2_4
+  guid: e5db3452468d2d4892b0a6f90424a800
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11033
+--- !u!114 &8696817201311990295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2_Delegacia/Antonio_Delegacia_2_3
+  m_EditorClassIdentifier: 
+  Path: event:/2_Delegacia/Antonio_Delegacia_2_3
+  guid: 317d42742f3e284e8d33505ba492f482
+  Banks:
+  - {fileID: -6492666910826985692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7038
